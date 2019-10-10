@@ -28,7 +28,7 @@ class membre
 		/* class Membre Constructeur */
 		/* ---------------------- */
 
-			Public function membre ( $idm, $nom_mem, $pre_mem, $dna_mem, $mail_mem, $tel_mem, $log_mem, $mdp_membre)
+			Public function membre ( $idm, $nom_mem, $pre_mem, $dna_mem, $mail_mem, $tel_mem, $log_mem, $mdp_membre, $etat_mem)
 			{
 				$this -> id_membre = $idm;
 				$this -> nom_membre = $nom_mem;
@@ -179,7 +179,7 @@ class membre
           $etat_mem = $objet->get_etat_membre();
 
 
-					print $SQL = "INSERT INTO membre values (NULL, '$nom_mem', '$pre_mem', '$dna_che', '$mail_mem', '$tel_mem', '$log_mem', '$mdp_mem', '0', '1')";
+					print $SQL = "INSERT INTO membre values (NULL, '$nom_mem', '$pre_mem', '$dna_che', '$mail_mem', '$tel_mem', '$log_mem', '$mdp_mem', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout membre ');
 				}
 
@@ -210,7 +210,7 @@ class membre
           $Req = $conn -> query ($SQL) or die (' Erreur suppression membre ');
         }
 
-				Public function affiche_chevaux_total($objet, $conn)
+				Public function affiche_membre_total($objet, $conn)
 				{
           $idm = $objet->get_id_membre();
 					$nom_mem = $objet->get_nom_membre();
@@ -221,7 +221,7 @@ class membre
 					$log_mem = $objet->get_login_membre();
 					$mdp_membre = $objet->get_mot_de_passe_membre();
 
-					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
+					print $SQL = " SELECT *  From membre WHERE id_membre= '$idm'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
 					return $Res = $Req -> fetch ();
 				}
