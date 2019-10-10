@@ -166,7 +166,7 @@ class ville
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}
 
-				Public function affiche_chevaux_total($objet, $conn)
+				Public function affiche_ville_total($objet, $conn)
 				{
 					$id_che = $objet->get_id_chevaux();
 					$nom_che = $objet->get_nom_chevaux();
@@ -179,7 +179,7 @@ class ville
 					$qual_che = $objet->get_qualite_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
-					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
+					print $SQL = " SELECT *  From ville WHERE id_ville = '$id_ville'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
 					return $Res = $Req -> fetch ();
 				}
