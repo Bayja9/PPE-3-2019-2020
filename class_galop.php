@@ -132,8 +132,6 @@ class galop
           $Req = $conn -> query ($SQL) or die (' Erreur suppression galop ');
         }
 
-
-
 				Public function affiche_galop_total($objet, $conn)
 				{
           $idg = $objet->get_id_galop();
