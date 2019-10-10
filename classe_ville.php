@@ -3,46 +3,38 @@
 include 'bdd.inc.php';
 
 	/* ---------------------- */
-	/* DEBUT class Utilisateur */
+	/* DEBUT class Ville */
 	/* ---------------------- */
 
-class chevaux
+class ville
 {
 		/* ---------------------- */
-		/* class Utilisateur Variables */
+		/* class Ville Variables */
 		/* ---------------------- */
 
-		Private $id_chevaux;
-		Private $nom_chevaux;
-		Private $dna_chevaux;
-		Private $taille_chevaux;
-		Private $age_chevaux;
-		Private $couleur_chevaux;
-    Private $robe_chevaux;
-    Private $sexe_chevaux;
-    Private $qualite_chevaux;
-
+		Private $ville_id;
+		Private $ville_departement;
+		Private $ville_nom;
+		Private $ville_code_postal;
+		Private $ville_code_commune;
+		Private $ville_arrondissement;
 
 		/* ---------------------- */
-		/* class Utilisateur Constructeur */
+		/* class Ville Constructeur */
 		/* ---------------------- */
 
-			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $etat_che)
+			Public function ville ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $etat_che)
 			{
-				$this -> id_chevaux = $id_che;
-				$this -> nom_chevaux = $nom_che;
-				$this -> dna_chevaux = $dna_che;
-				$this -> taille_chevaux = $taille_che;
-				$this -> age_chevaux = $age_che;
-				$this -> couleur_chevaux = $coul_che;
-				$this -> robe_chevaux = $robe_che;
-        $this -> sexe_chevaux = $sexe_che;
-        $this -> qualite_chevaux = $qual_che;
-				$this -> etat_chevaux = $etat_che;
+				$this -> ville_id = $id_ville;
+				$this -> ville_departement = $dep_ville;
+				$this -> ville_nom = $nom_ville;
+				$this -> ville_code_postal = $cp_ville;
+				$this -> ville_code_commune = $code_comm_ville;
+				$this -> ville_arrondissement = $arron_ville;
 			}
 
 			/* ---------------------- */
-			/* fonction Utilisateur getalldata */
+			/* fonction Ville getalldata */
 			/* ---------------------- */
 
 		/*	public function getallutil()
@@ -63,117 +55,77 @@ class chevaux
 			}
 
 			/* ---------------------- */
-			/* class Utilisateur GET */
+			/* class Ville GET */
 			/* ---------------------- */
 
-			Public function get_id_chevaux ()
+			Public function get_id_ville ()
 			{
-				return $this-> id_chevaux;
+				return $this-> ville_id;
 			}
 
-			Public function get_nom_chevaux ()
+			Public function get_departement_ville ()
 			{
-				return $this-> nom_chevaux;
+				return $this-> ville_departement;
 			}
 
-			Public function get_datenaissance_chevaux ()
+			Public function get_nom_ville ()
 			{
-				return $this-> dna_chevaux;
+				return $this-> ville_nom;
 			}
 
-			Public function  get_taille_chevaux ()
+			Public function  get_code_postal_ville ()
 			{
-				return $this-> taille_chevaux;
+				return $this-> ville_code_postal;
 			}
 
-			Public function  get_age_chevaux ()
+			Public function  get_code_commune_ville()
 			{
-				return $this-> age_chevaux;
+				return $this-> ville_code_commune;
 			}
 
-			Public function  get_couleur_chevaux ()
+			Public function  get_arrondissement_ville()
 			{
-				return $this-> couleur_chevaux;
-			}
-
-			Public function  get_robe_chevaux ()
-			{
-				return $this-> robe_chevaux;
-			}
-
-			Public function  get_sexe_chevaux ()
-			{
-				return $this-> sexe_chevaux;
-			}
-
-			Public function  get_qualite_chevaux ()
-			{
-				return $this-> qualite_chevaux;
-			}
-
-			Public function get_etat_chevaux ()
-			{
-				return $this-> etat_chevaux;
+				return $this-> ville_arrondissement;
 			}
 
 
 			/* ---------------------- */
-			/* class Utilisateur SET */
+			/* class Ville SET */
 			/* ---------------------- */
 
-			Public function set_id_chevaux ($id_che)
+			Public function set_id_ville ($id_ville)
 			{
-				 $this-> id_chevaux = $id_che;
+				 $this-> ville_id = $id_ville;
 			}
 
-			Public function set_nom_chevaux ($nom_che)
+			Public function set_departement_ville ($dep_ville)
 			{
-				 $this-> nom_chevaux = $nom_che;
+				 $this-> ville_departement = $dep_ville;
 			}
 
-			Public function set_dna_chevaux ($dna_che)
+			Public function set_nom_ville ($nom_ville)
 			{
-				 $this-> dna_chevaux = $dna_che;
+				 $this-> ville_nom = $nom_ville;
 			}
 
-			Public function set_taille_chevaux ($taille_che)
+			Public function set_code_postal_ville ($cp_ville)
 			{
-				 $this-> taille_chevaux = $taille_che;
+				 $this-> ville_code_postal = $cp_ville;
 			}
 
-			Public function set_age_chevaux ($age_che)
+			Public function set_code_commune_ville ($code_comm_ville)
 			{
-				 $this-> age_chevaux = $age_che;
+				 $this-> ville_code_postal = $code_comm_ville;
 			}
 
-			Public function set_couleur_chevaux ($coul_che)
+			Public function set_arrondissement_ville ($arron_ville)
 			{
-				 $this-> couleur_chevaux = $coul_che;
-			}
-
-			Public function set_robe_chevaux ($robe_che)
-			{
-				 $this-> robe_chevaux = $robe_che;
-			}
-
-			Public function set_sexe_chevaux ($sexe_che)
-			{
-				 $this-> sexe_chevaux = $sexe_che;
-			}
-
-			Public function set_qualite_chevaux ($qual_che)
-			{
-				 $this-> qualite_chevaux = $qual_che;
-			}
-
-			Public function set_etat_chevaux ($etat_che)
-			{
-				$this-> etat_chevaux = $etat_che;
+				 $this-> ville_arrondissement = $arron_ville;
 			}
 
 
 			/* ---------------------- */
-			/* class Chevaux fonctions publiques */
+			/* class Ville fonctions publiques */
 			/* ---------------------- */
 
 
@@ -243,7 +195,7 @@ class chevaux
 
 
 	/* ---------------------- */
-	/* FIN class Chevaux */
+	/* FIN class Ville */
 	/* ---------------------- */
 }
 ?>
