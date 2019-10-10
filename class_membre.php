@@ -20,6 +20,7 @@ class membre
 		Private $tel_membre;
     Private $login_membre;
     Private $mot_de_passe_membre;
+		Private $commentaire_membre;
     Private $etat_membre;
 
 
@@ -38,6 +39,7 @@ class membre
 				$this -> telephone_membre = $tel_mem;
 				$this -> login_membre = $log_mem;
         $this -> mot_de_passe_membre = $mdp_mem;
+				$this -> commentaire_membre = $comm_mem;
         $this -> etat_membre = $etat_mem;
 			}
 
@@ -106,6 +108,11 @@ class membre
 				return $this-> mot_de_passe_membre;
 			}
 
+			Public function  get_commentaire_membre ()
+			{
+				return $this-> commentaire_membre;
+			}
+
       Public function  get_etat_membre ()
 			{
 				return $this-> etat_membre;
@@ -155,6 +162,11 @@ class membre
 				 $this-> mot_de_passe_membre = $mdp_mem;
 			}
 
+			Public function set_commentaire_membre ($comm_mem)
+			{
+				$this-> commentaire_membre = $comm_mem;
+			}
+
       Public function set_etat_membre ($etat_mem)
       {
          $this-> etat_membre = $etat_mem;
@@ -176,10 +188,11 @@ class membre
 					$tel_mem = $objet->get_telephone_membre();
 					$log_mem = $objet->get_login_membre();
 					$mdp_mem = $objet->get_mot_de_passe_membre();
+					$comm_mem =$objet->get_commentaire_membre();
           $etat_mem = $objet->get_etat_membre();
 
 
-					print $SQL = "INSERT INTO membre values (NULL, '$nom_mem', '$pre_mem', '$dna_che', '$mail_mem', '$tel_mem', '$log_mem', '$mdp_mem', '0')";
+					print $SQL = "INSERT INTO membre values (NULL, '$nom_mem', '$pre_mem', '$dna_che', '$mail_mem', '$tel_mem', '$log_mem', '$mdp_mem', '$comm_mem', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout membre ');
 				}
 
@@ -193,11 +206,12 @@ class membre
 					$tel_mem = $objet->get_telephone_membre();
 					$log_mem = $objet->get_login_membre();
 					$mdp_membre = $objet->get_mot_de_passe_membre();
+					$comm_mem =$objet->get_commentaire_membre();
 
 
 					print $SQL = "UPDATE membre SET id_membre = '$idm', nom_mem  = '$nom_mem',
 					prenom_membre = '$pre_mem', date_de_naissance_membre = '$dna_che', mail_membre = '$mail_mem',
-          telephone_membre = '$tel_mem', login_membre = '$log_mem', mot_de_passe_membre = '$mdp_membre'	WHERE id_membre = '$idm'";
+          telephone_membre = '$tel_mem', login_membre = '$log_mem', mot_de_passe_membre = '$mdp_membre', commentaire_membre = '$comm_mem'	WHERE id_membre = '$idm'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification membre ');
 				}
 
@@ -220,6 +234,7 @@ class membre
 					$tel_mem = $objet->get_telephone_membre();
 					$log_mem = $objet->get_login_membre();
 					$mdp_membre = $objet->get_mot_de_passe_membre();
+					$comm_mem =$objet->get_commentaire_membre();
 
 					print $SQL = " SELECT *  From membre WHERE id_membre= '$idm'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
