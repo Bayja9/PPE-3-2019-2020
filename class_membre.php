@@ -24,7 +24,6 @@ class membre
     Private $etat_membre;
 
 
-
 		/* ---------------------- */
 		/* class Membre Constructeur */
 		/* ---------------------- */
