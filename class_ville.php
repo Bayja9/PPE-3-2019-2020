@@ -37,20 +37,15 @@ class ville
 			/* fonction Ville getalldata */
 			/* ---------------------- */
 
-		/*	public function getallutil()
+			public function getallville()
 			{
-				$data = $this->id_utilisateur;
-				$data = $data.$this->nom_utilisateur;
-				$data = $data.$this->prenom_utilisateur;
-				$data = $data.$this->tel_utilisateur;
-				$data = $data.$this->email_utilisateur;
-				$data = $data.$this->rue_utilisateur;
-				$data = $data.$this->ville_utilisateur;
-				$data = $data.$this->cp_utilisateur;
-				$data = $data.$this->photo_utilisateur;
-				$data = $data.$this->login_utilisateur;
-				$data = $data.$this->mdp_utilisateur;
-				$data = $data.$this->etat_utilisateur;
+				$data = $this->ville_id;
+				$data = $data.$this->ville_departement;
+				$data = $data.$this->ville_nom;
+				$data = $data.$this->ville_code_postal;
+				$data = $data.$this->ville_code_commune;
+				$data = $data.$this->ville_arrondissement;
+
 				return $data;
 			}
 

@@ -39,20 +39,15 @@ class promenade
 			/* fonction Cours getalldata */
 			/* ---------------------- */
 
-		/*	public function getallutil()
+			public function getallpromenade()
 			{
-				$data = $this->id_utilisateur;
-				$data = $data.$this->nom_utilisateur;
-				$data = $data.$this->prenom_utilisateur;
-				$data = $data.$this->tel_utilisateur;
-				$data = $data.$this->email_utilisateur;
-				$data = $data.$this->rue_utilisateur;
-				$data = $data.$this->ville_utilisateur;
-				$data = $data.$this->cp_utilisateur;
-				$data = $data.$this->photo_utilisateur;
-				$data = $data.$this->login_utilisateur;
-				$data = $data.$this->mdp_utilisateur;
-				$data = $data.$this->etat_utilisateur;
+				$data = $this->id_promenade;
+				$data = $data.$this->description_promenade;
+				$data = $data.$this->date_debut_promenade;
+				$data = $data.$this->date_fin_promenade;
+				$data = $data.$this->localisation;
+				$data = $data.$this->etat_promenade;
+
 				return $data;
 			}
 

@@ -37,20 +37,14 @@ class stage
 			/* fonction Utilisateur getalldata */
 			/* ---------------------- */
 
-		/*	public function getallutil()
+			public function getallstage()
 			{
-				$data = $this->id_utilisateur;
-				$data = $data.$this->nom_utilisateur;
-				$data = $data.$this->prenom_utilisateur;
-				$data = $data.$this->tel_utilisateur;
-				$data = $data.$this->email_utilisateur;
-				$data = $data.$this->rue_utilisateur;
-				$data = $data.$this->ville_utilisateur;
-				$data = $data.$this->cp_utilisateur;
-				$data = $data.$this->photo_utilisateur;
-				$data = $data.$this->login_utilisateur;
-				$data = $data.$this->mdp_utilisateur;
-				$data = $data.$this->etat_utilisateur;
+				$data = $this->id_stage;
+				$data = $data.$this->date_debut_stage;
+				$data = $data.$this->date_fin_stage;
+				$data = $data.$this->description_stage;
+				$data = $data.$this->etat_stage;
+
 				return $data;
 			}
 

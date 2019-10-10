@@ -34,20 +34,13 @@ class galop
 			/* fonction Galop getalldata */
 			/* ---------------------- */
 
-		/*	public function getallutil()
+			public function getallutil()
 			{
-				$data = $this->id_utilisateur;
-				$data = $data.$this->nom_utilisateur;
-				$data = $data.$this->prenom_utilisateur;
-				$data = $data.$this->tel_utilisateur;
-				$data = $data.$this->email_utilisateur;
-				$data = $data.$this->rue_utilisateur;
-				$data = $data.$this->ville_utilisateur;
-				$data = $data.$this->cp_utilisateur;
-				$data = $data.$this->photo_utilisateur;
-				$data = $data.$this->login_utilisateur;
-				$data = $data.$this->mdp_utilisateur;
-				$data = $data.$this->etat_utilisateur;
+				$data = $this->id_galop;
+				$data = $data.$this->date_obtention_galop;
+				$data = $data.$this->nom_galop;
+				$data = $data.$this->etat_galop;
+
 				return $data;
 			}
 

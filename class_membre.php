@@ -46,20 +46,19 @@ class membre
 			/* fonction Membre getalldata */
 			/* ---------------------- */
 
-		/*	public function getallutil()
+			public function getallmembre()
 			{
-				$data = $this->id_utilisateur;
-				$data = $data.$this->nom_utilisateur;
-				$data = $data.$this->prenom_utilisateur;
-				$data = $data.$this->tel_utilisateur;
-				$data = $data.$this->email_utilisateur;
-				$data = $data.$this->rue_utilisateur;
-				$data = $data.$this->ville_utilisateur;
-				$data = $data.$this->cp_utilisateur;
-				$data = $data.$this->photo_utilisateur;
-				$data = $data.$this->login_utilisateur;
-				$data = $data.$this->mdp_utilisateur;
-				$data = $data.$this->etat_utilisateur;
+				$data = $this->id_membre;
+				$data = $data.$this->nom_membre;
+				$data = $data.$this->prenom_membre;
+				$data = $data.$this->date_de_naissance_membre;
+				$data = $data.$this->mail_membre;
+				$data = $data.$this->telephone_membre;
+				$data = $data.$this->login_membre;
+				$data = $data.$this->mot_de_passe_membre;
+				$data = $data.$this->commentaire_membre;
+				$data = $data.$this->etat_membre;
+
 				return $data;
 			}
 
