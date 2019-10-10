@@ -116,7 +116,7 @@ class stage
 
 
 			/* ---------------------- */
-			/* class Promenade fonctions publiques */
+			/* class Stage fonctions publiques */
 			/* ---------------------- */
 
 
@@ -130,51 +130,50 @@ class stage
 
 
 					print $SQL = " INSERT INTO stage values (NULL, '$date_deb_sta', '$date_fin_sta', '$desc_sta', '0')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout cours ');
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout stage ');
 				}
 
-				Public function modif_cours ($objet, $conn)
+				Public function modif_stage ($objet, $conn)
 				{
-          $id_cours = $objet->get_id_cours();
-					$nom_cours = $objet->get_nom_cours();
-					$lib_cours = $objet->get_libelle_cours();
-					$date_deb_cours = $objet->get_date_debut_cours();
-					$date_fin_cours = $objet->get_date_fin_cours();
-					$etat_cours = $objet->get_etat_cours();
+					$id_sta = $objet->get_id_stage();
+					$date_deb_sta = $objet->get_date_debut_stage();
+					$date_fin_sta = $objet->get_date_fin_stage();
+					$desc_sta = $objet->get_description_stage();
+					$etat_sta = $objet->get_etat_stage();
 
 
-					print $SQL = "UPDATE cours SET id_cours = '$id_cours', nom_cours  = '$nom_cours',
-					libelle_cours = '$lib_cours', date_debut_cours = '$date_deb_cours', date_fin_cours = '$date_fin_cours' WHERE id_cours = '$id_cours'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification cours ');
+					print $SQL = "UPDATE stage SET id_stage = '$id_sta', date_debut_stage  = '$date_deb_sta',
+					date_fin_stage = '$date_fin_sta', description_stage = '$desc_sta', WHERE id_stage = '$id_sta'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification stage ');
 				}
 
-        Public function suppr_cours ($objet, $conn)
+        Public function suppr_stage ($objet, $conn)
         {
           $id_cours = $objet->get_id_cours();
 
-          print $SQL = "UPDATE cours SET etat_cours = '1'
-          WHERE id_cours = '$id_cours'";
-          $Req = $conn -> query ($SQL) or die (' Erreur suppression cours ');
+          print $SQL = "UPDATE stage SET etat_stage = '1'
+          WHERE id_stage = '$id_stage'";
+          $Req = $conn -> query ($SQL) or die (' Erreur suppression stage ');
         }
 
-				Public function affiche_cours_total($objet, $conn)
+				Public function affiche_stage_total($objet, $conn)
 				{
-          $id_cours = $objet->get_id_cours();
-					$nom_cours = $objet->get_nom_cours();
-					$lib_cours = $objet->get_libelle_cours();
-					$date_deb_cours = $objet->get_date_debut_cours();
-					$date_fin_cours = $objet->get_date_fin_cours();
-					$etat_cours = $objet->get_etat_cours();
+					$id_sta = $objet->get_id_stage();
+					$date_deb_sta = $objet->get_date_debut_stage();
+					$date_fin_sta = $objet->get_date_fin_stage();
+					$desc_sta = $objet->get_description_stage();
+					$etat_sta = $objet->get_etat_stage();
 
-					print $SQL = " SELECT *  From cours WHERE id_cours = '$id_cours'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage cours ');
+
+					print $SQL = " SELECT *  From stage WHERE id_stage = '$id_sta'";
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage stage ');
 					return $Res = $Req -> fetch ();
 				}
 
 
 
 	/* ---------------------- */
-	/* FIN class Promenade */
+	/* FIN class Stage */
 	/* ---------------------- */
 }
 ?>
