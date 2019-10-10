@@ -1,9 +1,18 @@
 <?php
 
-  $serveur = 'localhost';
-  $db = 'TP1';
-  $user = 'root';
-  $pass = '';
-  $conn = new PDO("mysql:host=$serveur;dbname=$db;charset=utf8", $user, $pass);
+$host="localhost";
+$dbname="centre_equestre";
+$user="root";
+$password="";
+
+//PDO = classe
+
+try {
+  $conn=new PDO ("mysql:host=".$host.";dbname=".$dbname,$user,$password);
+  $conn -> exec ('SET NAMES utf8');
+} catch (Exception $e) {
+    die ('erreur'.$e ->getMessage());
+}
+
 
 ?>
