@@ -155,19 +155,9 @@ class chevaux
 				 $this-> sexe_chevaux = $photo_util;
 			}
 
-			Public function set_login_utilisateur ($login_util)
+			Public function set_qualite_chevaux ($qual_che)
 			{
-				 $this-> login_utilisateur = $login_util;
-			}
-
-			Public function set_mdp_utilisateur($mdp_util)
-			{
-				 $this-> mdp_utilisateur = $mdp_util;
-			}
-
-			Public function set_etat_utilisateur($etat_util)
-			{
-				 $this-> etat_utilisateur = $etat_util;
+				 $this-> qualite_chevaux = $qual_che;
 			}
 
 
@@ -189,8 +179,8 @@ class chevaux
 					$mdp_util = $objet->get_mdp_utilisateur();
 					$etat_util = $objet->get_etat_utilisateur();
 
-					print $SQL = " INSERT INTO utilisateur values (NULL, '$nom_util', '$prenom_util', '$tel_util', '$email_util', '$rue_util', '$ville_util', '$cp_util', '$photo_util', '$login_util', '$mdp_util', '0', '1')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout utilisateur ');
+					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_chevaux', '$dna_chevaux', '$taille_chevaux', '$age_chevaux', '$couleur_chevaux')";
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
 				}
 
 				Public function modif_utilisateur ($objet, $conn)
