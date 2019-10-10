@@ -150,9 +150,9 @@ class chevaux
 				 $this-> robe_chevaux = $robe_che;
 			}
 
-			Public function set_sexe_chevaux ($photo_util)
+			Public function set_sexe_chevaux ($sexe_che)
 			{
-				 $this-> sexe_chevaux = $photo_util;
+				 $this-> sexe_chevaux = $sexe_che;
 			}
 
 			Public function set_qualite_chevaux ($qual_che)
@@ -162,161 +162,74 @@ class chevaux
 
 
 			/* ---------------------- */
-			/* class Utilisateur fonctions publiques */
+			/* class Chevaux fonctions publiques */
 			/* ---------------------- */
-			Public function ajout_utilisateur ($objet, $conn)
+
+
+			Public function ajout_chevaux ($objet, $conn)
 				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$photo_util = $objet->get_photo_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-					$etat_util = $objet->get_etat_utilisateur();
+					$id_che = $objet->get_id_chevaux();
+					$nom_che = $objet->get_nom_chevaux();
+					$dna_che = $objet->get_datenaissance_chevaux();
+					$taille_che = $objet->get_taille_chevaux();
+					$age_che = $objet->get_age_chevaux();
+					$coul_che = $objet->get_couleur_chevaux();
+					$robe_che = $objet->get_robe_chevaux();
+					$sexe_che = $objet->get_sexe_chevaux();
+					$qual_che = $objet->get_qualite_chevaux();
+
 
 					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_chevaux', '$dna_chevaux', '$taille_chevaux', '$age_chevaux', '$couleur_chevaux')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
 				}
 
-				Public function modif_utilisateur ($objet, $conn)
+				Public function modif_chevaux ($objet, $conn)
 				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$photo_util = $objet->get_photo_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-					$etat_util = $objet->get_etat_utilisateur();
+					$id_che = $objet->get_id_chevaux();
+					$nom_che = $objet->get_nom_chevaux();
+					$dna_che = $objet->get_datenaissance_chevaux();
+					$taille_che = $objet->get_taille_chevaux();
+					$age_che = $objet->get_age_chevaux();
+					$coul_che = $objet->get_couleur_chevaux();
+					$robe_che = $objet->get_robe_chevaux();
+					$sexe_che = $objet->get_sexe_chevaux();
+					$qual_che = $objet->get_qualite_chevaux();
 
-					print $SQL = "UPDATE utilisateur SET nom_utilisateur = '$nom_util', prenom_utilisateur  = '$prenom_util',
-					tel_utilisateur = '$tel_util', email_utilisateur = '$email_util', rue_utilisateur = '$rue_util', ville_utilisateur = '$ville_util',
-					cp_utilisateur = '$cp_util', mdp_utilisateur = '$mdp_util' WHERE id_utilisateur = '$id_util'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification utilisateur ');
+					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
+					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', age_chevaux = '$age_che', couleur_chevaux = '$coul_che',
+					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che' WHERE id_chevaux = '$id_che'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}
 
-				Public function affiche_utilisateur_total($objet, $conn)
+				Public function affiche_chevaux_total($objet, $conn)
 				{
+					$id_che = $objet->get_id_chevaux();
+					$nom_che = $objet->get_nom_chevaux();
+					$dna_che = $objet->get_datenaissance_chevaux();
+					$taille_che = $objet->get_taille_chevaux();
+					$age_che = $objet->get_age_chevaux();
+					$coul_che = $objet->get_couleur_chevaux();
+					$robe_che = $objet->get_robe_chevaux();
+					$sexe_che = $objet->get_sexe_chevaux();
+					$qual_che = $objet->get_qualite_chevaux();
 
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$photo_util = $objet->get_photo_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-					$etat_util = $objet->get_etat_utilisateur();
-
-					print $SQL = " SELECT *  From utilisateur WHERE id_utilisateur = '$id_util'";
+					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
-					Return $Res = $Req -> fetch ();
-
+					return $Res = $Req -> fetch ();
 				}
 
-				Public function suppr_utilisateur ($objet, $conn)
+				Public function suppr_chevaux ($objet, $conn)
 				{
-					$id_util = $objet->get_id_utilisateur();
+					$id_che = $objet->get_id_chevaux();
 
-					print $SQL = "UPDATE utilisateur SET etat_utilisateur = '1'
-					WHERE id_utilisateur = '$id_util'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression utilisateur ');
+					print $SQL = "UPDATE chevaux SET etat_chevaux = '1'
+					WHERE id_chevaux = '$id_che'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression chevaux ');
 				}
 
-				Public function suppr_fictive_util($objet, $conn)
-				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-
-					print $SQL = "UPDATE utilisateur SET etat_utilisateur=1 WHERE $id_util = '$id'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression utilisateur ');
-				}
-
-				Public function rajout_suppr_fictive($objet, $conn)
-				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-
-					print $SQL = "UPDATE utilisateur SET etat_utilisateur='0'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur rajout utilisateur ');
-				}
-
-				Public function exp_pro_emploi($objet, $conn)
-				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-
-					print $SQL = "SELECT * FROM emploi, entreprise, utilisateur
-		            WHERE utilisateur.id_utilisateur=$id_util
-		            AND emploi.id_utilisateur=utilisateur.id_utilisateur
-		            AND entreprise.id_entreprise=emploi.id_entreprise
-		            ORDER BY date_crea DESC";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur affichage ');
-					$Res = $Req -> fetch ();
-					return $Res
-				}
-
-				Public function exp_pro_stage($objet, $conn)
-				{
-					$id_util = $objet->get_id_utilisateur();
-					$nom_util = $objet->get_nom_utilisateur();
-					$prenom_util = $objet->get_prenom_utilisateur();
-					$tel_util = $objet->get_tel_utilisateur();
-					$email_util = $objet->get_email_utilisateur();
-					$rue_util = $objet->get_rue_utilisateur();
-					$ville_util = $objet->get_ville_utilisateur();
-					$cp_util = $objet->get_cp_utilisateur();
-					$login_util = $objet->get_login_utilisateur();
-					$mdp_util = $objet->get_mdp_utilisateur();
-
-					print $SQL = "SELECT * FROM emploi, entreprise, utilisateur
-		            WHERE utilisateur.id_utilisateur=$id_util
-		            AND emploi.id_utilisateur=utilisateur.id_utilisateur
-		            AND entreprise.id_entreprise=emploi.id_entreprise
-		            ORDER BY date_crea DESC";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur affichage ');
-					$Res = $Req -> fetch ();
-					return $Res
-				}
 
 	/* ---------------------- */
-	/* FIN class Utilisateur */
+	/* FIN class Chevaux */
 	/* ---------------------- */
 }
 ?>
