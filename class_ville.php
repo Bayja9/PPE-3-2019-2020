@@ -23,7 +23,7 @@ class ville
 		/* class Ville Constructeur */
 		/* ---------------------- */
 
-			Public function ville ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $etat_che)
+			Public function ville ( $id_ville, $dep_ville, $nom_ville, $cp_ville, $code_comm_ville, $arron_ville)
 			{
 				$this -> ville_id = $id_ville;
 				$this -> ville_departement = $dep_ville;
@@ -124,18 +124,14 @@ class ville
 			/* ---------------------- */
 
 
-			Public function ajout_chevaux ($objet, $conn)
+			Public function ajout_ville ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
-					$dna_che = $objet->get_datenaissance_chevaux();
-					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
-					$coul_che = $objet->get_couleur_chevaux();
-					$robe_che = $objet->get_robe_chevaux();
-					$sexe_che = $objet->get_sexe_chevaux();
-					$qual_che = $objet->get_qualite_chevaux();
-					$etat_che = $objet->get_etat_chevaux();
+					$ville_id = $objet->get_id_ville();
+					$ville_departement = $objet->get_departement_ville();
+					$ville_nom = $objet->get_nom_ville();
+					$ville_code_postal = $objet->get_code_postal_ville();
+					$ville_code_commune = $objet->get_code_commune_ville();
+					$ville_arrondissement = $objet->get_arrondissement_ville();
 
 
 					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '0')";

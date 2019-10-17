@@ -22,7 +22,7 @@ class galop
 		/* class Galop Constructeur */
 		/* ---------------------- */
 
-			Public function galop ( $idg, $nom_gal, $etat_gal)
+			Public function galop ($idg, $nom_gal, $etat_gal)
 			{
 				$this -> id_galop = $idg;
         $this -> date_obtention_galop = $dat_obt_gal;

@@ -3,13 +3,13 @@
 include 'bdd.inc.php';
 
 	/* ---------------------- */
-	/* DEBUT class Cours */
+	/* DEBUT class Promenade */
 	/* ---------------------- */
 
 class promenade
 {
 		/* ---------------------- */
-		/* class Cours Variables */
+		/* class Promenade Variables */
 		/* ---------------------- */
 
 		Private $id_promenade;
@@ -22,7 +22,7 @@ class promenade
 
 
 		/* ---------------------- */
-		/* class Cours Constructeur */
+		/* class Promenade Constructeur */
 		/* ---------------------- */
 
 			Public function promenade ( $idp, $desc_pro, $date_deb_pro, $date_fin_pro, $localisation, $etat_pro)
@@ -36,7 +36,7 @@ class promenade
 			}
 
 			/* ---------------------- */
-			/* fonction Cours getalldata */
+			/* fonction Promenade getalldata */
 			/* ---------------------- */
 
 			public function getallpromenade()
@@ -52,7 +52,7 @@ class promenade
 			}
 
 			/* ---------------------- */
-			/* class Cours GET */
+			/* class Promenade GET */
 			/* ---------------------- */
 
 			Public function get_id_promenade()
@@ -88,7 +88,7 @@ class promenade
 
 
 			/* ---------------------- */
-			/* class Cours SET */
+			/* class Promenade SET */
 			/* ---------------------- */
 
 			Public function set_id_promenade ($idp)
@@ -124,7 +124,7 @@ class promenade
 
 
 			/* ---------------------- */
-			/* class Cours fonctions publiques */
+			/* class Promenade fonctions publiques */
 			/* ---------------------- */
 
 
@@ -157,7 +157,7 @@ class promenade
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification promenade ');
 				}
 
-        Public function suppr_chevaux ($objet, $conn)
+        Public function suppr_promenade ($objet, $conn)
         {
           $idp = $objet->get_id_promenade();
 
@@ -183,7 +183,7 @@ class promenade
 
 
 	/* ---------------------- */
-	/* FIN class Cours */
+	/* FIN class Promenade */
 	/* ---------------------- */
 }
 ?>
