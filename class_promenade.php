@@ -157,7 +157,7 @@ class promenade
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification promenade ');
 				}
 
-        Public function suppr_chevaux ($objet, $conn)
+        Public function suppr_promenade ($objet, $conn)
         {
           $idp = $objet->get_id_promenade();
 

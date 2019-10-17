@@ -237,7 +237,7 @@ class membre
 					print $SQL = " SELECT *  From membre WHERE id_membre= '$idm'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
 					return $Res = $Req -> fetch ();
-				}
+				
 
 
 

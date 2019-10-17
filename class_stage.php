@@ -34,7 +34,7 @@ class stage
 			}
 
 			/* ---------------------- */
-			/* fonction Utilisateur getalldata */
+			/* fonction Stage getalldata */
 			/* ---------------------- */
 
 			public function getallstage()
@@ -49,7 +49,7 @@ class stage
 			}
 
 			/* ---------------------- */
-			/* class Promenade GET */
+			/* class Stage GET */
 			/* ---------------------- */
 
 			Public function get_id_stage()
@@ -78,7 +78,7 @@ class stage
       }
 
 			/* ---------------------- */
-			/* class Promenade SET */
+			/* class Stage SET */
 			/* ---------------------- */
 
 			Public function set_id_stage ($ids)
