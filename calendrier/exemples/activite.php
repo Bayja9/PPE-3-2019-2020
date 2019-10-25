@@ -68,16 +68,16 @@
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
-      <?php
-        //Info classe
-        include ('../../../bdd.inc.php');
-        //Affichage des donnees
-         $requete = "SELECT id_activite, title, url, start, end FROM activite";
-         $result = $conn -> query($requete);
-         while($ligne = $result -> fetch())
-        {
-      ?>
       events: [
+        <?php
+          //Info classe
+          include ('../../../bdd.inc.php');
+          //Affichage des donnees
+           $requete = "SELECT id_activite, title, url, start, end FROM activite";
+           $result = $conn -> query($requete);
+           while($ligne = $result -> fetch())
+          {
+        ?>
           groupId: '<?php echo $ligne['id_activite']?>',
           title: '<?php echo $ligne['title']?>',
           url: '<?php echo $ligne['url']?>',
