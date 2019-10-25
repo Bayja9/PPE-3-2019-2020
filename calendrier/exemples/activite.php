@@ -61,70 +61,34 @@
         center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
       },
-      defaultDate: '2019-08-12',
+      defaultDate: '2019-10-25',
       locale: initialLocaleCode,
       buttonIcons: false, // show the prev/next text
       weekNumbers: true,
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
+      <?php
+        //Info classe
+        include ('../../../bdd.inc.php');
+        //Affichage des donnees
+         $requete = "SELECT id_activite, title, url, start, end FROM activite";
+         $result = $conn -> query($requete);
+         while($ligne = $result -> fetch())
+        {
+      ?>
       events: [
-        {
-          title: 'All Day Event',
-          start: '2019-08-01'
+          groupId: '<?php echo $ligne['id_activite']?>',
+          title: '<?php echo $ligne['title']?>',
+          url: '<?php echo $ligne['url']?>',
+          start: '<?php echo $ligne['start']?>',
+          end: '<?php echo $ligne['end']?>'
         },
-        {
-          title: 'Long Event',
-          start: '2019-08-07',
-          end: '2019-08-10'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2019-08-09T16:00:00'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2019-08-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2019-08-11',
-          end: '2019-08-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2019-08-12T10:30:00',
-          end: '2019-08-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2019-08-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2019-08-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2019-08-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2019-08-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2019-08-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2019-08-28'
-        }
       ]
     });
+    <?php
+        }
+    ?>
 
     calendar.render();
 
