@@ -61,7 +61,7 @@
         center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
       },
-      defaultDate: '2019-10-25',
+      defaultDate: '2019-11-03',
       locale: initialLocaleCode,
       buttonIcons: false, // show the prev/next text
       weekNumbers: true,
@@ -69,26 +69,15 @@
       editable: true,
       eventLimit: true, // allow "more" link when too many events
       events: [
-        <?php
-          //Info classe
-          include ('../../../bdd.inc.php');
-          //Affichage des donnees
-           $requete = "SELECT id_activite, title, url, start, end FROM activite";
-           $result = $conn -> query($requete);
-           while($ligne = $result -> fetch())
-          {
-        ?>
-          groupId: '<?php echo $ligne['id_activite']?>',
-          title: '<?php echo $ligne['title']?>',
-          url: '<?php echo $ligne['url']?>',
-          start: '<?php echo $ligne['start']?>',
-          end: '<?php echo $ligne['end']?>'
-        },
+        {
+          groupId: '1',
+          title: 'nouveau',
+          url: '',
+          start: '2019-11-03',
+          end: '2019-11-09'
+        }
       ]
     });
-    <?php
-        }
-    ?>
 
     calendar.render();
 
