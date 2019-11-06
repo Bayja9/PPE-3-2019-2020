@@ -225,6 +225,7 @@ class chevaux
 					$qual_che = $objet->get_qualite_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
+
 					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
 					return $Res = $Req -> fetch ();

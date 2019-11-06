@@ -151,7 +151,6 @@ class promenade
 					$localisation = $objet->get_localisation();
 					$etat_pro = $objet->get_etat_promenade();
 
-
 					print $SQL = "UPDATE promenade SET id_promenade = '$idp', description_promenade  = '$desc_pro',
 					date_deb_pro = '$date_deb_pro', date_fin_pro = '$date_fin_pro', localisation = '$localisation' WHERE id_promenade = '$idp'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification promenade ');
@@ -160,7 +159,6 @@ class promenade
         Public function suppr_promenade ($objet, $conn)
         {
           $idp = $objet->get_id_promenade();
-
           print $SQL = "UPDATE promenade SET etat_promenade = '1'
           WHERE id_promenade = '$idp'";
           $Req = $conn -> query ($SQL) or die (' Erreur suppression promenade ');
