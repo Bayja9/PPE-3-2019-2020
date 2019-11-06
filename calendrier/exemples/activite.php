@@ -155,6 +155,8 @@
           <li class="menu-active"><a href="activite.html">Activite</a></li>
           <li><a href="../../events.html">Événement</a></li>
           <li><a href="../../pricing.html">Prix</a></li>
+          <li><a href="stages.html">Stages</a></li>
+          <li><a href="balades.html">Balades</a></li>
           <li class="menu-has-children"><a href="#">Blog</a>
             <ul>
               <li><a href="../../blog-home.html">Blog Accueil</a></li>
