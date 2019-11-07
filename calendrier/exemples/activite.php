@@ -157,14 +157,7 @@
           <li><a href="../../pricing.html">Prix</a></li>
           <li><a href="stages.html">Stages</a></li>
           <li><a href="balades.html">Balades</a></li>
-          <li class="menu-has-children"><a href="#">Blog</a>
-            <ul>
-              <li><a href="../../blog-home.html">Blog Accueil</a></li>
-              <li><a href="../../blog-single.html">Blog Single</a></li>
-            </ul>
-          </li>
           <li><a href="../../contact.html">Contact</a></li>
-          <li><a href="../../elements.html">Éléments</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -187,7 +180,7 @@
           <div class="single-footer-widget">
             <h4>À Propos de nous</h4>
             <p>
-              "TEXTE..."
+              	Le centre équestre met à votre disposition des infrastructures sécurisées qui vous permettront de monter à cheval même en hiver grâce au grand manège couvert. Deux monitrices Brevet d’État sont à l’écoute de vos attentes pour vous faire progresser et atteindre vos objectifs.
             </p>
           </div>
         </div>
@@ -195,7 +188,8 @@
           <div class="single-footer-widget">
             <h4>Contact</h4>
             <p>
-              "TEXTE..."
+              Centre équestre de Brive <br><br>
+              Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
             </p>
             <p class="number">
               06-56-78-87-45 <br>
@@ -228,9 +222,7 @@
       </div>
       <div class="footer-bottom row">
         <p class="footer-text m-0 col-lg-6 col-md-12">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
         </p>
         <div class="footer-social col-lg-6 col-md-12">
           <a href="#"><i class="fa fa-facebook"></i></a>
