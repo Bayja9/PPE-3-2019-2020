@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="../../css/magnific-popup.css">
 <link rel="stylesheet" href="../../css/nice-select.css">
 <link rel="stylesheet" href="../../css/animate.min.css">
-<link rel="stylesheet" href="../../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="../../css/owl.carousel.css">
 <link rel="stylesheet" href="../../css/main.css">
     <!--
@@ -151,10 +151,10 @@
         <ul class="nav-menu">
           <li><a href="../../index.html">Accueil</a></li>
           <li><a href="../../about.html">À propos</a></li>
-          <li><a href="../../service.html">Service</a></li>
-          <li><a href="../../training.html">Entraînement</a></li>
-          <li class="menu-active"><a href="activite.html">Activite</a></li>
-          <li><a href="../../events.html">Événement</a></li>
+          <li><a href="../../service.html">Services</a></li>
+          <li><a href="../../training.html">Entraînements</a></li>
+          <li class="menu-active"><a href="activite.html">Activites</a></li>
+          <li><a href="../../events.html">Événements</a></li>
           <li><a href="../../pricing.html">Prix</a></li>
           <li class="menu-has-children"><a href="#">Blog</a>
             <ul>
@@ -163,7 +163,6 @@
             </ul>
           </li>
           <li><a href="../../contact.html">Contact</a></li>
-          <li><a href="../../elements.html">Éléments</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
