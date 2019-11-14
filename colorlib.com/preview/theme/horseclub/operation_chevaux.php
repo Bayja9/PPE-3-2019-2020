@@ -41,10 +41,10 @@ if (isset($_POST['modifierd']))
 if (isset($_POST['suppr']))
 {
 
-  $idc=$_POST['id_chevaux'];
+    $idc=$_POST['id_chevaux'];
 
-  $uncheval = new cheval ($id_cheval,'','','','','','');
-  $undiplome -> suppr_diplome($uncheval, $conn);
+    $uncheval = new chevaux ($id_cheval,'','','','','','');
+    $undiplome -> suppr_diplome($uncheval, $conn);
 
   header('Location: ./modif_chevaux.php');
 }
