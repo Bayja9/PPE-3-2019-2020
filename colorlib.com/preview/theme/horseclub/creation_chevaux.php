@@ -1,5 +1,6 @@
 <?php
 //session_start();
+//require_once();
 include "bdd.inc.php";
 include "class_chevaux.php";
 
@@ -14,14 +15,16 @@ include "class_chevaux.php";
 
 
   ///////////////////////////////////////////////////////////////////////////////
-  /*									        CHEVAUX																 */
+  /*									       CREATION CHEVAUX														       */
   ///////////////////////////////////////////////////////////////////////////////
-      if ($_SESSION['profil']=="membre")
+
+
+    if ($_SESSION['profil']=="membre")
       {
-          $uncheval = new stage (NULL, $nom_chevaux, $dna_chevaux, $taille, $age, $couleur, $note);
-          $uncheval -> ajout_stage_util($uncheval, $conn);
-          header('Location: ./newsfeed.php');
-        }
+          $uncheval = new stage (NULL, $nom_chevaux, $dna_chevaux, $taille, $age, $couleur, $note, '0');
+          $uncheval -> ajout_chevaux($uncheval, $conn);
+          header('Location: ./chevaux.php');
+      }
 
 
 
