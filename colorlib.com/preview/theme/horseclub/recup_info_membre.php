@@ -1,13 +1,14 @@
 <?php
 include "bdd.inc.php";
+include "class_membre.php";
 $idm=$_SESSION['id_membre'];
 
 
-    if ($_SESSION['profil']=="chevaux")
+    if ($_SESSION['profil']=="membre")
 
     {
-      $sql="SELECT * FROM chevaux
-            WHERE id_chevaux=$idche";
+      $sql="SELECT * FROM membre
+           WHERE id_membre=$idm";
       $req = $conn -> query($sql)or die($conn->errorInfo());
       $req -> execute();
       $res=$req->fetch();
