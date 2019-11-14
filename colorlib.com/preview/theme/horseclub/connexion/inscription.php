@@ -80,7 +80,7 @@
                     (?, ?, ?, ?, ?)",
                     array($nom, $prenom, $mail, $mdp, $date_creation_compte));
 
-                header('Location: index.php');
+                header('Location: connexion.php');
                 exit;
             }
         }
