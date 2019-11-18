@@ -5,7 +5,7 @@
 
   // S'il y a une session alors on ne retourne plus sur cette page
     if (isset($_SESSION['id'])){
-        header('Location: Theme/index.php');
+        header('Location: ../index.php');
         exit;
     }
 
@@ -55,7 +55,7 @@
                 $_SESSION['prenom'] = $req['prenom'];
                 $_SESSION['mail'] = $req['mail'];
 
-                header('Location:  Theme/index.php');
+                header('Location:  ../index.php');
                 exit;
             }
         }

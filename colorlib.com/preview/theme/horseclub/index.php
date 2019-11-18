@@ -1,4 +1,7 @@
  <!DOCTYPE html>
+ <?php
+ session_start();
+ ?>
 <html lang="fr" class="no-js">
 
 <!-- Mirrored from colorlib.com/preview/theme/horseclub/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Nov 2019 17:43:55 GMT -->
@@ -54,16 +57,31 @@
 <div class="row align-items-center justify-content-center d-flex">
 <nav id="nav-menu-container"
   <ul class="nav-menu">
-  	<li class="menu-active"><a href="index.html">Accueil</a></li>
-  	<li><a href="about.html">À propos</a></li>
-  	<li><a href="service.html">Services</a></li>
-  	<li><a href="training.html">Entraînements</a></li>
-  	<li><a href="calendrier/exemples/activite.php">Activités</a></li>
-  	<li><a href="events.html">Événements</a></li>
+    <?php
+    if (isset($_SESSION['id'])) {
+      ?>
+      <li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
+      <li><a href="connexion\modifier-profil.php">Profil</a></li>
+      <li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
+      <li><a href="connexion\deconnexion.php">Déconnection</a></li>
+        <?php
+      }
+        else {
+          ?>
+    <li class="menu-active"><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="training.html">Entraînements</a></li>
+    <li><a href="calendrier/exemples/activite.php">Activités</a></li>
+    <li><a href="events.html">Événements</a></li>
   	<li><a href="pricing.html">Prix</a></li>
-  	<li><a href="stages.html">Stages</a></li>
+    <li><a href="stages.html">Stages</a></li>
     <li><a href="balades.html">Balades</a></li>
-  	<li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="connexion\connexion.php">Connection</a></li>
+    <?php
+      }
+    ?>
   </ul>
 </nav>
 </div>
@@ -81,7 +99,18 @@
 Vous êtes la Bienvenue <br>
 sur notre site
 </h1>
-<a href="connexion\connexion.php" class="genric-btn">Inscription & Connection</a>
+<?php
+if (isset($_SESSION['id'])) {
+  ?>
+  <a href="connexion\deconnexion.php" class="genric-btn">Déconnection</a>
+    <?php
+  }
+    else {
+      ?>
+<a href="connexion\connexion.php" class="genric-btn">Connection</a>
+<?php
+  }
+?>
 </div>
 </div>
 </div>

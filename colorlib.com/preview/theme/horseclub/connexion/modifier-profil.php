@@ -80,14 +80,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Modifier votre profil</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Dashboard">
+		<meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Connexion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
     </head>
 
     <body>
-        <div>Modification</div>
-        <form method="post">
+		<div id="login-page">
+			<div class="container">
 
+			<form class="form-login" method="post">
+        <div class="login-wrap"><h2 class="form-login-heading">Modifier Profil</h2>
+  					<td align="right">
             <?php
                 if (isset($er_nom)){
                 ?>
@@ -95,7 +111,7 @@
                 <?php
                 }
             ?>
-            <input type="text" placeholder="Votre nom" name="nom" value="<?php if(isset($nom)){ echo $nom; }else{ echo $afficher_profil['nom'];}?>" required>
+            <input type="text" class="form-control" placeholder="Votre nom" name="nom" value="<?php if(isset($nom)){ echo $nom; }else{ echo $afficher_profil['nom'];}?>" required>
 
             <?php
                 if (isset($er_prenom)){
@@ -104,7 +120,7 @@
                 <?php
                 }
             ?>
-            <input type="text" placeholder="Votre prénom" name="prenom" value="<?php if(isset($prenom)){ echo $prenom; }else{ echo $afficher_profil['prenom'];}?>" required>
+            <input type="text" class="form-control" placeholder="Votre prénom" name="prenom" value="<?php if(isset($prenom)){ echo $prenom; }else{ echo $afficher_profil['prenom'];}?>" required>
 
             <?php
                 if (isset($er_mail)){
@@ -113,10 +129,19 @@
                 <?php
                 }
             ?>
-            <input type="email" placeholder="Adresse mail" name="mail" value="<?php if(isset($mail)){ echo $mail; }else{ echo $afficher_profil['mail'];}?>" required>
+            <input type="email" class="form-control" placeholder="Adresse mail" name="mail" value="<?php if(isset($mail)){ echo $mail; }else{ echo $afficher_profil['mail'];}?>" required>
 
-            <button type="submit" name="modification">Modifier</button>
-
-        </form>
+            <button class="btn btn-theme btn-block" type="submit" name="modification">Modifier</button>
+          </form>
+    			</div>
+    		</div>
+    	<script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    	<!--BACKSTRETCH-->
+        <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+        <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+        <script>
+            $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+        </script>
     </body>
 </html>
