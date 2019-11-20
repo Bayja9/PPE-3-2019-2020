@@ -1,3 +1,10 @@
+<?php
+//session_start();
+//require_once('letraitementlogin.php');
+include "bdd.inc.php";
+
+
+ ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
