@@ -58,21 +58,31 @@
           <div class="row align-items-center justify-content-center d-flex">
             <nav id="nav-menu-container">
               <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li class="menu-active"><a href="service.html">Services</a></li>
-                <li><a href="training.html">Entraînements</a></li>
+                <?php
+                if (isset($_SESSION['id'])) {
+                  ?>
+                  <li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
+                  <li><a href="connexion\modifier-profil.php">Profil</a></li>
+                  <li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
+                  <li><a href="connexion\deconnexion.php">Déconnection</a></li>
+                    <?php
+                  }
+                    else {
+                      ?>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="about.php">À propos</a></li>
+                <li><a href="service.php">Services</a></li>
+                <li><a href="training.php">Entraînements</a></li>
                 <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                <li><a href="events.html">Événements</a></li>
-                <li><a href="pricing.html">Prix</a></li>
-                <li class="menu-has-children"><a href="#">Blog</a>
-                  <ul>
-                    <li><a href="blog-home.html">Blog Accueil</a></li>
-                    <li><a href="blog-single.html">Blog Single</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="elements.html">Éléments</a></li>
+                <li><a href="events.php">Événements</a></li>
+                <li><a href="pricing.php">Prix</a></li>
+                <li><a href="stages.php">Stages</a></li>
+                <li><a href="balades.php">Balades</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="connexion\connexion.php">Connection</a></li>
+                <?php
+                  }
+                ?>
               </ul>
             </nav><!-- #nav-menu-container -->
           </div>

@@ -1,4 +1,7 @@
     <!DOCTYPE html>
+    <?php
+      session_start();
+    ?>
     <html lang="zxx" class="no-js">
 
 <!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:58 GMT -->
@@ -58,21 +61,31 @@
                     <div class="row align-items-center justify-content-center d-flex">
                       <nav id="nav-menu-container">
                         <ul class="nav-menu">
-                          <li class="menu-active"><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="service.html">Service</a></li>
-                          <li><a href="training.html">training</a></li>
-                          <li><a href="calendrier/exemples/activite.php">Activite</a></li>
-                          <li><a href="events.html">events</a></li>
-                          <li><a href="pricing.html">Pricing</a></li>
-                          <li class="menu-has-children"><a href="#">Blog</a>
-                            <ul>
-                              <li><a href="blog-home.html">Blog Home</a></li>
-                              <li><a href="blog-single.html">Blog Single</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="contact.html">Contact</a></li>
-                          <li><a href="elements.html">Elements</a></li>
+                          <?php
+        									if (isset($_SESSION['id'])) {
+        										?>
+        										<li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
+        										<li><a href="connexion\modifier-profil.php">Profil</a></li>
+        										<li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
+        										<li><a href="connexion\deconnexion.php">Déconnection</a></li>
+        											<?php
+        										}
+        											else {
+        												?>
+        									<li><a href="index.php">Accueil</a></li>
+        									<li><a href="about.php">À propos</a></li>
+        									<li><a href="service.php">Services</a></li>
+        									<li><a href="training.php">Entraînements</a></li>
+        									<li><a href="calendrier/exemples/activite.php">Activités</a></li>
+        									<li><a href="events.php">Événements</a></li>
+        									<li><a href="pricing.php">Prix</a></li>
+        									<li><a href="stages.php">Stages</a></li>
+        									<li><a href="balades.php">Balades</a></li>
+        									<li><a href="contact.php">Contact</a></li>
+        									<li><a href="connexion\connexion.php">Connection</a></li>
+        									<?php
+        										}
+        									?>
                         </ul>
                       </nav><!-- #nav-menu-container -->
                     </div>

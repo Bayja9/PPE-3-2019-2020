@@ -1,6 +1,6 @@
  <!DOCTYPE html>
  <?php
- session_start();
+  session_start();
  ?>
 <html lang="fr" class="no-js">
 
@@ -68,16 +68,16 @@
       }
         else {
           ?>
-    <li class="menu-active"><a href="index.html">Accueil</a></li>
-    <li><a href="about.html">À propos</a></li>
-    <li><a href="service.html">Services</a></li>
-    <li><a href="training.html">Entraînements</a></li>
+    <li class="menu-active"><a href="index.php">Accueil</a></li>
+    <li><a href="about.php">À propos</a></li>
+    <li><a href="service.php">Services</a></li>
+    <li><a href="training.php">Entraînements</a></li>
     <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-    <li><a href="events.html">Événements</a></li>
-  	<li><a href="pricing.html">Prix</a></li>
-    <li><a href="stages.html">Stages</a></li>
-    <li><a href="balades.html">Balades</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="events.php">Événements</a></li>
+  	<li><a href="pricing.php">Prix</a></li>
+    <li><a href="stages.php">Stages</a></li>
+    <li><a href="balades.php">Balades</a></li>
+    <li><a href="contact.php">Contact</a></li>
     <li><a href="connexion\connexion.php">Connection</a></li>
     <?php
       }

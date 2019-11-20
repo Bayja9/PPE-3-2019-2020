@@ -54,9 +54,8 @@ session_start();
             - etc.
         -->
         <h3>Voici le profil de <?= $afficher_profil['nom'] . " " .  $afficher_profil['prenom']; ?></h3>
-          <p class="form-control">Votre id est : <?= $afficher_profil['id'] ?></p>
-          <p class="form-control">Votre mail est : <?= $afficher_profil['mail'] ?></p>
-          <p class="form-control">Votre compte a été cree le : <?= $afficher_profil['date_creation_compte'] ?></p>
+          <p class="">Votre mail est : <?= $afficher_profil['mail'] ?></p>
+          <p class="">Votre compte a été cree le : <br> <?= $afficher_profil['date_creation_compte'] ?></p>
           </form>
     			</div>
     		</div>

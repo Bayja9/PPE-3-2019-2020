@@ -1,7 +1,10 @@
 	<!DOCTYPE html>
+	<?php
+		session_start();
+	?>
 	<html lang="zxx" class="no-js">
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:54 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:15 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
 		<!-- Mobile Specific Meta -->
@@ -23,6 +26,7 @@
 			<!--
 			CSS
 			============================================= -->
+
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
@@ -48,8 +52,8 @@
 							</a>
 			    		</div>
 			    		<div class="col-lg-4 col-sm-4 menu-top-right">
-			    			<a class="tel" href="tel:0612120054">06.12.12.00.54</a>
-			    			<a href="tel:0612120054"><span class="lnr lnr-phone-handset"></span></a>
+			    			<a class="tel" href="tel:0612120054">06 87 74 75 96</a>
+			    			<a href="tel:06-12-12-00-54"><span class="lnr lnr-phone-handset"></span></a>
 			    		</div>
 			    	</div>
 			    </div>
@@ -58,16 +62,31 @@
 			    	<div class="row align-items-center justify-content-center d-flex">
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">Accueil</a></li>
-				          <li><a href="about.html">À propos</a></li>
-				          <li><a href="service.html">Services</a></li>
-				          <li><a href="training.html">Entraînements</a></li>
+									<?php
+									if (isset($_SESSION['id'])) {
+										?>
+										<li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
+										<li><a href="connexion\modifier-profil.php">Profil</a></li>
+										<li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
+										<li><a href="connexion\deconnexion.php">Déconnection</a></li>
+											<?php
+										}
+											else {
+												?>
+									<li><a href="index.php">Accueil</a></li>
+									<li><a href="about.php">À propos</a></li>
+									<li><a href="service.php">Services</a></li>
+									<li><a href="training.php">Entraînements</a></li>
 									<li><a href="calendrier/exemples/activite.php">Activités</a></li>
-				          <li><a href="events.html">Événements</a></li>
-				          <li class="menu-active"><a href="pricing.html">Prix</a></li>
-									<li><a href="stages.html">Stages</a></li>
-									<li><a href="balades.html">Balades</a></li>
-				          <li><a href="contact.html">Contact</a></li>
+									<li><a href="events.php">Événements</a></li>
+									<li><a href="pricing.php">Prix</a></li>
+									<li><a href="stages.php">Stages</a></li>
+									<li><a href="balades.php">Balades</a></li>
+									<li><a href="contact.php">Contact</a></li>
+									<li><a href="connexion\connexion.php">Connection</a></li>
+									<?php
+										}
+									?>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->
 			    	</div>
@@ -81,111 +100,126 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Plans Tarifaires
+								À propos de nous
 							</h1>
-							<p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="pricing.html">Plans Tarifaires</a></p>
+							<p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> À propos de nous </a></p>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->
 
-			<!-- Start price Area -->
-			<section class="price-area section-gap">
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Choisissez le meilleur plan qui vous convient</h1>
-								<p>Voici les tarifs</p>
-							</div>
+					<div class="row">
+						<div class="col-lg-6 home-about-left">
+							<img class="mx-auto d-block img-fluid" src="img/about-img.png" alt="">
+						</div>
+						<div class="col-lg-6 home-about-right">
+							<h6 class="text-uppercase">Centre équestre</h6>
+							<h1>Nous avons fait une vie <br>
+							qui va vous changer</h1>
+							<p>
+								<span>Nous sommes ici pour vous écouter</span>
+							</p>
+							<p>
+								Nous, on aime bien rigoler ! Autant chez les adultes que chez les enfants d’ailleurs… Toute occasion est bonne pour se réunir et partager un bon moment autour d’une table remplie de bonnes choses à déguster. Et on aime bien les challenges aussi… alors à vos paris !
+								<br><br>
+								Cavaliers du centre équestre, choisissez la formule qui vous correspond et s’adapte à vos objectifs. Que vous soyez de passage en Corrèze ou que vous souhaitiez monter à cheval toute l’année, vous trouverez une formule pour vous satisfaire. Notez également que nous mettons en place des facilités de paiement pour étaler vos règlement de forfaits et que les chèques vacances sont acceptés pour le règlement des stages.
+								<br><br>
+								Propriétaires, choisissez parmi de nombreuses options et déterminez la pension adaptée à vos besoins et à ceux de votre cheval. L’ensemble de l’équipe du centre équestre est à votre écoute afin de mettre en place un régime alimentaire adapté. Deux moniteurs Brevet d’État (BE) sont à vos côtés pour vous conseiller et vous orienter dans votre travail à cheval.
+							</p>
+							<a class="primary-btn" href="#">Commencez maintenant</a>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="single-price">
-								<div class="top-part">
-									<h1 class="package-no">01</h1>
-									<h4>De base </h4>
-									<p>Pour les particuliers</p>
-								</div>
-								<div class="package-list">
-									<ul>
-										<li>Transfert en ligne sécurisé</li>
-										<li>Styles illimités pour l'interface</li>
-										<li>Service client fiable</li>
-									</ul>
-								</div>
-								<div class="bottom-part">
-									<h1>199.00€</h1>
-									<a class="price-btn text-uppercase" href="#">Acheter</a>
-								</div>
+				</div>
+			</section>
+			<!-- End home-about Area -->
+
+			<!-- Start feature Area -->
+			<section class="feature-area relative pt-100 pb-20">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Techniciens experts</h4></a>
+								<p>
+										L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-price">
-								<div class="top-part">
-									<h1 class="package-no">02</h1>
-									<h4>Economie</h4>
-									<p>Pour les particuliers</p>
-								</div>
-								<div class="package-list">
-									<ul>
-										<li>Transfert en ligne sécurisé</li>
-										<li>Styles illimités pour l'interface</li>
-										<li>Service client fiable</li>
-									</ul>
-								</div>
-								<div class="bottom-part">
-									<h1>299.00€</h1>
-									<a class="price-btn text-uppercase" href="#">Acheter</a>
-								</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Service professionnel</h4></a>
+								<p>
+									L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-price">
-								<div class="top-part">
-									<h1 class="package-no">03</h1>
-									<h4>Premium</h4>
-									<p>Pour les particuliers</p>
-								</div>
-								<div class="package-list">
-									<ul>
-										<li>Transfert en ligne sécurisé</li>
-										<li>Styles illimités pour l'interface</li>
-										<li>Service client fiable</li>
-									</ul>
-								</div>
-								<div class="bottom-part">
-									<h1>399.00€</h1>
-									<a class="price-btn text-uppercase" href="#">Acheter</a>
-								</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Support</h4></a>
+								<p>
+									L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-price">
-								<div class="top-part">
-									<h1 class="package-no">04</h1>
-									<h4>Entreprise</h4>
-									<p>Pour les particuliers</p>
-								</div>
-								<div class="package-list">
-									<ul>
-										<li>Transfert en ligne sécurisé</li>
-										<li>Styles illimités pour l'interface</li>
-										<li>Service client fiable</li>
-									</ul>
-								</div>
-								<div class="bottom-part">
-									<h1>499.00€</h1>
-									<a class="price-btn text-uppercase" href="#">Acheter</a>
-								</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Compétences techniques</h4></a>
+								<p>
+									L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Hautement recommandé</h4></a>
+								<p>
+									L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-feature">
+								<a href="#"><h4 class="text-white">Avis positifs</h4></a>
+								<p>
+									L'utilisation d'Internet devient de plus en plus courante en raison des progrès rapides de la technologies et du pouvoir.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End price Area -->
+			<!-- End feature Area -->
+
+			<!-- Start about-video Area -->
+			<section class="about-video-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 about-video-left">
+							<h6 class="text-uppercase">"TEXTE..."</h6>
+							<h1>
+							"TEXTE..." <br>
+
+							</h1>
+							<p>
+								<span>"TEXTE..."</span>
+							</p>
+							<p>
+								"TEXTE..."
+							</p>
+							<a class="primary-btn" href="#">Commencez maintenant</a>
+						</div>
+						<div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex">
+							<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End about-video Area -->
 
 			<!-- Start booking Area -->
 			<section class="booking-area section-gap relative" id="consultancy">
@@ -315,7 +349,7 @@
 							<div class="single-footer-widget">
 								<h4>À Propos de nous</h4>
 								<p>
-									Le centre équestre met à votre disposition des infrastructures sécurisées qui vous permettront de monter à cheval même en hiver grâce au grand manège couvert. Deux monitrices Brevet d’État sont à l’écoute de vos attentes pour vous faire progresser et atteindre vos objectifs.
+										Le centre équestre met à votre disposition des infrastructures sécurisées qui vous permettront de monter à cheval même en hiver grâce au grand manège couvert. Deux monitrices Brevet d’État sont à l’écoute de vos attentes pour vous faire progresser et atteindre vos objectifs.
 								</p>
 							</div>
 						</div>
@@ -324,7 +358,7 @@
 								<h4>Contact</h4>
 								<p>
 									Centre équestre de Brive <br><br>
-		              Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
+									Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
 								</p>
 								<p class="number">
 									06-56-78-87-45 <br>
@@ -341,7 +375,7 @@
 
 									  <form class="navbar-form" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
 									    <div class="input-group add-on align-items-center d-flex">
-									      	<input class="form-control" name="EMAIL" placeholder="Adresse Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adresse Email'" required="" type="email">
+									      	<input class="form-control" name="EMAIL" placeholder="Adresse Email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adresse Email...'" required="" type="email">
 											<div style="position: absolute; left: -5000px;">
 												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
 											</div>
@@ -390,5 +424,5 @@
 			<script src="js/main.js"></script>
 		</body>
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:54 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:29 GMT -->
 </html>
