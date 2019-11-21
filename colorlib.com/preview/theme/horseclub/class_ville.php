@@ -135,53 +135,46 @@ class ville
 
 
 					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '0')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout ville ');
 				}
 
-				Public function modif_chevaux ($objet, $conn)
+				Public function modif_ville ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
-					$dna_che = $objet->get_datenaissance_chevaux();
-					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
-					$coul_che = $objet->get_couleur_chevaux();
-					$robe_che = $objet->get_robe_chevaux();
-					$sexe_che = $objet->get_sexe_chevaux();
-					$qual_che = $objet->get_qualite_chevaux();
-					$etat_che = $objet->get_etat_chevaux();
+					$ville_id = $objet->get_id_ville();
+					$ville_departement = $objet->get_departement_ville();
+					$ville_nom = $objet->get_nom_ville();
+					$ville_code_postal = $objet->get_code_postal_ville();
+					$ville_code_commune = $objet->get_code_commune_ville();
+					$ville_arrondissement = $objet->get_arrondissement_ville();
 
-					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
-					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', age_chevaux = '$age_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che' WHERE id_chevaux = '$id_che'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
+					print $SQL = "UPDATE ville SET ville_id = '$id_ville', ville_departement  = '$ville_departement',
+					ville_nom = '$ville_nom', ville_code_postal = '$ville_code_postal', ville_code_commune = '$ville_code_commune', ville_arrondissement = '$ville_arrondissement'
+					WHERE ville_id = '$ville_id'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification ville ');
 				}
 
 				Public function affiche_ville_total($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
-					$dna_che = $objet->get_datenaissance_chevaux();
-					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
-					$coul_che = $objet->get_couleur_chevaux();
-					$robe_che = $objet->get_robe_chevaux();
-					$sexe_che = $objet->get_sexe_chevaux();
-					$qual_che = $objet->get_qualite_chevaux();
-					$etat_che = $objet->get_etat_chevaux();
+					$ville_id = $objet->get_id_ville();
+					$ville_departement = $objet->get_departement_ville();
+					$ville_nom = $objet->get_nom_ville();
+					$ville_code_postal = $objet->get_code_postal_ville();
+					$ville_code_commune = $objet->get_code_commune_ville();
+					$ville_arrondissement = $objet->get_arrondissement_ville();
 
-					print $SQL = " SELECT *  From ville WHERE id_ville = '$id_ville'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
+					print $SQL = " SELECT ville_id, ville_departement, ville_nom, ville_code_postal,
+					ville_code_commune, ville_arrondissement FROM ville WHERE id_ville = '$id_ville'";
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage ville ');
 					return $Res = $Req -> fetch ();
 				}
 
-				Public function suppr_chevaux ($objet, $conn)
+				Public function suppr_ville ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
+					$ville_id = $objet->get_id_ville();
 
-					print $SQL = "UPDATE chevaux SET etat_chevaux = '1'
-					WHERE id_chevaux = '$id_che'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression chevaux ');
+					print $SQL = "UPDATE ville SET etat_ville = '1'
+					WHERE ville_id = '$id_ville'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression ville ');
 				}
 
 
