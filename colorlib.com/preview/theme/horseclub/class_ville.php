@@ -133,8 +133,7 @@ class ville
 					$ville_code_commune = $objet->get_code_commune_ville();
 					$ville_arrondissement = $objet->get_arrondissement_ville();
 
-
-					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '0')";
+					print $SQL = " INSERT INTO ville values (NULL, '$ville_departement', '$ville_nom' , '$ville_code_postal', '$ville_code_commune', '$ville_arrondissement'())";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout ville ');
 				}
 
@@ -168,14 +167,14 @@ class ville
 					return $Res = $Req -> fetch ();
 				}
 
-				Public function suppr_ville ($objet, $conn)
-				{
-					$ville_id = $objet->get_id_ville();
+			//	Public function suppr_ville ($objet, $conn)
+				//{
+				//	$ville_id = $objet->get_id_ville();
 
-					print $SQL = "UPDATE ville SET etat_ville = '1'
-					WHERE ville_id = '$id_ville'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression ville ');
-				}
+					//print $SQL = "UPDATE ville SET etat_ville = '1'
+					//WHERE ville_id = '$id_ville'";
+				 	//$Req = $conn -> query ($SQL) or die (' Erreur suppression ville ');
+				//}
 
 
 	/* ---------------------- */
