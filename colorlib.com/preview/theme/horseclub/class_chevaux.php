@@ -21,13 +21,17 @@ class chevaux
     Private $robe_chevaux;
     Private $sexe_chevaux;
     Private $qualite_chevaux;
+		Private $poids_chevaux;
+		Private $origine_chevaux;
+		Private $utilisation_chevaux;
+		Private $etat_chevaux;
 
 
 		/* ---------------------- */
 		/* class Utilisateur Constructeur */
 		/* ---------------------- */
 
-			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $etat_che)
+			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $poids_che, $origin_che, $util_che, $etat_che)
 			{
 				$this -> id_chevaux = $id_che;
 				$this -> nom_chevaux = $nom_che;
@@ -38,7 +42,11 @@ class chevaux
 				$this -> robe_chevaux = $robe_che;
         $this -> sexe_chevaux = $sexe_che;
         $this -> qualite_chevaux = $qual_che;
+				$this -> poids_chevaux = $poids_che;
+				$this -> origine_chevaux = $origin_che;
+				$this -> utilisation_chevaux = $util_che;
 				$this -> etat_chevaux = $etat_che;
+
 			}
 
 			/* ---------------------- */
@@ -55,6 +63,9 @@ class chevaux
 				$data = $data.$this->robe_chevaux;
 				$data = $data.$this->sexe_chevaux;
 				$data = $data.$this->qualite_chevaux;
+				$data = $data.$this->poids_chevaux;
+				$data = $data.$this->origine_chevaux;
+				$data = $data.$this->utilisation_chevaux;
 				$data = $data.$this->etat_chevaux;
 
 				return $data;
@@ -107,6 +118,21 @@ class chevaux
 			Public function  get_qualite_chevaux ()
 			{
 				return $this-> qualite_chevaux;
+			}
+
+			Public function  get_poids_chevaux ()
+			{
+				return $this-> poids_chevaux;
+			}
+
+			Public function  get_origine_chevaux ()
+			{
+				return $this-> origine_chevaux;
+			}
+
+			Public function  get_utilisation_chevaux ()
+			{
+				return $this-> utilisation_chevaux;
 			}
 
 			Public function get_etat_chevaux ()
@@ -164,6 +190,21 @@ class chevaux
 				 $this-> qualite_chevaux = $qual_che;
 			}
 
+			Public function set_poids_chevaux ($poids_che)
+			{
+				 $this-> poids_chevaux = $poids_che;
+			}
+
+			Public function set_origine_chevaux ($origin_che)
+			{
+				$this-> origine_chevaux = $origin_che;
+			}
+
+			Public function set_utilisation_chevaux ($util_che)
+			{
+				$this-> utilisation_chevaux = $util_che;
+			}
+
 			Public function set_etat_chevaux ($etat_che)
 			{
 				$this-> etat_chevaux = $etat_che;
@@ -186,10 +227,12 @@ class chevaux
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$poids_che = $objet->get_poids_chevaux();
+					$origin_che = $objet->get_origine_chevaux();
+					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
-
-					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '0')";
+					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$poids_che', '$origin_che', '$util_che', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
 				}
 
@@ -204,11 +247,15 @@ class chevaux
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$poids_che = $objet->get_poids_chevaux();
+					$origin_che = $objet->get_origine_chevaux();
+					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
 					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
 					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', age_chevaux = '$age_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che' WHERE id_chevaux = '$id_che'";
+					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
+					WHERE id_chevaux = '$id_che'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}
 
@@ -223,8 +270,10 @@ class chevaux
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$poids_che = $objet->get_poids_chevaux();
+					$origin_che = $objet->get_origine_chevaux();
+					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
-
 
 					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
