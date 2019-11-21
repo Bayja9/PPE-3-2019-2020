@@ -9,7 +9,7 @@ include "letraitementlogin.php";
 if (isset($_POST['enregistrerd']))
 {
 
-    $idg=$_SESSION['id_galop'];
+    $idc=$_SESSION['id_cours'];
     $date_galop=$_POST['date_obtention_galop'];
     $nom_galop=$_POST['nom_galop'];
     $lib_galop=$_POST['lib_galop'];
