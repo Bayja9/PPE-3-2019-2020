@@ -8,7 +8,7 @@ $end = $_POST['end'];
 
 // connection to the database
 try {
- $bdd = new PDO('mysql:host=localhost;dbname=fullcalendar', 'root', 'root');
+ $bdd = new PDO('mysql:host=localhost;dbname=centre_equestre', 'root', '');
  } catch(Exception $e) {
 exit('Unable to connect to database.');
 }

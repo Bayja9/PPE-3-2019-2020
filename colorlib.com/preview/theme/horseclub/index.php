@@ -79,7 +79,7 @@
     <li><a href="balades.php">Balades</a></li>
     <li><a href="contact.php">Contact</a></li>
     <li><a href="connexion\connexion.php">Connection</a></li>
-    <li><a href="elements.php">elements</a></li>elements
+    <li><a href="elements.php">elements</a></li>
     <?php
       }
     ?>
