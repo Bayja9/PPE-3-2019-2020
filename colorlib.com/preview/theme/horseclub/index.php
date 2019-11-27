@@ -61,7 +61,7 @@
     if (isset($_SESSION['id'])) {
       ?>
       <li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
-      <li><a href="connexion\modifier-profil.php">Profil</a></li>
+      <li><a href="connexion\modifier-profil.php">Modifier Profil</a></li>
       <li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
       <li><a href="connexion\deconnexion.php">Déconnection</a></li>
         <?php
