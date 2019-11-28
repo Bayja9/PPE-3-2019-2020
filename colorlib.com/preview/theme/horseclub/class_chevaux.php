@@ -9,7 +9,7 @@ include 'bdd.inc.php';
 class chevaux
 {
 		/* ---------------------- */
-		/* class Utilisateur Variables */
+		/* class Chevaux Variables */
 		/* ---------------------- */
 
 		Private $id_chevaux;
@@ -28,7 +28,7 @@ class chevaux
 
 
 		/* ---------------------- */
-		/* class Utilisateur Constructeur */
+		/* class Chevaux Constructeur */
 		/* ---------------------- */
 
 			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $poids_che, $origin_che, $util_che, $etat_che)
@@ -50,7 +50,7 @@ class chevaux
 			}
 
 			/* ---------------------- */
-			/* fonction Utilisateur getalldata */
+			/* fonction Chevaux getalldata */
 			/* ---------------------- */
 
 			public function getallchevaux()
@@ -72,7 +72,7 @@ class chevaux
 			}
 
 			/* ---------------------- */
-			/* class Utilisateur GET */
+			/* class Chevaux GET */
 			/* ---------------------- */
 
 			Public function get_id_chevaux ()
@@ -142,7 +142,7 @@ class chevaux
 
 
 			/* ---------------------- */
-			/* class Utilisateur SET */
+			/* class Chevaux SET */
 			/* ---------------------- */
 
 			Public function set_id_chevaux ($id_che)
