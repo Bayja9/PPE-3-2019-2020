@@ -108,7 +108,7 @@ if (isset($_SESSION['id'])) {
   }
     else {
       ?>
-<a href="connexion\connexion.php" class="genric-btn">Connection</a>
+<a href="connexion\connexion.php" class="genric-btn">Connexion</a>
 <?php
   }
 ?>

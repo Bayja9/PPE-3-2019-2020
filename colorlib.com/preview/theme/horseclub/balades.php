@@ -61,14 +61,14 @@
           <div class="row align-items-center justify-content-center d-flex">
             <nav id="nav-menu-container">
               <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="training.html">Entraînements</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="about.php">À propos</a></li>
+                <li><a href="service.php">Services</a></li>
+                <li><a href="training.php">Entraînements</a></li>
                 <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                <li><a href="training.html">Événements</a></li>
-                <li><a href="pricing.html">Prix</a></li>
-                <li><a href="stages.html">Stages</a></li>
+                <li><a href="training.php">Événements</a></li>
+                <li><a href="pricing.php">Prix</a></li>
+                <li><a href="stages.php">Stages</a></li>
                 <li class="menu-active"><a href="balades.html">Balades</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -86,7 +86,7 @@
             <h1 class="text-white">
               Balades
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.html"> Balades </a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.php"> Balades </a></p>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
                 <br><br>
                 Les promenades journée ne sont en général pas accompagnées, mais n'hésitez pas à suivre notre calendrier, nous essayerons de vous proposer plusieurs dates pour des balades organisées.
               </p>
-              <a class="primary-btn text-uppercase" href="#">Voir les détails</a>
+              <a class="primary-btn text-uppercase" href="operation_balades.php">Voir les détails</a>
             </div>
           </div>
 
