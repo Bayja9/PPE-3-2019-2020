@@ -21,7 +21,7 @@ include "class_chevaux.php";
 
     if ($_SESSION['profil']=="membre")
       {
-          $uncheval = new stage (NULL, $nom_chevaux, $dna_chevaux, $taille, $age, $couleur, $note, '0');
+          $uncheval = new chevaux (NULL, $nom_chevaux, $dna_chevaux, $taille, $age, $couleur, $note, '0');
           $uncheval -> ajout_chevaux($uncheval, $conn);
           header('Location: ./chevaux.php');
       }
