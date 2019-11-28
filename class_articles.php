@@ -148,7 +148,7 @@ class articles
 
 
 	/* ---------------------- */
-	/* FIN class Activites */
+	/* FIN class articles */
 	/* ---------------------- */
 }
 ?>
