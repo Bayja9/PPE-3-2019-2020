@@ -140,6 +140,8 @@
               </div>
 
 
+              <a class="primary-btn text-uppercase" href="inscriptionstage.php">Réserver un Stage</a> 
+
       </div>
     </section>
     <!-- End training Area -->

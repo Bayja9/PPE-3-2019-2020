@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<?php
-  session_start();
-?>
 <html lang="zxx" class="no-js">
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Mobile Specific Meta -->
@@ -51,8 +48,8 @@
             </a>
             </div>
             <div class="col-lg-4 col-sm-4 menu-top-right">
-              <a class="tel" href="tel:0612120054">06.12.12.00.54</a>
-              <a href="tel:0612120054"><span class="lnr lnr-phone-handset"></span></a>
+              <a class="tel" href="tel:06 12 12 00 54">06.12.12.00.54</a>
+              <a href="tel:06 12 12 00 54"><span class="lnr lnr-phone-handset"></span></a>
             </div>
           </div>
         </div>
@@ -61,16 +58,31 @@
           <div class="row align-items-center justify-content-center d-flex">
             <nav id="nav-menu-container">
               <ul class="nav-menu">
+                <?php
+                if (isset($_SESSION['id'])) {
+                  ?>
+                  <li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
+                  <li><a href="connexion\modifier-profil.php">Profil</a></li>
+                  <li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
+                  <li><a href="connexion\deconnexion.php">Déconnection</a></li>
+                    <?php
+                  }
+                    else {
+                      ?>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="about.php">À propos</a></li>
                 <li><a href="service.php">Services</a></li>
                 <li><a href="training.php">Entraînements</a></li>
                 <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                <li><a href="training.php">Événements</a></li>
+                <li><a href="events.php">Événements</a></li>
                 <li><a href="pricing.php">Prix</a></li>
-                <li><a href="stages.php">Stages</a></li>
-                <li class="menu-active"><a href="balades.html">Balades</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="menu-active"><a href="stages.php">Stages</a></li>
+                <li><a href="balades.php">Balades</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="connexion\connexion.php">Connection</a></li>
+                <?php
+                  }
+                ?>
               </ul>
             </nav><!-- #nav-menu-container -->
           </div>
@@ -84,54 +96,119 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Balades
+              Stages
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.php"> Balades </a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="stages.html">Stages</a></p>
           </div>
         </div>
       </div>
     </section>
     <!-- End banner Area -->
 
-    <!-- Start upcoming-event Area -->
-      <section class="upcoming-event-area section-gap">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-9 pb-40 header-text text-center">
-              <h1 class="pb-10">Nous proposons des balades à cheval pour tous niveaux !</h1>
-            </div>
-          </div>
-          <div class="row align-items-center upcoming-wrap">
-            <div class="col-lg-6 upcoming-left">
-              <img class="img-fluid" src="img/pages/ev1.jpg" alt="">
-            </div>
-            <div class="col-lg-6 upcoming-right">
-              <a href="#"><h4>Balades</h4></a>
-              <p class="meta">
-                <span>A Brive-la-Gaillarde</span>
-              </p>
-              <p>
-                Si nous accompagnons systématiquement les débutants lors de petites balades d'1h à 1h30, les cavaliers plus expérimentés pourront partir seuls en promenade, à la carte ! Ou accompagnés pour ne pas se perdre.
-                <br><br>
-                Nous tenons à préciser que soucieux de vous garantir un niveau de sécurité maximum, nous nous réservons le droit de refuser de trotter ou de galoper si nous jugeons le niveau trop faible, la promenade se fera au pas afin d'éviter tout risque d'accident. Évidement, si l'ensemble du groupe ne possède un niveau suffisant la balade s’effectuera en fonction de la personne la plus inexpérimentée.
-                <br><br>
-                Si vous avez un niveau suffisant vous pourrez partir seul ou accompagné pour des balades aux trois allures de 1h à 3h.
-                <br><br>
-                Les promenades journée ne sont en général pas accompagnées, mais n'hésitez pas à suivre notre calendrier, nous essayerons de vous proposer plusieurs dates pour des balades organisées.
-              </p>
-<<<<<<< HEAD
-              <a class="primary-btn text-uppercase" href="inscriptionbalade.php">Réserver une Balade</a>
-=======
-              <a class="primary-btn text-uppercase" href="operation_balades.php">Voir les détails</a>
->>>>>>> f16a3bcd8361d58d895125bcd7b9793593eb6a0e
-            </div>
-          </div>
-
-
+    <!-- Start training Area -->
+    <section class="training-area section-gap">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9 pb-40 header-text text-center">
+            <h1 class="pb-10">Des stages d’équitation ouverts à tous.</h1>
           </div>
         </div>
-      </section>
-    <!-- End upcoming-event Area -->
+
+        <HTML><HEAD><TITLE>Inscription pour le Stage</TITLE>
+        <META content=stage name=Author>
+        <META content="MSHTML 6.00.6001.18344" name=GENERATOR>
+        <META http-equiv=Content-Type content="text/html; charset=iso-8859-1"></HEAD>
+        <BODY>
+        <H2 align=center>Inscription pour le Stage</H2>
+        <FORM name=inscript action=form01.php3 method=get>
+        <HR>
+        <B><FONT size=+1>Vous</FONT></B><BR>
+        <TABLE align=center>
+          <TBODY>
+          <TR>
+            <TD align=right><B>Nom</B></TD>
+            <TD><INPUT size=40 name=Nom></TD></TR>
+          <TR>
+            <TD align=right><B>Prénom</B></TD>
+            <TD><INPUT size=40 name=Prénom></TD></TR>
+          <TR>
+            <TD align=right><B>Numéro carte d'étudiant</B></TD>
+            <TD><INPUT size=40 name=Carte></TD></TR>
+          <TR>
+            <TD align=right>Téléphone</TD>
+            <TD><INPUT size=40 name=Téléphone></TD></TR>
+          <TR>
+            <TD align=right>Adresse Email</TD>
+            <TD><INPUT size=40 name=email></TD></TR></TBODY></TABLE>
+        <P>
+        <HR>
+        <B><FONT size=+1>Vos études actuelles</FONT></B><BR>
+        <TABLE align=center>
+          <TBODY>
+          <tr>
+            <TD align=right><B>Formations</B></TD>
+            <TD><SELECT name=UFR> <OPTION value=-1 selected>----- Choisisez votre formation
+                dans la liste -----<OPTION value=0>Autre<OPTION value=1>Angellier<OPTION
+                value=2>Arts et Culture<OPTION value=3>Études Germaniques<OPTION
+                value=4>Études Romanes, Slaves et Orientales<OPTION value=5>IDIST<OPTION
+                value=6>IUP Infocom<OPTION value=7>Langues et Cultures Antiques<OPTION
+                value=8>Langues Étrangères et Appliquées<OPTION value=9>Lettres<OPTION
+                value=10>Mathématiques, Sciences Économiques et Sociales (AES)<OPTION
+                value=11>Philosophie<OPTION value=12>Psychologie<OPTION
+                value=13>Sciences de l'Éducation<OPTION value=14>Sciences Historiques
+                Artistiques et Politiques</OPTION></SELECT> </TD>
+          <TR vAlign=top>
+            <TD align=right><B>Année</B></TD>
+            <TD><SELECT name=Année> <OPTION value=-1 selected>--Choisir une
+                année--<OPTION value=0>Autre<OPTION value=1>Deug 1ère année<OPTION
+                value=2>Deug 2ème année<OPTION value=3>IUP 1ère année<OPTION value=4>IUP
+                2ème année<OPTION value=5>IUP 3ème année<OPTION value=6>Licence<OPTION
+                value=7>Maîtrise<OPTION value=8>DEA<OPTION
+              value=9>Doctorat</OPTION></SELECT> </TD></TR></TBODY></TABLE>
+        <P>
+        <HR>
+        <B><FONT size=+1>Votre inscription</FONT></B><BR>
+        <TABLE align=center>
+          <TBODY>
+          <TR vAlign=top>
+            <TD align=right><B>Quel semestre ?</B></TD>
+            <TD><SELECT name=Semestre> <OPTION value=PasDeSelection
+                selected>--Choisir un semestre--<OPTION value=X0>1er semestre<OPTION
+                value=0X>2ème semestre<OPTION value=XX>Les deux
+              semestres</OPTION></SELECT> </TD></TR></TBODY></TABLE>
+        <HR>
+
+        <CENTER><FONT size=+1><INPUT type=reset value="Pour vider le formulaire, cliquer ici."> <INPUT type=submit value=Envoyer></FONT> </CENTER>
+        <HR>
+        </FORM></BODY></HTML>
+
+
+
+              <div class="section-top-border">
+                <h3 class="mb-30">STAGES</h3>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <blockquote class="generic-blockquote">
+                      Des stages sont organisés, du lundi au samedi, durant toutes les vacances scolaires, en 1/2 journée ou en journée complète avec passage des examens fédéraux. Renseignements au bureau.
+                      <br><br>
+                      Le galops 8 se déroule sur rendez vous
+                      <br><br>
+                      Vous pouvez aussi vivre votre passion à travers des cours particuliers de ½ h ou 1h.
+                      <br><br>
+                      Vous pouvez aussi choisir de faire une animation spécifique : balade, anniversaire, heure libre ou demi-pension…
+                      <br><br>
+                      Le centre équestre de Vernouillet 78 vous propose de vous accueillir en groupe (comité d’entreprise, centre aéré, école, groupe d’amis…
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+
+
+              <a class="primary-btn text-uppercase" href="index.html">Retour à l'accueil</a>
+
+      </div>
+    </section>
+    <!-- End training Area -->
 
 
     <!-- Start booking Area -->
@@ -254,6 +331,8 @@
     </section>
     <!-- End booking Area -->
 
+
+
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
       <div class="container">
@@ -271,7 +350,7 @@
               <h4>Contact</h4>
               <p>
                 Centre équestre de Brive <br><br>
-								Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
+                Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
               </p>
               <p class="number">
                 06-56-78-87-45 <br>
@@ -337,5 +416,5 @@
     <script src="js/main.js"></script>
   </body>
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:54 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
 </html>
