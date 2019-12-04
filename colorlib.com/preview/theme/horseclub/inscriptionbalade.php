@@ -112,11 +112,11 @@
           <FORM name=inscript action=form01.php3 method=get>
           <HR>
           <B><FONT size=+1>Vous</FONT></B><BR>
-          <TABLE align=center>
-            <TBODY>
-            <TR>
-              <TD align=right><B>Nom</B></TD>
-              <TD><INPUT size=40 name=Nom></TD></TR>
+          <table align=center>
+            <tbody>
+            <tr>
+              <td align=right><b>Nom</b></td>
+              <td><input size=40 name=Nom></TD></TR>
             <TR>
               <TD align=right><B>Prénom</B></TD>
               <TD><INPUT size=40 name=Prénom></TD></TR>

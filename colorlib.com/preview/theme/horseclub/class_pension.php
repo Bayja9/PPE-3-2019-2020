@@ -22,7 +22,7 @@ class pension
 		/* class Pension Constructeur */
 		/* ---------------------- */
 
-			Public function activites ($idp, $date_debut_p, $date_fin_p, $lib_p, $etat_p)
+			Public function pension ($idp, $date_debut_p, $date_fin_p, $lib_p, $etat_p)
 			{
 
 				$this -> id_pension = $idp;
@@ -122,45 +122,45 @@ class pension
 					$etat_p = $objet->get_etat_pension();
 
 
-					print $SQL = " INSERT INTO activites values (NULL, '$date_act', '$heure_act', '$desc_act', '0')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout activites ');
+					print $SQL = " INSERT INTO pension values (NULL, '$date_debut_p', '$date_fin_p', '$lib_p', '0')";
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout pension ');
 				}
 
-				Public function modif_activites ($objet, $conn)
+				Public function modif_pension ($objet, $conn)
 				{
-          $id_act = $objet->get_id_activites();
-					$date_act = $objet->get_date_activites();
-					$heure_act = $objet->get_heure_activites();
-					$desc_act = $objet->get_description_activites();
-					$etat_act = $objet->get_etat_activites();
+					$idp = $objet->get_id_pension();
+					$date_debut_p = $objet->get_date_debut_pension();
+					$date_fin_p = $objet->get_date_fin_pension();
+					$lib_p = $objet->get_lib_pension();
+					$etat_p = $objet->get_etat_pension();
 
 
-					print $SQL = "UPDATE activites SET id_activites = '$id_act', date_activites  = '$date_act',
-					heure_activites = '$heure_act', description_activites = '$desc_act'
-					WHERE id_activites = '$id_act'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification activites ');
+					print $SQL = "UPDATE pension SET id_pension = '$idp', date_debut_pension  = '$date_debut_p',
+					date_fin_pension = '$date_fin_p', lib_pension = '$lib_p'
+					WHERE id_pension = '$idp'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification pension ');
 				}
 
-				Public function affiche_chevaux_total($objet, $conn)
+				Public function affiche_pension_total($objet, $conn)
 				{
-          $id_act = $objet->get_id_activites();
-					$date_act = $objet->get_date_activites();
-					$heure_act = $objet->get_heure_activites();
-					$desc_act = $objet->get_description_activites();
-					$etat_act = $objet->get_etat_activites();
+					$idp = $objet->get_id_pension();
+					$date_debut_p = $objet->get_date_debut_pension();
+					$date_fin_p = $objet->get_date_fin_pension();
+					$lib_p = $objet->get_lib_pension();
+					$etat_p = $objet->get_etat_pension();
 
-					print $SQL = " SELECT * From activites WHERE id_activites = '$id_act'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage activites ');
+					print $SQL = " SELECT * From pension WHERE id_pension = '$idp'";
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage pension ');
 					return $Res = $Req -> fetch ();
 				}
 
-				Public function suppr_chevaux ($objet, $conn)
+				Public function suppr_pension ($objet, $conn)
 				{
-					$id_act = $objet->get_id_activites();
+					$id_act = $objet->get_id_pension();
 
-					print $SQL = "UPDATE activites SET etat_activites = '1'
-					WHERE id_activites = '$id_act'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression activites ');
+					print $SQL = "UPDATE pension SET etat_pension = '1'
+					WHERE id_pension = '$idp'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression pension ');
 				}
 
 
