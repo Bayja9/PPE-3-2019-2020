@@ -9,38 +9,42 @@ include "letraitementlogin.php";
 if (isset($_POST['enregistrerd']))
 {
 
-    $idc=$_SESSION['id_cours'];
-    $date_galop=$_POST['date_obtention_galop'];
-    $nom_galop=$_POST['nom_galop'];
-    $lib_galop=$_POST['lib_galop'];
+    $id_cours=$_SESSION['id_cours'];
+    $nom_cours=$_POST['nom_cours'];
+    $lib_cours=$_POST['libelle_cours'];
+    $date_deb_cours=$_POST['date_debut_cours'];
+    $date_fin_cours=$_POST['date_fin_cours'];
+    $repas=$_POST['repas'];
 
 
 
-    $desgalops = new galops (NULL, $date_galop, $nom_galop, $lib_galop, '0');
-    $desgalops -> ajout_galop($desgalops, $conn);
-    header('Location: ./modif_galop.php');
+    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
+    $descours -> ajout_cours($uncours, $conn);
+    header('Location: ./modif_cours.php');
 
 }
 if (isset($_POST['modifierd']))
 {
 
-    $idg=$_SESSION['id_galop'];
-    $date_galop=$_POST['date_obtention_galop'];
-    $nom_galop=$_POST['nom_galop'];
-    $lib_galop=$_POST['lib_galop'];
+    $id_cours=$_SESSION['id_cours'];
+    $nom_cours=$_POST['nom_cours'];
+    $lib_cours=$_POST['libelle_cours'];
+    $date_deb_cours=$_POST['date_debut_cours'];
+    $date_fin_cours=$_POST['date_fin_cours'];
+    $repas=$_POST['repas'];
 
 
-    $desgalops = new galops (NULL, $date_galop, $nom_galop, $lib_galop, '0');
-    $desgalops -> modif_galop($desgalops, $conn);
-    header('Location: ./modif_galop.php');
+    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
+    $descours -> modif_cours($uncours, $conn);
+    header('Location: ./modif_cours.php');
 }
 if (isset($_POST['suppr']))
 {
 
-    $idg=$_POST['id_galop'];
+    $id_cours=$_POST['id_cours'];
 
-    $desgalops = new chevaux ($id_galop,'','','','');
-    $desgalops -> suppr_galop($deschevaux, $conn);
-    header('Location: ./modif_chevaux.php');
+    $uncours = new cours ($id_cours,'','','','','','');
+    $descours -> suppr_cours($uncours, $conn);
+    header('Location: ./modif_cours.php');
 }
 ?>
