@@ -16,7 +16,7 @@ class concours
 		Private $nom_concours;
 		Private $date_debut_concours;
 		Private $date_fin_concours;
-		Private $libelle_concours;
+		Private $lib_concours;
     Private $localisation_concours;
     Private $etat_concours;
 
@@ -33,7 +33,7 @@ class concours
 				$this -> date_debut_concours = $date_deb_con;
 				$this -> date_fin_concours = $date_fin_con;
         $this -> date_fin_concours = $date_fin_con;
-        $this -> libelle_concours = $lib_con;
+        $this -> lib_concours = $lib_con;
 				$this -> localisation_concours = $loca_con;
         $this -> etat_concours = $etat_con;
 			}
@@ -48,7 +48,7 @@ class concours
 				$data = $data.$this->nom_concours;
 				$data = $data.$this->date_debut_concours;
 				$data = $data.$this->date_fin_concours;
-        $data = $data.$this->libelle_concours;
+        $data = $data.$this->lib_concours;
 				$data = $data.$this->localisation_concours;
 				$data = $data.$this->etat_concours;
 
@@ -79,9 +79,9 @@ class concours
 				return $this-> date_fin_concours;
 			}
 
-      Public function get_libelle_concours ()
+      Public function get_lib_concours ()
       {
-        return $this-> libelle_concours;
+        return $this-> lib_concours;
       }
 
 			Public function get_localisation_concours ()
@@ -125,9 +125,9 @@ class concours
 				 $this-> localisation_concours = $loca_con;
 			}
 
-      Public function set_libelle_concours ($lib_con)
+      Public function set_lib_concours ($lib_con)
       {
-         $this-> libelle_concours = $lib_con;
+         $this-> lib_concours = $lib_con;
       }
 
 			Public function set_etat_concours ($etat_con)
@@ -149,11 +149,11 @@ class concours
 					$date_deb_con = $objet->get_date_debut_concours();
 					$date_fin_con = $objet->get_date_fin_concours();
 					$loca_con = $objet->get_localisation_concours();
-          $lib_con =$objet->get_libelle_concours();
+          $lib_con =$objet->get_lib_concours();
 					$etat_con = $objet->get_etat_concours();
 
 
-					print $SQL = " INSERT INTO concours values (NULL, '$nom_con', '$date_deb_con', '$date_fin_con', '$loca_con', '0')";
+					print $SQL = " INSERT INTO concours values (NULL, '$nom_con', '$date_deb_con', '$date_fin_con', '$loca_con', '$lib_con', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout concours ');
 				}
 
@@ -168,8 +168,8 @@ class concours
 
 
 					print $SQL = "UPDATE concours SET id_concours = '$id_con', nom_concours  = '$nom_con',
-					date_deb_con = '$date_deb_con', date_fin_con = '$date_fin_con', localisation_concours = '$loca_con' WHERE id_concours = '$id_con'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification promenade ');
+					date_deb_con = '$date_deb_con', date_fin_con = '$date_fin_con', localisation_concours = '$loca_con', lib_concours = '$lib_con' WHERE id_concours = '$id_con'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification concours ');
 				}
 
         Public function suppr_promenade ($objet, $conn)
