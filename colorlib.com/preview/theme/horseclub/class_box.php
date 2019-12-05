@@ -23,7 +23,7 @@ class box
 		/* class Activites Constructeur */
 		/* ---------------------- */
 
-			Public function boxs ($num_box, $lib_art, $photo_art, $etat_art)
+			Public function boxs ($num_box, $date_deb_loca, $date_fin_loca, $nb_che_max,)
 			{
 
 				$this -> numero_boxs = $num_box;
