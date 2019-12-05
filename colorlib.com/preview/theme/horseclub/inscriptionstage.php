@@ -100,9 +100,9 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Stages
+              Inscription Stages
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="stages.html">Stages</a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="stages.html">inscriptionstage.php</a></p>
           </div>
         </div>
       </div>
@@ -116,16 +116,16 @@
 <form>
     <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
-        <label>Nom & Prénom <input type="text" name="field1" placeholder="Nom & Prénom" /></label>
-        <label>Etat du Stage <input type="text" name="field2" placeholder="Etat du stage" /></label>
+        <label><input type="text" name="field1" placeholder="Nom & Prénom" /></label>
+        <label><input type="text" name="field2" placeholder="Etat du stage" /></label>
     </div>
-
+    <hr>
     <div class="section"><span>2</span>Date enregistrement Stage</div>
     <div class="inner-wrap">
-        <label>Date de Début <input type="date" name="field3" /></label>
-        <label>Date de Fin <input type="date" name="field4" /></label>
+        <label>Début<input type="date" name="field3" /></label>
+        <label>Fin<input type="date" name="field4" /></label>
     </div>
-
+    <hr>
     <div class="section"><span>3</span>Information Complémentaire</div>
         <div class="inner-wrap">
         <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>

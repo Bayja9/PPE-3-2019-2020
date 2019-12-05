@@ -17,7 +17,7 @@ if (isset($_POST['enregistrerd']))
 
     $unepension = new pension (NULL, $date_debut_p, $date_fin_p, $lib_pension, '0');
     $despensions -> ajout_pension($unepension, $conn);
-    header('Location: ./modif_pension.php');
+    header('Location: ./modif_pension.php');  
 
 }
 if (isset($_POST['modifierd']))

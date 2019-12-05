@@ -4,7 +4,7 @@
 ?>
 <html lang="zxx" class="no-js">
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Mobile Specific Meta -->
@@ -52,8 +52,8 @@
             </a>
             </div>
             <div class="col-lg-4 col-sm-4 menu-top-right">
-              <a class="tel" href="tel:0612120054">06.12.12.00.54</a>
-              <a href="tel:0612120054"><span class="lnr lnr-phone-handset"></span></a>
+              <a class="tel" href="tel:06 12 12 00 54">06.12.12.00.54</a>
+              <a href="tel:06 12 12 00 54"><span class="lnr lnr-phone-handset"></span></a>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
                 <li><a href="calendrier/exemples/activite.php">Activités</a></li>
                 <li><a href="events.php">Événements</a></li>
                 <li><a href="pricing.php">Prix</a></li>
-                <li class="menu-active"><a href="stages.php">Stages</a></li>
+                <li><a href="stages.php">Stages</a></li>
                 <li><a href="balades.php">Balades</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="connexion\connexion.php">Connection</a></li>
@@ -100,9 +100,9 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Balades
+              Inscription Cavalier
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.html"> Balades </a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptioncavalier.php">Cavalier</a></p>
           </div>
         </div>
       </div>
@@ -112,33 +112,27 @@
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Balade<span>Inscrivez-vous pour une balade à Cheval ou Poney</span></h1>
+<h1>Inscription Cavalier<span>Inscrivez-vous pour les cavaliers</span></h1>
 <form>
-    <div class="section"><span>1</span>Prénom et adresse</div>
+    <div class="section"><span>1</span>Nom, Prénom et Âge</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom & Prénom"/></label>
-        <label><input type="text" name="field2" placeholder="Etat de la Balade"/></label>
+        <label><input type="text" name="field1" placeholder="Nom" /></label>
+        <label><input type="text" name="field2" placeholder="Prénom" /></label>
+        <label><input type="text" name="field2" placeholder="Age" /></label>
     </div>
-    <hr>
-    <div class="section"><span>2</span>Date enregistrement Stage</div>
-    <div class="inner-wrap">
-        <label>Debut<input type="date" name="field3" /></label>
-        <label>Fin<input type="date" name="field4" /></label>
-    </div>
-    <hr>
+    <hr size="10" />
     <div class="section"><span>3</span>Information Complémentaire</div>
         <div class="inner-wrap">
         <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
-            <br><br><br><br>
+						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
+            <br><br><br>  <br><br><br>
 		</div>
 </form>
-          </div>
-        </div>
-      </section>
-    <!-- End upcoming-event Area -->
+</div>
+</center>
+<!-- Fin Formulaire -->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -160,5 +154,5 @@
     <script src="js/main.js"></script>
   </body>
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:54 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
 </html>
