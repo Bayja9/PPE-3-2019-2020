@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/stage.css">
   </head>
   <body>
 
@@ -93,86 +94,47 @@
     </section>
     <!-- End banner Area -->
 
-    <!-- Start upcoming-event Area -->
-      <section class="upcoming-event-area section-gap">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-9 pb-40 header-text text-center">
-              <h1 class="pb-10">Nous proposons des balades à cheval pour tous niveaux !</h1>
-            </div>
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white">
+              Stages
+            </h1>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="stages.html">Stages</a></p>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+    <!-- Formulaire -->
+<center>
+    <div class="form-style-10">
+      <br><br>
+<h1>Inscription Balade<span>Inscrivez-vous pour une balade à Cheval ou Poney</span></h1>
+<form>
+    <div class="section"><span>1</span>Prénom et adresse</div>
+    <div class="inner-wrap">
+        <label>Nom & Prénom <input type="text" name="field1" /></label>
+        <label>Etat du Stage <textarea name="field2"></textarea></label>
+    </div>
 
+    <div class="section"><span>2</span>Date enregistrement Stage</div>
+    <div class="inner-wrap">
+        <label>Date de Début <input type="date" name="field3" /></label>
+        <label>Date de Fin <input type="date" name="field4" /></label>
+    </div>
 
-          <HTML><HEAD><TITLE>Inscription pour une Balade</TITLE>
-          <META content=zeze name=Author>
-          <META content="MSHTML 6.00.6001.18344" name=GENERATOR>
-          <META http-equiv=Content-Type content="text/html; charset=iso-8859-1"></HEAD>
-          <BODY>
-          <H2 align=center>Inscription pour une Balade</H2>
-          <FORM name=inscript action=form01.php3 method=get>
-          <HR>
-          <B><FONT size=+1>Vous</FONT></B><BR>
-          <table align=center>
-            <tbody>
-            <tr>
-              <td align=right><b>Nom</b></td>
-              <td><input size=40 name=Nom></TD></TR>
-            <TR>
-              <TD align=right><B>Prénom</B></TD>
-              <TD><INPUT size=40 name=Prénom></TD></TR>
-            <TR>
-              <TD align=right><B>Numéro carte d'étudiant</B></TD>
-              <TD><INPUT size=40 name=Carte></TD></TR>
-            <TR>
-              <TD align=right>Téléphone</TD>
-              <TD><INPUT size=40 name=Téléphone></TD></TR>
-            <TR>
-              <TD align=right>Adresse Email</TD>
-              <TD><INPUT size=40 name=email></TD></TR></TBODY></TABLE>
-          <P>
-          <HR>
-          <B><FONT size=+1>Vos études actuelles</FONT></B><BR>
-          <TABLE align=center>
-            <TBODY>
-            <TR>
-              <TD align=right><B>Formation</B></TD>
-              <TD><SELECT name=UFR> <OPTION value=-1 selected>----- Choisisez votre formation
-                  dans la liste -----<OPTION value=0>Autre<OPTION value=1>Angellier<OPTION
-                  value=2>Arts et Culture<OPTION value=3>Études Germaniques<OPTION
-                  value=4>Études Romanes, Slaves et Orientales<OPTION value=5>IDIST<OPTION
-                  value=6>IUP Infocom<OPTION value=7>Langues et Cultures Antiques<OPTION
-                  value=8>Langues Étrangères et Appliquées<OPTION value=9>Lettres<OPTION
-                  value=10>Mathématiques, Sciences Économiques et Sociales (AES)<OPTION
-                  value=11>Philosophie<OPTION value=12>Psychologie<OPTION
-                  value=13>Sciences de l'Éducation<OPTION value=14>Sciences Historiques
-                  Artistiques et Politiques</OPTION></SELECT> </TD>
-            <TR vAlign=top>
-              <TD align=right><B>Année</B></TD>
-              <TD><SELECT name=Année> <OPTION value=-1 selected>--Choisir une
-                  année--<OPTION value=0>Autre<OPTION value=1>Deug 1ère année<OPTION
-                  value=2>Deug 2ème année<OPTION value=3>IUP 1ère année<OPTION value=4>IUP
-                  2ème année<OPTION value=5>IUP 3ème année<OPTION value=6>Licence<OPTION
-                  value=7>Maîtrise<OPTION value=8>DEA<OPTION
-                value=9>Doctorat</OPTION></SELECT> </TD></TR></TBODY></TABLE>
-          <P>
-          <HR>
-          <B><FONT size=+1>Votre inscription</FONT></B><BR>
-          <TABLE align=center>
-            <TBODY>
-            <TR vAlign=top>
-              <TD align=right><B>Quel semestre ?</B></TD>
-              <TD><SELECT name=Semestre> <OPTION value=PasDeSelection
-                  selected>--Choisir un semestre--<OPTION value=X0>1er semestre<OPTION
-                  value=0X>2ème semestre<OPTION value=XX>Les deux
-                semestres</OPTION></SELECT> </TD></TR></TBODY></TABLE>
-          <HR>
-
-          <CENTER><FONT size=+1><INPUT type=reset value="Pour vider le formulaire, cliquer ici."> <INPUT type=submit value=Envoyer></FONT> </CENTER>
-          <HR>
-          </FORM></BODY></HTML>
-
-
-
+    <div class="section"><span>3</span>Information Complémentaire</div>
+        <div class="inner-wrap">
+        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+    </div>
+    <div class="button-group-area mt-40">
+						<a href="#" class="genric-btn danger radius">Valider mon Stage</a>
+		</div>
+</form>
           </div>
         </div>
       </section>

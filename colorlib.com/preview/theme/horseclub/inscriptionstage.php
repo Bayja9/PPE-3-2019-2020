@@ -125,7 +125,7 @@
 
     <div class="section"><span>3</span>Information Complémentaire</div>
         <div class="inner-wrap">
-        <label>Description <input type="text" name="field5" /></label>
+        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
     </div>
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider mon Stage</a>
