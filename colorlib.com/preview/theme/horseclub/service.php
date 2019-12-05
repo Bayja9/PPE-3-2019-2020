@@ -127,7 +127,7 @@
 									<img class="img-fluid" src="img/pages/sp1.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="chevaux.html"><h4>Nos chevaux</h4></a>
+									<a href="chevaux.php"><h4>Nos chevaux</h4></a>
 									<p>
 										"Nous vous proposons un large choix de services que vous pouvez consulter."
 								</div>
@@ -140,7 +140,7 @@
 									<img class="img-fluid" src="img/pages/sp2.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="training.html"><h4>Entrainements personnels</h4></a>
+									<a href="training.php"><h4>Entrainements personnels</h4></a>
 									<p>
 										"TEXTE..."
 								</div>
