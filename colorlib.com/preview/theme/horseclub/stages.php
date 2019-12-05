@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+?>
 <html lang="zxx" class="no-js">
 
 <!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
@@ -140,7 +143,7 @@
               </div>
 
 
-              <a class="primary-btn text-uppercase" href="inscriptionstage.php">Réserver un Stage</a> 
+              <a class="primary-btn text-uppercase" href="inscriptionstage.php">Réserver un Stage</a>
 
       </div>
     </section>

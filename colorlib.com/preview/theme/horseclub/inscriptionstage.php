@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+?>
 <html lang="zxx" class="no-js">
 
 <!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
@@ -113,8 +116,8 @@
 <form>
     <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
-        <label>Nom & Prénom <input type="text" name="field1" /></label>
-        <label>Etat du Stage <textarea name="field2"></textarea></label>
+        <label>Nom & Prénom <input type="text" name="field1" placeholder="Nom & Prénom" /></label>
+        <label>Etat du Stage <input type="text" name="field2" placeholder="Etat du stage" /></label>
     </div>
 
     <div class="section"><span>2</span>Date enregistrement Stage</div>

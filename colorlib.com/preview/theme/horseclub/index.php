@@ -75,7 +75,9 @@
     <li><a href="calendrier/exemples/activite.php">Activités</a></li>
     <li><a href="events.php">Événements</a></li>
   	<li><a href="pricing.php">Prix</a></li>
-    <li><a href="stages.php">Stages</a></li>
+      <ul>
+        <li><a href="stages.php">Stages</a></li>
+      </ul>
     <li><a href="balades.php">Balades</a></li>
     <li><a href="contact.php">Contact</a></li>
     <li><a href="connexion\connexion.php">Connection</a></li>

@@ -15,7 +15,6 @@
 }
 .form-style-10 .inner-wrap{
 	padding: 15px;
-	background: #F8F8F8;
 	border-radius: 6px;
 	margin-bottom: 15px;
 }
@@ -56,6 +55,7 @@
 .form-style-10 input[type="password"],
 .form-style-10 textarea,
 .form-style-10 select {
+	width: 30%;
 	display: block;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
