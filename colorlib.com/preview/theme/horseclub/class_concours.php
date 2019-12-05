@@ -26,12 +26,14 @@ class concours
 		/* class Concours Constructeur */
 		/* ---------------------- */
 
-			Public function concours ( $id_con, $nom_con, $date_deb_con, $date_fin_con, $loca_con, $etat_con)
+			Public function concours ( $id_con, $nom_con, $date_deb_con, $date_fin_con, $lib_con, $loca_con, $etat_con)
 			{
 				$this -> id_concours = $id_con;
 				$this -> nom_concours = $nom_con;
 				$this -> date_debut_concours = $date_deb_con;
 				$this -> date_fin_concours = $date_fin_con;
+        $this -> date_fin_concours = $date_fin_con;
+        $this -> libelle_concours = $lib_con;
 				$this -> localisation_concours = $loca_con;
         $this -> etat_concours = $etat_con;
 			}
@@ -46,6 +48,7 @@ class concours
 				$data = $data.$this->nom_concours;
 				$data = $data.$this->date_debut_concours;
 				$data = $data.$this->date_fin_concours;
+        $data = $data.$this->libelle_concours;
 				$data = $data.$this->localisation_concours;
 				$data = $data.$this->etat_concours;
 
@@ -75,6 +78,11 @@ class concours
 			{
 				return $this-> date_fin_concours;
 			}
+
+      Public function get_libelle_concours ()
+      {
+        return $this-> libelle_concours;
+      }
 
 			Public function get_localisation_concours ()
 			{
@@ -117,6 +125,11 @@ class concours
 				 $this-> localisation_concours = $loca_con;
 			}
 
+      Public function set_libelle_concours ($lib_con)
+      {
+         $this-> libelle_concours = $lib_con;
+      }
+
 			Public function set_etat_concours ($etat_con)
 			{
 				 $this-> etat_concours = $etat_con;
@@ -136,6 +149,7 @@ class concours
 					$date_deb_con = $objet->get_date_debut_concours();
 					$date_fin_con = $objet->get_date_fin_concours();
 					$loca_con = $objet->get_localisation_concours();
+          $lib_con =$objet->get_libelle_concours();
 					$etat_con = $objet->get_etat_concours();
 
 
