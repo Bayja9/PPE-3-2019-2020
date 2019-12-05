@@ -150,19 +150,19 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="../../index.html">Accueil</a></li>
-          <li><a href="../../about.html">À propos</a></li>
-          <li><a href="../../service.html">Services</a></li>
-          <li><a href="../../training.html">Entraînements</a></li>
+          <li><a href="../../about.php">À propos</a></li>
+          <li><a href="../../service.php">Services</a></li>
+          <li><a href="../../training.php">Entraînements</a></li>
           <li class="menu-active"><a href="activite.html">Activites</a></li>
-          <li><a href="../../events.html">Événements</a></li>
-          <li><a href="../../pricing.html">Prix</a></li>
+          <li><a href="../../events.php">Événements</a></li>
+          <li><a href="../../pricing.php">Prix</a></li>
           <li class="menu-has-children"><a href="#">Blog</a>
             <ul>
               <li><a href="../../blog-home.html">Blog Accueil</a></li>
               <li><a href="../../blog-single.html">Blog Single</a></li>
             </ul>
           </li>
-          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../contact.php">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
