@@ -64,44 +64,44 @@
                 <?php
                 if (isset($_SESSION['id'])) {
                   ?>
-                  <li><a href="index.php">Accueil</a></li>
-                  <li><a href="about.php">À propos</a></li>
-                  <li class="menu-active"><a href="service.php">Services</a>
+                  <li><a href="index">Accueil</a></li>
+                  <li><a href="about">À propos</a></li>
+                  <li class="menu-active"><a href="service">Services</a>
                     <ul>
-                      <li><a href="training.php">Entraînements</a></li>
-                      <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                      <li><a href="stages.php">Stages</a></li>
-                      <li><a href="balades.php">Balades</a></li>
-                      <li><a href="events.php">Événements</a></li>
+                      <li><a href="training">Entraînements</a></li>
+                      <li><a href="calendrier/exemples/activite">Activités</a></li>
+                      <li><a href="stages">Stages</a></li>
+                      <li><a href="balades">Balades</a></li>
+                      <li><a href="events">Événements</a></li>
                     </li>
                   </ul>
-                  <li><a href="pricing.php">Prix</a></li>
-                  <li><a href="contact.php">Contact</a></li>
-                    <li><a href="connexion\modifier-profil.php">Mon Compte</a>
+                  <li><a href="pricing">Prix</a></li>
+                  <li><a href="contact">Contact</a></li>
+                    <li><a href="connexion\modifier-profil">Mon Compte</a>
                       <ul>
-                  <li><a href="connexion\modifier-profil.php">Profil</a></li>
-                  <li><a href="connexion\panel.php">Pannel Admin</a></li>
-                  <li><a href="connexion\deconnexion.php">Déconnection</a></li>
+                  <li><a href="connexion\modifier-profil">Profil</a></li>
+                  <li><a href="panel">Pannel Admin</a></li>
+                  <li><a href="connexion\deconnexion">Déconnection</a></li>
                 </li>
                       </ul>
                     <?php
                   }
                     else {
                       ?>
-                      <li><a href="index.php">Accueil</a></li>
-                      <li><a href="about.php">À propos</a></li>
-                      <li><a href="service.php">Services</a>
+                      <li><a href="index">Accueil</a></li>
+                      <li><a href="about">À propos</a></li>
+                      <li><a href="service">Services</a>
                         <ul>
-                          <li><a href="training.php">Entraînements</a></li>
-                          <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                          <li><a href="stages.php">Stages</a></li>
-                          <li><a href="balades.php">Balades</a></li>
-                          <li><a href="events.php">Événements</a></li>
+                          <li><a href="training">Entraînements</a></li>
+                          <li><a href="calendrier/exemples/activite">Activités</a></li>
+                          <li><a href="stages">Stages</a></li>
+                          <li><a href="balades">Balades</a></li>
+                          <li><a href="events">Événements</a></li>
                         </li>
                       </ul>
-                      <li><a href="pricing.php">Prix</a></li>
-                      <li><a href="contact.php">Contact</a></li>
-                <li><a href="connexion\connexion.php">Connection</a></li>
+                      <li><a href="pricing">Prix</a></li>
+                      <li><a href="contact">Contact</a></li>
+                <li><a href="connexion\connexion">Connection</a></li>
                 <?php
                   }
                 ?>
@@ -120,7 +120,7 @@
             <h1 class="text-white">
               Balades
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.php"> Balades </a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades"> Balades </a></p>
           </div>
         </div>
       </div>
@@ -153,8 +153,8 @@
                 <br><br>
                 Les promenades journée ne sont en général pas accompagnées, mais n'hésitez pas à suivre notre calendrier, nous essayerons de vous proposer plusieurs dates pour des balades organisées.
               </p>
-              <a class="primary-btn text-uppercase" href="inscriptionbalade.php">Réserver une Balade</a>
-              <a class="primary-btn text-uppercase" href="operation_balades.php">Voir les détails</a>
+              <a class="primary-btn text-uppercase" href="inscriptionbalade">Réserver une Balade</a>
+              <a class="primary-btn text-uppercase" href="operation_balades">Voir les détails</a>
             </div>
           </div>
 
