@@ -6,25 +6,27 @@ include "class_stage.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrers']))
 {
 
     $ids=$_SESSION['id_stage'];
+    $nom_sta=$_POST=['nom_stage'];
     $date_debut_stage=$_POST['date_debut_stage'];
     $date_fin_stage=$_POST['date_fin_stage'];
     $description_stage=$_POST['description_stage'];
 
 
-    $unstage = new stage (NULL, $date_debut_stage, $date_fin_stage, $description_stage, '0');
+    $unstage = new stage (NULL, $nom_sta, $date_debut_stage, $date_fin_stage, $description_stage, '0');
     $unstage -> ajout_stage($unstage, $conn);
-    header('Location: ./modif_stage.php');
+  //  header('Location: ./inscriptionstage.php');
 
 }
 
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifiers']))
 {
 
     $ids=$_SESSION['id_stage'];
+    $nom_sta=$_POST=['nom_stage'];
     $date_debut_stage=$_POST['date_debut_stage'];
     $date_fin_stage=$_POST['date_fin_stage'];
     $description_stage=$_POST['description_stage'];

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "class_stage.php";
+  include "bdd.inc.php";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -114,25 +116,22 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Stage<span>Inscrivez-vous pour ce stage</span></h1>
-<form>
-    <div class="section"><span>1</span>Prénom et adresse</div>
+<form action='operation_stage.php' method='post'>
+  <hr>
+  <div class="inner-wrap">
+    <div class="section"><span>1</span>Dates du stage</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom & Prénom" /></label>
-        <label><input type="text" name="field2" placeholder="Etat du stage" /></label>
+      <label for="stage">Date de début<input type="date" id="date_debut_stage" name="date_debut_stage"/></label>
+      <label for="stage">Date de fin<input type="date" id="date_fin_stage" name="date_fin_stage" /></label>
     </div>
     <hr>
-    <div class="section"><span>2</span>Date enregistrement Stage</div>
-    <div class="inner-wrap">
-        <label>Début<input type="date" name="field3" /></label>
-        <label>Fin<input type="date" name="field4" /></label>
-    </div>
-    <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
+    <div class="section"><span>2</span>Informations Complémentaires</div>
         <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+        <textarea class="form-control" id="description_stage" name="description_stage" rows="8" cols="80" placeholder="Description"></textarea>
     </div>
+    <hr>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider mon Stage</a>
+        <input type="submit" class="genric-btn danger radius" name="enregistrers" value="Enregistrer">
 		</div>
 </form>
 </div>

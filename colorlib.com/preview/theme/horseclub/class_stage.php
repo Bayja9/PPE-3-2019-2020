@@ -13,6 +13,7 @@ class stage
 		/* ---------------------- */
 
 		Private $id_stage;
+		Private $nom_stage;
 		Private $date_debut_stage;
 		Private $date_fin_stage;
 		Private $description_stage;
@@ -24,9 +25,10 @@ class stage
 		/* class Stage Constructeur */
 		/* ---------------------- */
 
-			Public function stage ( $ids, $date_deb_sta, $date_fin_sta, $desc_sta, $etat_sta )
+			Public function stage ( $ids, $nom_sta, $date_deb_sta, $date_fin_sta, $desc_sta, $etat_sta )
 			{
 				$this -> id_stage = $ids;
+				$this -> nom_stage = $nom_sta;
 				$this -> date_debut_stage = $date_deb_sta;
 				$this -> date_fin_stage = $date_fin_sta;
 				$this -> description_stage = $desc_sta;
@@ -40,6 +42,7 @@ class stage
 			public function getallstage()
 			{
 				$data = $this->id_stage;
+				$data = $data.$this->nom_stage;
 				$data = $data.$this->date_debut_stage;
 				$data = $data.$this->date_fin_stage;
 				$data = $data.$this->description_stage;
@@ -55,6 +58,11 @@ class stage
 			Public function get_id_stage()
 			{
 				return $this-> id_stage;
+			}
+
+			Public function get_nom_stage()
+			{
+				return $this-> nom_stage;
 			}
 
 			Public function get_date_debut_stage()
@@ -84,6 +92,11 @@ class stage
 			Public function set_id_stage ($ids)
 			{
 				 $this-> id_stage = $ids;
+			}
+
+			Public function set_nom_stage ($nom_sta)
+			{
+				 $this-> nom_stage = $nom_sta;
 			}
 
 			Public function set_date_debut_stage ($date_deb_sta)
@@ -117,26 +130,28 @@ class stage
 			Public function ajout_stage ($objet, $conn)
 				{
 					$id_sta = $objet->get_id_stage();
+					$nom_sta = $objet->get_nom_stage();
 					$date_deb_sta = $objet->get_date_debut_stage();
 					$date_fin_sta = $objet->get_date_fin_stage();
 					$desc_sta = $objet->get_description_stage();
 					$etat_sta = $objet->get_etat_stage();
 
 
-					print $SQL = " INSERT INTO stage values (NULL, '$date_deb_sta', '$date_fin_sta', '$desc_sta', '0')";
+					print $SQL = " INSERT INTO stage values (NULL, '$nom_stage', '$date_deb_sta', '$date_fin_sta', '$desc_sta', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout stage ');
 				}
 
 				Public function modif_stage ($objet, $conn)
 				{
 					$id_sta = $objet->get_id_stage();
+					$nom_sta = $objet->get_nom_stage();
 					$date_deb_sta = $objet->get_date_debut_stage();
 					$date_fin_sta = $objet->get_date_fin_stage();
 					$desc_sta = $objet->get_description_stage();
 					$etat_sta = $objet->get_etat_stage();
 
 
-					print $SQL = "UPDATE stage SET id_stage = '$id_sta', date_debut_stage  = '$date_deb_sta',
+					print $SQL = "UPDATE stage SET id_stage = '$id_sta', nom_stage = '$nom_sta', date_debut_stage  = '$date_deb_sta',
 					date_fin_stage = '$date_fin_sta', description_stage = '$desc_sta', WHERE id_stage = '$id_sta'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification stage ');
 				}
@@ -153,6 +168,7 @@ class stage
 				Public function affiche_stage_total($objet, $conn)
 				{
 					$id_sta = $objet->get_id_stage();
+					$nom_sta = $objet->get_nom_stage();
 					$date_deb_sta = $objet->get_date_debut_stage();
 					$date_fin_sta = $objet->get_date_fin_stage();
 					$desc_sta = $objet->get_description_stage();

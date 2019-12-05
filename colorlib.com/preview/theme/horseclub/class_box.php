@@ -23,15 +23,15 @@ class box
 		/* class Activites Constructeur */
 		/* ---------------------- */
 
-			Public function boxs ($num_box, $date_deb_loca, $date_fin_loca, $nb_che_max,)
+			Public function boxs ($num_boxs, $date_deb_loca, $date_fin_loca, $nb_che_max, $prix_boxs, $etat_boxs)
 			{
 
-				$this -> numero_boxs = $num_box;
+				$this -> numero_boxs = $num_boxs;
 				$this -> date_debut_location = $date_deb_loca;
 				$this -> date_fin_location = $date_fin_loca;
         $this -> nombre_chevaux_max = $nb_che_max;
-        $this -> prix_box = $prix_boxs;
-				$this -> etat_articles = $etat_boxs;
+        $this -> prix_boxs = $prix_boxs;
+				$this -> etat_boxs = $etat_boxs;
 
 			}
 
@@ -41,12 +41,12 @@ class box
 
 			public function getallarticles()
 			{
-				$data = $this->numero_box;
+				$data = $this->numero_boxs;
 				$data = $data.$this->date_debut_location;
 				$data = $data.$this->date_fin_location;
         $data = $data.$this->nombre_chevaux_max;
-        $data = $data.$this->prix_box;
-				$data = $data.$this->etat_box;
+        $data = $data.$this->prix_boxs;
+				$data = $data.$this->etat_boxs;
 
 				return $data;
 			}
@@ -55,9 +55,9 @@ class box
 			/* class Activites GET */
 			/* ---------------------- */
 
-			Public function get_num_box ()
+			Public function get_numero_boxs()
 			{
-				return $this-> num_box;
+				return $this-> num_boxs;
 			}
 
 			Public function get_date_debut_location ()
@@ -75,23 +75,23 @@ class box
         return $this-> nombre_chevaux_max;
       }
 
-      Public function get_prix_box ()
+      Public function get_prix_boxs ()
       {
-        return $this-> date_fin_location;
+        return $this-> prix_boxs;
       }
 
-      Public function get_etat_box ()
+      Public function get_etat_boxs ()
       {
-        return $this-> etat_box;
+        return $this-> etat_boxs;
       }
 
 			/* ---------------------- */
 			/* class Activites SET */
 			/* ---------------------- */
 
-			Public function set_num_box ($num_box)
+			Public function set_numero_boxs ($num_boxs)
 			{
-				 $this-> numero_box = $num_box;
+				 $this-> numero_boxs = $num_boxs;
 			}
 
 			Public function set_date_debut_location($date_deb_loca)
@@ -109,14 +109,14 @@ class box
          $this-> nombre_chevaux_max = $nb_che_max;
       }
 
-      Public function set_prix_box ($prix_box)
+      Public function set_prix_boxs ($prix_boxs)
       {
-         $this-> prix_box = $prix_box;
+         $this-> prix_boxs = $prix_boxs;
       }
 
-			Public function set_etat_box ($etat_box)
+			Public function set_etat_boxs ($etat_boxs)
 			{
-				 $this-> etat_box = $etat_box;
+				 $this-> etat_boxs = $etat_boxs;
 			}
 
 			/* ---------------------- */
@@ -126,7 +126,7 @@ class box
 
 			Public function ajout_box ($objet, $conn)
 				{
-					$num_box = $objet->get_numero_box();
+					$num_boxs = $objet->get_numero_box();
 					$date_deb_loca = $objet->get_date_debut_location();
 					$date_fin_loca = $objet->get_date_fin_location();
           $nb_che_max = $objet->get_nombre_chevaux_max();
@@ -134,44 +134,46 @@ class box
 					$etat_box= $objet->get_etat_box();
 
 
-					print $SQL = " INSERT INTO boxs values (NULL, '$date_deb_loca', '$date_fin_loca', '$nb_che_max', '$prix_box', '0')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout articles ');
+					print $SQL = " INSERT INTO boxs values (NULL, '$date_deb_loca', '$date_fin_loca', '$nb_che_max', '$prix_boxs', '0')";
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout boxs ');
 				}
 
 				Public function modif_box ($objet, $conn)
 				{
-          $num_box = $objet->get_numero_box();
+          $num_boxs = $objet->get_numero_boxs();
 					$date_deb_loca = $objet->get_date_debut_location();
 					$date_fin_loca = $objet->get_date_fin_location();
           $nb_che_max = $objet->get_nombre_chevaux_max();
-          $prix_box = $objet->get_prix_box();
-					$etat_box= $objet->get_etat_box();
+          $prix_boxs= $objet->get_prix_boxs();
+					$etat_boxs= $objet->get_etat_boxs();
 
-					print $SQL = "UPDATE box SET id_articles = '$lib_art', lib_articles  = '$lib_art',
+					print $SQL = "UPDATE boxs SET id_articles = '$lib_art', lib_articles  = '$lib_art',
           photo_articles  = '$photo_art'
 					WHERE id_articles = '$id_art'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification articles ');
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification boxs ');
 				}
 
 				Public function affiche_articles_total($objet, $conn)
 				{
-          $id_art = $objet->get_id_articles();
-					$lib_art = $objet->get_lib_articles();
-					$photo_art = $objet->get_photo_articles();
-					$etat_art= $objet->get_etat_articles();
+          $num_boxs = $objet->get_numero_boxs();
+					$date_deb_loca = $objet->get_date_debut_location();
+					$date_fin_loca = $objet->get_date_fin_location();
+          $nb_che_max = $objet->get_nombre_chevaux_max();
+          $prix_boxs= $objet->get_prix_boxs();
+					$etat_boxs= $objet->get_etat_boxs();
 
 
-					print $SQL = " SELECT * From articles WHERE id_articles = '$id_art'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage articles ');
+					print $SQL = " SELECT * From boxs WHERE num_boxs = '$num_boxs'";
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage boxs ');
 					return $Res = $Req -> fetch ();
 				}
 
 				Public function suppr_articles ($objet, $conn)
 				{
-          $id_art = $objet->get_id_articles();
+          $num_boxs = $objet->get_num_boxs();
 
-					print $SQL = "UPDATE articles SET etat_articles = '1'
-					WHERE id_articles = '$id_art'";
+					print $SQL = "UPDATE boxs SET etat_boxs = '1'
+					WHERE num_boxs = '$num_boxs'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression articles ');
 				}
 
