@@ -64,44 +64,44 @@
 									<?php
 									if (isset($_SESSION['id'])) {
 										?>
-										<li><a href="index.php">Accueil</a></li>
-							      <li><a href="about.php">À propos</a></li>
-							      <li class="menu-active"><a href="service.php">Services</a>
+										<li><a href="index">Accueil</a></li>
+							      <li><a href="about">À propos</a></li>
+							      <li class="menu-active"><a href="service">Services</a>
 							        <ul>
-							          <li><a href="training.php">Entraînements</a></li>
-							          <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-							          <li><a href="stages.php">Stages</a></li>
-							          <li><a href="balades.php">Balades</a></li>
-							          <li><a href="events.php">Événements</a></li>
+							          <li><a href="training">Entraînements</a></li>
+							          <li><a href="calendrier/exemples/activite">Activités</a></li>
+							          <li><a href="stages">Stages</a></li>
+							          <li><a href="balades">Balades</a></li>
+							          <li><a href="events">Événements</a></li>
 							        </li>
 							      </ul>
-							      <li><a href="pricing.php">Prix</a></li>
-							      <li><a href="contact.php">Contact</a></li>
-							        <li><a href="connexion\modifier-profil.php">Mon Compte</a>
+							      <li><a href="pricing">Prix</a></li>
+							      <li><a href="contact">Contact</a></li>
+							        <li><a href="connexion\modifier-profil">Mon Compte</a>
 							          <ul>
-							      <li><a href="connexion\modifier-profil.php">Profil</a></li>
-							      <li><a href="connexion\panel.php">Pannel Admin</a></li>
-							      <li><a href="connexion\deconnexion.php">Déconnection</a></li>
+							      <li><a href="connexion\modifier-profil">Profil</a></li>
+							      <li><a href="panel">Pannel Admin</a></li>
+							      <li><a href="connexion\deconnexion">Déconnection</a></li>
 							    </li>
 							          </ul>
 											<?php
 										}
 											else {
 												?>
-												<li><a href="index.php">Accueil</a></li>
-												<li><a href="about.php">À propos</a></li>
-												<li class="menu-active"><a href="service.php">Services</a>
+												<li><a href="index">Accueil</a></li>
+												<li><a href="about">À propos</a></li>
+												<li class="menu-active"><a href="service">Services</a>
 													<ul>
-														<li><a href="training.php">Entraînements</a></li>
-														<li><a href="calendrier/exemples/activite.php">Activités</a></li>
-														<li><a href="stages.php">Stages</a></li>
-														<li><a href="balades.php">Balades</a></li>
-														<li><a href="events.php">Événements</a></li>
+														<li><a href="training">Entraînements</a></li>
+														<li><a href="calendrier/exemples/activite">Activités</a></li>
+														<li><a href="stages">Stages</a></li>
+														<li><a href="balades">Balades</a></li>
+														<li><a href="events">Événements</a></li>
 													</li>
 												</ul>
-												<li><a href="pricing.php">Prix</a></li>
-												<li><a href="contact.php">Contact</a></li>
-									<li><a href="connexion\connexion.php">Connection</a></li>
+												<li><a href="pricing">Prix</a></li>
+												<li><a href="contact">Contact</a></li>
+									<li><a href="connexion\connexion">Connection</a></li>
 									<?php
 										}
 									?>
@@ -146,7 +146,7 @@
 									<img class="img-fluid" src="img/pages/sp1.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="chevaux.php"><h4>Nos chevaux</h4></a>
+									<a href="chevaux"><h4>Nos chevaux</h4></a>
 									<p>
 										"Nous vous proposons un large choix de services que vous pouvez consulter."
 								</div>
@@ -159,7 +159,7 @@
 									<img class="img-fluid" src="img/pages/sp2.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="training.php"><h4>Entrainements personnels</h4></a>
+									<a href="training"><h4>Entrainements personnels</h4></a>
 									<p>
 										"TEXTE..."
 								</div>

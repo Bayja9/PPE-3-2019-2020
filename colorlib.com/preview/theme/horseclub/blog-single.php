@@ -64,25 +64,25 @@
                           <?php
         									if (isset($_SESSION['id'])) {
         										?>
-        										<li><a href="connexion\deconnexion.php">Ajouter des Activités</a></li>
-        										<li><a href="connexion\modifier-profil.php">Profil</a></li>
-        										<li><a href="connexion\deconnexion.php">Pannel Admin</a></li>
-        										<li><a href="connexion\deconnexion.php">Déconnection</a></li>
+        										<li><a href="connexion\deconnexion">Ajouter des Activités</a></li>
+        										<li><a href="connexion\modifier-profil">Profil</a></li>
+        										<li><a href="connexion\deconnexion">Pannel Admin</a></li>
+        										<li><a href="connexion\deconnexion">Déconnection</a></li>
         											<?php
         										}
         											else {
         												?>
-        									<li><a href="index.php">Accueil</a></li>
-        									<li><a href="about.php">À propos</a></li>
-        									<li><a href="service.php">Services</a></li>
-        									<li><a href="training.php">Entraînements</a></li>
-        									<li><a href="calendrier/exemples/activite.php">Activités</a></li>
-        									<li><a href="events.php">Événements</a></li>
-        									<li><a href="pricing.php">Prix</a></li>
-        									<li><a href="stages.php">Stages</a></li>
-        									<li><a href="balades.php">Balades</a></li>
-        									<li><a href="contact.php">Contact</a></li>
-        									<li><a href="connexion\connexion.php">Connection</a></li>
+        									<li><a href="index">Accueil</a></li>
+        									<li><a href="about">À propos</a></li>
+        									<li><a href="service">Services</a></li>
+        									<li><a href="training">Entraînements</a></li>
+        									<li><a href="calendrier/exemples/activite">Activités</a></li>
+        									<li><a href="events">Événements</a></li>
+        									<li><a href="pricing">Prix</a></li>
+        									<li><a href="stages">Stages</a></li>
+        									<li><a href="balades">Balades</a></li>
+        									<li><a href="contact">Contact</a></li>
+        									<li><a href="connexion\connexion">Connection</a></li>
         									<?php
         										}
         									?>
