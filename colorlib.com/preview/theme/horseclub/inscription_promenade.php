@@ -87,52 +87,37 @@
             <h1 class="text-white">
               Promenades
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="balades.html"> Balades </a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscription_promenade.php"> Balades </a></p>
           </div>
         </div>
       </div>
     </section>
     <!-- End banner Area -->
 
-    <!-- start banner Area -->
-    <section class="banner-area relative" id="home">
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="about-content col-lg-12">
-            <h1 class="text-white">
-              Stages
-            </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="stages.html">Stages</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End banner Area -->
     <!-- Formulaire -->
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Balade<span>Inscrivez-vous pour une balade à Cheval ou Poney</span></h1>
+<h1>Inscription Promenade<span>Inscrivez-vous pour une promenade à Cheval ou Poney</span></h1>
 <form>
     <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
-        <label>Nom & Prénom <input type="text" name="field1" /></label>
-        <label>Etat du Stage <textarea name="field2"></textarea></label>
+        <label>Libellé Promenade <input type="text" name="lib_promenade" value=""/></label>
+        <label>localisation <input type="text" name="localisation" value=""/></label>
     </div>
 
     <div class="section"><span>2</span>Date enregistrement Stage</div>
     <div class="inner-wrap">
-        <label>Date de Début <input type="date" name="field3" /></label>
-        <label>Date de Fin <input type="date" name="field4" /></label>
+        <label>Date de Début <input type="date" name="date_début_promenade" value=""/></label>
+        <label>Date de Fin <input type="date" name="date_fin_promenade" value="" /></label>
     </div>
 
     <div class="section"><span>3</span>Information Complémentaire</div>
         <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+        <textarea class="form-control" name="desc_promenade" value="" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider mon Stage</a>
+						<a href="operation_promenade.php" class="genric-btn danger radius">Valider mon Stage</a>
 		</div>
 </form>
           </div>
