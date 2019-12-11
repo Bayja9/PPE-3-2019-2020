@@ -108,8 +108,8 @@
 
     <div class="section"><span>2</span>Date enregistrement Stage</div>
     <div class="inner-wrap">
-        <label>Date de Début <input type="date" name="date_début_promenade" value=""/></label>
-        <label>Date de Fin <input type="date" name="date_fin_promenade" value="" /></label>
+        <label>Date de Début <input type="date" name="date_debut_promenade" value="date_debut_promenade"/></label>
+        <label>Date de Fin <input type="date" name="date_fin_promenade" value="date_fin_promenade" /></label>
     </div>
 
     <div class="section"><span>3</span>Information Complémentaire</div>

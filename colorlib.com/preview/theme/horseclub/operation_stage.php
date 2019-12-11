@@ -18,7 +18,7 @@ if (isset($_POST['enregistrers']))
 
     $unstage = new stage (NULL, $nom_sta, $date_debut_stage, $date_fin_stage, $description_stage, '0');
     $unstage -> ajout_stage($unstage, $conn);
-  //  header('Location: ./inscriptionstage.php');
+    header('Location: ./inscriptionstage.php');
 
 }
 

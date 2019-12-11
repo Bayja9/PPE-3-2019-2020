@@ -162,7 +162,7 @@
               </div>
 
 
-              <a class="primary-btn text-uppercase" href="index.phpw">Retour à l'accueil</a>
+              <a class="primary-btn text-uppercase" href="index.php">Retour à l'accueil</a>
 
       </div>
     </section>
