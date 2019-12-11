@@ -19,53 +19,62 @@
     </head>
 
     <body>
+    <center><font size="7"><b><u>Pannel Admin</u></b></font></center>
 		<div id="login-page">
 			<div class="container">
       <br><br><br><br><br><br><br><br>
-
       <ul>
         <li>
-          <a href="#">
+          <h1><b>Membre du site</b></h1>
+          <a href="connexion/utilisateurs.php">
           <img src="img/panel/clipboard-with-blank-paper.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <h1><b>Tableau des Activités</b></h1>
           <a href="#">
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <h1><b>Tableau des Cours</b></h1>
           <a href="#">
           <img src="img/panel/list-with-text.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <h1><b>Tableau </b></h1>
           <a href="#">
           <img src="img/panel/two-gears.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <a href="#">
+          <h1><b>Membre du site</b></h1>
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <a href="#">
+          <h1><b>Membre du site</b></h1>
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <a href="#">
+          <h1><b>Membre du site</b></h1>
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <a href="#">
+          <h1><b>Membre du site</b></h1>
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <a href="#">
+          <h1><b>Membre du site</b></h1>
           <img src="img/panel/two-contacts.png" height=300 alt="" />
           </a>
         </li>

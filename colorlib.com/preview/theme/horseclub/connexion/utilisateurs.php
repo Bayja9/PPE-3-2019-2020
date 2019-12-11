@@ -4,7 +4,7 @@
     include('connexionDB.php');
 
     if (!isset($_SESSION['id'])){
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit;
     }
 
@@ -24,7 +24,6 @@
 .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
 .tftable tr:hover {background-color:#ffffff;}
 </style>
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -50,11 +49,10 @@
 			<div class="container">
       <br><br><br><br><br><br><br><br>
         <table class="tftable" border="1">
-          <caption> Utilisateurs </caption>
+          <caption><h1> Utilisateurs </h1></caption>
           <tr>
             <th> Nom </th>
             <th> Prénom </th>
-            <th> Voir Profil </th>
             <th> Voir Profil </th>
           </tr>
             <?php
@@ -83,4 +81,4 @@
               $.backstretch("assets/img/autre photo.jpg", {speed: 500});
           </script>
       </body>
-    </html
+    </html>

@@ -5,7 +5,7 @@ session_start();
 
     // S'il n'y a pas de session alors on ne va pas sur cette page
     if (!isset($_SESSION['id'])){
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit;
     }
 
@@ -56,6 +56,7 @@ session_start();
         <h3>Voici le profil de <?= $afficher_profil['nom'] . " " .  $afficher_profil['prenom']; ?></h3>
           <p class="">Votre mail est : <?= $afficher_profil['mail'] ?></p>
           <p class="">Votre compte a été cree le : <br> <?= $afficher_profil['date_creation_compte'] ?></p>
+          <p class="">Votre Level : <?= $afficher_profil['level'] ?></p>
           </form>
     			</div>
     		</div>
