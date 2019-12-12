@@ -154,7 +154,7 @@
 								<br><br>
 
 
-								<table border="8" cellpadding="2.5" cellspacing="1" width="100%">
+								<table border="9" cellpadding="2.5" cellspacing="1" width="100%">
 
 							   <tr>
 									<p class="calcoul">
@@ -214,7 +214,7 @@
 
 								 <tr>
 							      <th width="20%" style="color:#83A697">Vacances d'été </th>
-							      <td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
+							      <td style="color:#FF001F"> FIN DES COURS: Samedi 04 Juillet 2020</td>
 							      <td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
 										<td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
 										<td> 200 EUROS </td>
@@ -222,6 +222,7 @@
 
 							</table>
 
+							<br><br>
 							<br><br>
 
 								<p>Voici les tarifs</p>
