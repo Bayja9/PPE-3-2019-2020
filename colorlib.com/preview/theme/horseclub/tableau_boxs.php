@@ -22,7 +22,7 @@
     <center>
 		<div id="login-page">
 			<div class="container">
-        <h1>Le Tableau Promenade</h1>
+        <h1>Le Tableau Des Boxs</h1>
       <br><br>
       <table class="tftable" border="1">
       <table border="8" cellpadding="5" cellspacing="2" width="50%" >
@@ -34,6 +34,9 @@
           <th width="1%" style="color:#C40101">Date de Début</th>
           <th width="1%" style="color:#C40101">Date de Fin</th>Information Complémentaire
           <th width="1%" style="color:#C40101">Information Complémentaire</th>
+          <th width="1%" style="color:#C40101">Ajouter</th>
+          <th width="1%" style="color:#C40101">Modifier</th>
+          <th width="1%" style="color:#C40101">Supprimer</th>
        </tr>
           <tr>
              <td width="1%" style="color:black"><b></b></td>
@@ -42,6 +45,9 @@
              <td width="1%" style="color:black"><b></b></td>
              <td width="1%" style="color:black"><b></b></td>
              <td width="1%" style="color:black"><b></b></td>
+             <td width="1%" style="color:black"><a href=inscription_concours.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
+             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>
       </div>
     </div>
