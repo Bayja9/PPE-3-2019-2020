@@ -24,7 +24,7 @@ if (isset($_POST['modifiertp']))
 {
 
     $idtp=$_SESSION['id_type_pension'];
-    $lib_type_p=$_POST=['libelle_type_pension'];
+    $lib_type_p=$_POST['libelle_type_pension'];
     $etat_type_p=$_POST['etat_type_pension'];
 
 

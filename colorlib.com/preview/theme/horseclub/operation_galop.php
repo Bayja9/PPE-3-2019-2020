@@ -6,7 +6,7 @@ include "class_galop.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrerg']))
 {
 
     $idg=$_SESSION['id_galop'];
@@ -21,7 +21,7 @@ if (isset($_POST['enregistrerd']))
     header('Location: ./modif_galop.php');
 
 }
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifierg']))
 {
 
     $idg=$_SESSION['id_galop'];
