@@ -3,13 +3,13 @@
 include 'bdd.inc.php';
 
 	/* ---------------------- */
-	/* DEBUT class Activites */
+	/* DEBUT class Terrain */
 	/* ---------------------- */
 
 class terrain
 {
 		/* ---------------------- */
-		/* class Activites Variables */
+		/* class Terrain Variables */
 		/* ---------------------- */
 
 		Private $id_terrain;
@@ -19,21 +19,21 @@ class terrain
     Private $etat_terrain;
 
 		/* ---------------------- */
-		/* class Activites Constructeur */
+		/* class Terrain Constructeur */
 		/* ---------------------- */
 
-			Public function terrain ($id_terr, $nom_terr, $surface_terr, $type_terr, $etat_terr)
+			Public function terrain ($id_terr, $nom_terr, $surf_terr, $type_terr, $etat_terr)
 			{
 
 				$this -> id_terrain = $id_terr;
 				$this -> nom_terrain = $nom_terr;
-				$this -> surface_terrain = $surface_terr;
+				$this -> surface_terrain = $surf_terr;
 				$this -> type_terrain = $type_terr;
         $this -> etat_terrain = $etat_terr;
 			}
 
 			/* ---------------------- */
-			/* fonction Activites getalldata */
+			/* fonction Terrain getalldata */
 			/* ---------------------- */
 
 			public function getallterrain()
@@ -49,7 +49,7 @@ class terrain
 			}
 
 			/* ---------------------- */
-			/* class Activites GET */
+			/* class Terrain GET */
 			/* ---------------------- */
 
 			Public function get_id_terrain ()
@@ -80,7 +80,7 @@ class terrain
 
 
 			/* ---------------------- */
-			/* class Activites SET */
+			/* class Terrain SET */
 			/* ---------------------- */
 
 			Public function set_id_terrain ($id_terr)
@@ -93,9 +93,9 @@ class terrain
 				 $this-> nom_terrain = $nom_terr;
 			}
 
-			Public function set_surface_terrain ($surface_terr)
+			Public function set_surface_terrain ($surf_terr)
 			{
-				 $this-> surface_terrain = $surface_terr;
+				 $this-> surface_terrain = $surf_terr;
 			}
 
 			Public function set_type_terrain ($type_terr)
@@ -110,7 +110,7 @@ class terrain
 
 
 			/* ---------------------- */
-			/* class Activites fonctions publiques */
+			/* class Terrain fonctions publiques */
 			/* ---------------------- */
 
 
@@ -118,38 +118,37 @@ class terrain
 				{
 					$id_terr = $objet->get_id_terrain();
 					$nom_terr = $objet->get_nom_terrain();
-					$surface_terr = $objet->get_surface_terrain();
+					$surf_terr = $objet->get_surface_terrain();
 					$type_terr = $objet->get_type_terrain();
 					$etat_terr = $objet->get_etat_terrain();
 
 
-					print $SQL = " INSERT INTO terrain values (NULL, '$id_terr', '$nom_terr', '$surface_terr', '$type_terr', '$etat_terr','0')";
+					print $SQL = " INSERT INTO terrain values (NULL, '$id_terr', '$nom_terr', '$surf_terr', '$type_terr', '$etat_terr', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout activites ');
 				}
 
 				Public function modif_terrain ($objet, $conn)
 				{
-          $id_terr = $objet->get_id_terrain();
+					$id_terr = $objet->get_id_terrain();
 					$nom_terr = $objet->get_nom_terrain();
-					$surface_terr = $objet->get_surface_terrain();
+					$surf_terr = $objet->get_surface_terrain();
 					$type_terr = $objet->get_type_terrain();
 					$etat_terr = $objet->get_etat_terrain();
 
 
 					print $SQL = "UPDATE terrain SET id_terrain = '$id_terr', nom_terrain  = '$nom_terr',
-					surface_terrain = '$surface_terr', type_terrain = '$type_terr'
+					surface_terrain = '$surf_terr', type_terrain = '$type_terr'
 					WHERE id_terrain = '$id_terr'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification terrain ');
 				}
 
 				Public function affiche_terrain_total($objet, $conn)
 				{
-          $id_terr = $objet->get_id_terrain();
+					$id_terr = $objet->get_id_terrain();
 					$nom_terr = $objet->get_nom_terrain();
-					$surface_terr = $objet->get_surface_terrain();
+					$surf_terr = $objet->get_surface_terrain();
 					$type_terr = $objet->get_type_terrain();
 					$etat_terr = $objet->get_etat_terrain();
-
 					print $SQL = " SELECT * From terrain WHERE id_terrain = '$id_terr'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage terrain ');
 					return $Res = $Req -> fetch ();
@@ -166,7 +165,7 @@ class terrain
 
 
 	/* ---------------------- */
-	/* FIN class Activites */
+	/* FIN class Terrain */
 	/* ---------------------- */
 }
 ?>
