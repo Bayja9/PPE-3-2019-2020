@@ -6,7 +6,7 @@ include 'bdd.inc.php';
 	/* DEBUT class Promenade */
 	/* ---------------------- */
 
-class promenade
+class cours
 {
 		/* ---------------------- */
 		/* class Promenade Variables */
@@ -21,12 +21,11 @@ class promenade
     Private $etat_cours;
 
 
-
 		/* ---------------------- */
 		/* class Promenade Constructeur */
 		/* ---------------------- */
 
-			Public function cours ( $id_cours, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $repas, $etat_pro)
+			Public function cours ( $id_cours, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $etat_cours)
 			{
 				$this -> id_cours = $id_cours;
 				$this -> nom_cours = $nom_cours;

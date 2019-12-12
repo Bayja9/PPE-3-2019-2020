@@ -73,11 +73,6 @@
                       <li><a href="stages">Stages</a></li>
                       <li><a href="balades">Balades</a></li>
                       <li><a href="events">Événements</a></li>
-                      <li><a href="events">Galop</a></li>
-                      <li><a href="events">Boxs</a></li>
-                      <li><a href="events">Pension</a></li>
-                      <li><a href="events">Cavalier</a></li>
-                      <li><a href="events">Cours</a></li>
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>

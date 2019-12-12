@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "operation_cours.php";
+  include "bdd.inc.php";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -129,32 +131,29 @@
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Cours<span>Inscrivez sur le cours</span></h1>
-<form>
-    <div class="section"><span>1</span>Information sur le cours</div>
+<h1>Inscription Cours<span>Inscrivez-vous sur le cours</span></h1>
+<form action="operation_cours.php" method="post">
+    <div class="section"><span>1</span>Informations sur le cours</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom cours" /></label>
-        <label><input type="text" name="field1" placeholder="Libellé cours" /></label>
-        <label>Prendre un Repas</label>
+        <label><input type="text" name="nom_cours" placeholder="Nom cours" /></label>
+        <label><input type="text" name="libelle_cours" placeholder="Libellé cours" /></label>
+
+  <div class="section"><span>2</span>Prendre un repas</div>
         <p>
-    	Oui: <input type="radio" name="citizenship" /><br />
-    	Non: <input type="radio" name="citizenship" /><br />
+    	Oui: <input type="radio" name="repas" /><br/>
+    	Non: <input type="radio" name="repas" /><br/>
         </p>
 
     </div>
     <hr>
-    <div class="section"><span>2</span>Date enregistrement</div>
+    <div class="section"><span>3</span>Date enregistrement</div>
     <div class="inner-wrap">
-        <label>Début cours<input type="date" name="field3" /></label>
-        <label>Fin cours<input type="date" name="field4" /></label>
+        <label>Début cours<input type="date" name="date_debut_cours" /></label>
+        <label>Fin cours<input type="date" name="date_fin_cours" /></label>
     </div>
     <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
-        <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
-    </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
+			<input type="submit" class="genric-btn danger radius" name="enregistrerc" value="Enregistrer">
             <br><br><br>  <br><br><br>
 		</div>
 </form>
