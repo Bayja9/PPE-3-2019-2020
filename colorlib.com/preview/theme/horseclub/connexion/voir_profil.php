@@ -59,22 +59,25 @@
       <br><br>
       <table class="tftable" border="1">
       <caption><h1> Voir Profil </h1></caption>
-      <tr>
-        <th> Id </th>
-        <th> Mail </th>
-        <th> Date de Création </th>
-        <th> Level </th>
-      </tr>
-        <tr>
-          <td>Votre id est : <?= $afficher_profil['id'] ?></td>
-          <td>Votre mail est : <?= $afficher_profil['mail'] ?></td>
-          <td>Votre compte a été créé le : <?= $afficher_profil['date_creation_compte'] ?></td>
-          <td><p class="">Votre Level : <?= $afficher_profil['level'] ?></p></td>
-        </tr>
+      <table border="8" cellpadding="5" cellspacing="2" width="50%" >
+
+       <tr>
+        <p class="">
+          <th width="1%" style="color:#C40101">ID</th>
+          <th width="1%" style="color:#C40101">Mail</th>
+          <th width="1%" style="color:#C40101">Date de Création</th>
+          <th width="1%" style="color:#C40101">Level</th>
+       </tr>
+          <tr>
+             <td width="1%" style="color:black"><b><?= $afficher_profil['id'] ?></b></td>
+             <td width="24%" style="color:black"><b><?= $afficher_profil['mail'] ?></b></td>
+             <td width="24%" style="color:black"><b><?= $afficher_profil['date_creation_compte'] ?></b></td>
+             <td width="1%" style="color:black"><b><?= $afficher_profil['level'] ?></b></td>
+          </tr>
       </div>
     </div>
     </table>
-    <center>
+  </center>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!--BACKSTRETCH-->
