@@ -32,21 +32,16 @@
       // http://fullcalendar.io/docs/google_calendar/
       googleCalendarApiKey: 'AIzaSyDhNGkLoUS-gQ4mSmcraf3NSNLUq4pkSog',
 
-      // US Holidays
-      events: '65k3hfaqc7mmsbubp6g62tb4so@group.calendar.google.com',
-
-      eventClick: function(arg) {
-        // opens events in a popup window
-        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
-
-        arg.jsEvent.preventDefault() // don't navigate in main tab
-      },
-
-      loading: function(bool) {
-        document.getElementById('loading').style.display =
-          bool ? 'block' : 'none';
-      }
-
+      // Notre google
+      eventSources: [
+        {
+          googleCalendarId: '65k3hfaqc7mmsbubp6g62tb4so@group.calendar.google.com'
+        },
+        {
+          googleCalendarId: 'fr.french#holiday@group.v.calendar.google.com',
+          className: 'nice-event'
+        }
+      ]
     });
 
     calendar.render();
