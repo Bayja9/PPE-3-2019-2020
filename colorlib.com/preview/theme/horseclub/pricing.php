@@ -133,7 +133,83 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
+
+
 								<h1 class="mb-10">Choisissez le meilleur plan qui vous convient</h1>
+
+								<br><br>
+
+
+								<table border="8" cellpadding="2.5" cellspacing="1" width="100%">
+
+							   <tr>
+									<p class="calcoul">
+							      <th width="20%" style="color:#000552">Calendrier Scolaire 2019/2020 </th>
+							      <th width="20%" style="color:#C40101">ZONE A</th>
+							      <th width="20%" style="color:#C40101">ZONE B</th>
+										<th width="20%" style="color:#C40101">ZONE C</th>
+										<th width="20%" style="color:#C40101">PRIX</th>
+							   </tr>
+
+							   <tr>
+							      <th width="20%" style="color:#83A697">Rentrée des enseignants</th>
+							      <td>Vendredi 30 août 2019</td>
+							      <td>Vendredi 30 août 2019</td>
+										<td>Vendredi 30 août 2019</td>
+										<td>________</td>
+							   </tr>
+
+							   <tr>
+							      <th width="20%" style="color:#83A697">Rentrée des élèves</th>
+							      <td style="color:#FF001F">Lundi 2 Septembre 2019</td>
+							      <td style="color:#FF001F">Lundi 2 Septembre 2019</td>
+										<td style="color:#FF001F">Lundi 2 Septembre 2019</td>
+										<td>________</td>
+
+							   </tr>
+								 <tr>
+							      <th width="20%" style="color:#83A697">Vacances de la Toussaint</th>
+							      <td>FIN DES COURS: <br> Samedi 19 Octobre 2019 <br><br> REPRISE:<br> Lundi 4 Novembre 2019</td>
+							      <td>FIN DES COURS: <br> Samedi 19 Octobre 2019 <br><br> REPRISE:<br> Lundi 4 Novembre 2019</td>
+										<td>FIN DES COURS: <br> Samedi 19 Octobre 2019 <br><br> REPRISE:<br> Lundi 4 Novembre 2019</td>
+										<td> 90 EUROS </td>
+							   </tr>
+								 <tr>
+							      <th width="20%" style="color:#83A697">Vacances de Noël </th>
+							      <td>FIN DES COURS: <br> Samedi 21 Décembre 2019 <br><br> REPRISE:<br> Lundi 6 Janvier 2020</td>
+							      <td>FIN DES COURS: <br> Samedi 21 Décembre 2019 <br><br> REPRISE:<br> Lundi 6 Janvier 2020</td>
+										<td>FIN DES COURS: <br> Samedi 21 Décembre 2019 <br><br> REPRISE:<br> Lundi 6 Janvier 2020</td>
+										<td> 230 EUROS </td>
+							   </tr>
+
+								 <tr>
+							      <th width="20%" style="color:#83A697">Vacances de Février </th>
+							      <td>FIN DES COURS: <br> Samedi 22 Février 2020 <br><br> REPRISE:<br> Lundi 09 Mars 2020</td>
+							      <td>FIN DES COURS: <br> Samedi 15 Février 2020 <br><br> REPRISE:<br> Lundi 02 Mars 2020</td>
+										<td>FIN DES COURS: <br> Samedi 08 Février 2020 <br><br> REPRISE:<br> Lundi 24 Février 2020</td>
+										<td> 85 EUROS </td>
+							   </tr>
+
+								 <tr>
+							      <th width="20%" style="color:#83A697">Vacances de Pâques </th>
+							      <td>FIN DES COURS: <br> Samedi 18 Avril 2020 <br><br> REPRISE:<br> Lundi 04 Mai 2020</td>
+							      <td>FIN DES COURS: <br> Samedi 11 Avril 2020 <br><br> REPRISE:<br> Lundi 27 Avril 2020</td>
+										<td>FIN DES COURS: <br> Samedi 04 Avril 2020 <br><br> REPRISE:<br> Lundi 20 Avril 2020</td>
+										<td> 150 EUROS </td>
+							   </tr>
+
+								 <tr>
+							      <th width="20%" style="color:#83A697">Vacances d'été </th>
+							      <td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
+							      <td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
+										<td style="color:#FF001F">FIN DES COURS: Samedi 04 Juillet 2020</td>
+										<td> 200 EUROS </td>
+							   </tr>
+
+							</table>
+
+							<br><br>
+
 								<p>Voici les tarifs</p>
 							</div>
 						</div>
@@ -159,6 +235,8 @@
 								</div>
 							</div>
 						</div>
+
+
 						<div class="col-lg-3 col-md-6">
 							<div class="single-price">
 								<div class="top-part">
