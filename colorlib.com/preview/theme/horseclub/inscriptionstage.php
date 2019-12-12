@@ -138,14 +138,13 @@
   <div class="inner-wrap">
     <div class="section"><span>1</span>Dates du stage</div>
     <div class="inner-wrap">
-      <label for="stage">Début du Stage<input type="date" id="date_debut_stage" name="date_debut_stage"/></label>
-      <label for="stage">Fin du Stage<input type="date" id="date_fin_stage" name="date_fin_stage" /></label>
       <label for="stage">Date de début<input type="date" name="date_debut_stage"/></label>
       <label for="stage">Date de fin<input type="date" name="date_fin_stage" /></label>
     </div>
     <hr>
     <div class="section"><span>2</span>Informations Complémentaires</div>
         <div class="inner-wrap">
+        <textarea class="form-control" name="nom_stage" rows="1" cols="80" placeholder="Nom du stage"></textarea>
         <textarea class="form-control" name="description_stage" rows="8" cols="80" placeholder="Description"></textarea>
     </div>
     <hr>

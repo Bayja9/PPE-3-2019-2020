@@ -16,9 +16,9 @@ if (isset($_POST['enregistrerg']))
 
 
 
-    $desgalops = new galops (NULL, $date_galop, $nom_galop, $lib_galop, '0');
+    $desgalops = new galop (NULL, $date_galop, $nom_galop, $lib_galop, '0');
     $desgalops -> ajout_galop($desgalops, $conn);
-    header('Location: ./modif_galop.php');
+    header('Location: ./inscriptiongalop.php');
 
 }
 if (isset($_POST['modifierg']))
@@ -32,7 +32,7 @@ if (isset($_POST['modifierg']))
 
     $desgalops = new galops (NULL, $date_galop, $nom_galop, $lib_galop, '0');
     $desgalops -> modif_galop($desgalops, $conn);
-    header('Location: ./modif_galop.php');
+    header('Location: ./inscriptiongalop.php');
 }
 if (isset($_POST['suppr']))
 {
@@ -41,6 +41,6 @@ if (isset($_POST['suppr']))
 
     $desgalops = new chevaux ($id_galop,'','','','');
     $desgalops -> suppr_galop($deschevaux, $conn);
-    header('Location: ./modif_chevaux.php');
+    header('Location: ./inscriptiongalop.php');
 }
 ?>
