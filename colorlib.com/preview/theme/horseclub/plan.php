@@ -185,10 +185,14 @@
                </tr>
 
             </table>
+            <br><br>
+            <br><br>
 
-            <img class="plan-picture" src="C:\wamp643\www\PPE3\PPE-3-2019-2020\colorlib.com\preview\theme\horseclub\img\plan">
+            <br><br><br>
+            <h1> Voici Le Plan </h1>
+            <img class="plan-picture" src="img\plan.jpg">
 
-
+          <iframe class="snapiframe" onload="this.style.visibility = 'visible';" src="https://satellites.pro/carte_de_Brive-la-Gaillarde" width="710" height="300" scrolling="auto" style="visibility:hidden;border-width:6px;border-style:double;border-color:#F17030;">Ohhhh No! Your browser does not support iframes.</iframe>
 
             </div>
           </div>

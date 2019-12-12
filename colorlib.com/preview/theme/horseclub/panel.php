@@ -86,9 +86,9 @@
           </a>
         </li>
       </ul>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div class="banner-content col-lg-12">
-      <div align="right"><a href="./index.php" class="genric-btn primary-border">Retour</a></div>
+      <div align="center"><a href="./index.php" class="genric-btn primary-border">Retour</a></div>
     </div>
       <script src="connexion/assets/js/jquery.js"></script>
         <script src="connexion/assets/js/bootstrap.min.js"></script>
