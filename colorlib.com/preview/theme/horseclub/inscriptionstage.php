@@ -144,6 +144,7 @@
     <hr>
     <div class="section"><span>2</span>Informations Complémentaires</div>
         <div class="inner-wrap">
+        <textarea class="form-control" name="nom_stage" rows="1" cols="80" placeholder="Nom du stage"></textarea>
         <textarea class="form-control" name="description_stage" rows="8" cols="80" placeholder="Description"></textarea>
     </div>
     <hr>

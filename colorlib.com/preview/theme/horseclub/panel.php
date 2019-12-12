@@ -39,49 +39,49 @@
         </li>
         <li>
           <b>Tableau des Cours</b>
-          <a href="#">
+          <a href="tableau_cours.php">
           <img src="img/panel/list-with-text.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des Stages</b>
-          <a href="#">
+          <a href="tableau_stages.php">
           <img src="img/panel/list-with-text.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des Promenades</b>
-          <a href="#">
+          <a href="tableau_promenade.php">
           <img src="img/panel/you-are-here.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des Chevaux</b>
-          <a href="#">
+          <a href="tableau_chevaux.php*">
           <img src="img/panel/curriculum-with-picture.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des Concours</b>
-          <a href="#">
+          <a href="tableau_concours.php">
           <img src="img/panel/quality-badge.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des boxs</b>
-          <a href="#">
+          <a href="tableau_boxs.php">
           <img src="img/panel/web-home.png" height=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tablau des Pensions</b>
-          <a href="#">
+          <a href="tableau_pensions.php">
           <img src="img/panel/web-home.png" hweb-home.pngeight=300 alt="" />
           </a>
         </li>
         <li>
           <b>Tableau des Galops</b>
-          <a href="#">
+          <a href="tableau_galops.php">
           <img src="img/panel/open-book-with-bookmark.png" height=300 alt="" />
           </a>
         </li>

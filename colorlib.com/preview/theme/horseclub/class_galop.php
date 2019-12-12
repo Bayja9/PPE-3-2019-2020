@@ -121,7 +121,7 @@ class galop
 					$etat_galop = $objet->get_etat_galop();
 
 
-					print $SQL = " INSERT INTO galop values (NULL, '$dat_obt_gal', '$nom_galop', '$lib_galop', '0')";
+					print $SQL = " INSERT INTO galop values (NULL, '$nom_galop', '$lib_galop', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout galop ');
 				}
 

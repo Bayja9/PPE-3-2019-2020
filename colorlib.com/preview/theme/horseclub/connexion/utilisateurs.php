@@ -45,33 +45,37 @@
     </head>
 
     <body>
+      <center>
 		<div id="login-page">
 			<div class="container">
       <br><br><br><br><br><br><br><br>
         <table class="tftable" border="1">
           <caption><h1> Utilisateurs </h1></caption>
-          <tr>
-            <th> Nom </th>
-            <th> Prénom </th>
-            <th> Voir Profil </th>
-          </tr>
-            <?php
-                // Foreach agit comme une boucle mais celle-ci s'arrête de façon intelligente.
-                // Elle s'arrête avec le nombre de lignes qu'il y a dans la variable $afficher_profil
+        <table border="8" cellpadding="5" cellspacing="2" width="50%" >
+         <tr>
+          <p class="">
+            <th width="1%" style="color:#C40101">Nom</th>
+            <th width="1%" style="color:#C40101">Prénom</th>
+            <th width="1%" style="color:#C40101">Voir Profil</th>
+         </tr>
+         <?php
+             // Foreach agit comme une boucle mais celle-ci s'arrête de façon intelligente.
+             // Elle s'arrête avec le nombre de lignes qu'il y a dans la variable $afficher_profil
 
-                // La variable $afficher_profil est comme un tableau contenant plusieurs valeurs
-                // pour lire chacune des valeurs distinctement on va mettre un pointeur que l'on appellera ici $ap
-                foreach($afficher_profil as $ap){
-                    ?>
-                        <tr>
-                            <td><?= $ap['nom'] ?></td>
-                            <td><?= $ap['prenom'] ?></td>
-                            <td><a href="voir_profil.php?id=<?= $ap['id'] ?>">Aller au profil</a></td>
-                        </tr>
-                    <?php
-                }
-            ?>
+             // La variable $afficher_profil est comme un tableau contenant plusieurs valeurs
+             // pour lire chacune des valeurs distinctement on va mettre un pointeur que l'on appellera ici $ap
+             foreach($afficher_profil as $ap){
+                 ?>
+         <tr>
+            <td width="24%" style="color:black"><b><?= $ap['nom'] ?></b></td>
+            <td width="24%" style="color:black"><b><?= $ap['prenom'] ?></b></td>
+            <td width="1%" style="color:black"><b><a href="voir_profil.php?id=<?= $ap['id'] ?>">Aller au profil</a></b></td>
+         </tr>
+         <?php
+            }
+          ?>
         </table>
+      </center>
         <script src="assets/js/jquery.js"></script>
           <script src="assets/js/bootstrap.min.js"></script>
         <!--BACKSTRETCH-->

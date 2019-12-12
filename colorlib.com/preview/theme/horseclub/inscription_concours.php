@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <?php
   session_start();
-  include "class_galop.php";
-  include "bdd.inc.php";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -75,17 +73,34 @@
                   }
                     else {
                       ?>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="about.php">À propos</a></li>
-                <li><a href="service.php">Services</a></li>
-                <li><a href="training.php">Entraînements</a></li>
-                <li><a href="calendrier/exemples/activite.php">Activités</a></li>
-                <li><a href="events.php">Événements</a></li>
-                <li><a href="pricing.php">Prix</a></li>
-                <li><a href="stages.php">Stages</a></li>
-                <li><a href="balades.php">Balades</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="connexion\connexion.php">Connection</a></li>
+                      <li><a href="index.php">Accueil</a></li>
+                      <li><a href="about.php">À propos</a></li>
+                      <li><a href="service.php">Services</a></li>
+                      <ul>
+                        <li><a href="training">Entraînements</a></li>
+                        <li><a href="calendrier/exemples/activite">Activités</a></li>
+                        <li><a href="stages">Stages</a></li>
+                        <li><a href="balades">Balades</a></li>
+                        <li><a href="events">Événements</a></li>
+                        <li><a href="events">Galop</a></li>
+                        <li><a href="events">Boxs</a></li>
+                        <li><a href="events">Pension</a></li>
+                        <li><a href="events">Cavalier</a></li>
+                        <li><a href="events">Cours</a></li>
+                      </li>
+                    </ul>
+                    <li><a href="pricing">Prix</a></li>
+                    <li><a href="contact">Contact</a></li>
+                      <li><a href="connexion\profil">Mon Compte</a>
+                        <ul>
+                      <li><a href="training.php">Entraînements</a></li>
+                      <li><a href="calendrier/exemples/activite.php">Activités</a></li>
+                      <li><a href="events.php">Événements</a></li>
+                      <li><a href="pricing.php">Prix</a></li>
+                      <li class="menu-active"><a href="stages.php">Stages</a></li>
+                      <li><a href="balades.php">Balades</a></li>
+                      <li><a href="contact.php">Contact</a></li>
+                      <li><a href="connexion\connexion.php">Connection</a></li>
                 <?php
                   }
                 ?>
@@ -102,11 +117,11 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Inscription Galop
+              Inscription Concours
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptiongalop.php">Galop</a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptionchevaux.php">Concours</a></p>
           </div>
-        </div>
+        </div> 
       </div>
     </section>
     <!-- End banner Area -->
@@ -114,16 +129,28 @@
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Galop<span>Inscrivez les galops</span></h1>
-<form action="operation_galop.php" method="post">
-    <div class="section"><span>1</span>Information sur le Galop</div>
+<h1>Inscription Concours<span>Inscrivez Vous</span></h1>
+<form>
+    <div class="section"><span>1</span>Information sur le concour</div>
     <div class="inner-wrap">
-        <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
-        <label><input type="text" name="lib_galop" placeholder="Libellé Galop" /></label>
-
+        <label><input type="text" name="field1" placeholder="Nom du Cheval" /></label>
+        <label><input type="text" name="field2" placeholder="Prénom du Cheval" /></label>
+        <label><input type="text" name="field2" placeholder="Âge" /></label>
+    </div>
+    <hr>
+    <div class="section"><span>1</span>Autres</div>
+    <div class="inner-wrap">
+              <label><input type="text" name="field2" placeholder="Date de Naissance" /></label>
+      <label><input type="text" name="field2" placeholder="Taille en M" /></label>
+      <label><input type="text" name="field2" placeholder="Couleur Cheval" /></label>
+      <label><input type="text" name="field2" placeholder="Note" /></label>
+    <hr>
+    <div class="section"><span>3</span>Information Complémentaire</div>
+        <div class="inner-wrap">
+        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
     </div>
     <div class="button-group-area mt-40">
-			 <input type="submit" class="genric-btn danger radius" name="enregistrerg" value="Enregistrer">
+						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
             <br><br><br>  <br><br><br>
 		</div>
 </form>
