@@ -80,7 +80,7 @@ include "bdd.inc";
                 <li><a href="about">À propos</a></li>
                 <li><a href="service">Services</a></li>
                 <li><a href="training">Entraînements</a></li>
-                <li><a href="calendrier/exemples/activite">Activités</a></li>
+                <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
                 <li><a href="events">Événements</a></li>
                 <li><a href="pricing">Prix</a></li>
                 <li><a href="stages">Stages</a></li>

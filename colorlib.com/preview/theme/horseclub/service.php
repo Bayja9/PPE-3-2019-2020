@@ -69,7 +69,7 @@
 							      <li class="menu-active"><a href="service">Services</a>
 							        <ul>
 							          <li><a href="training">Entraînements</a></li>
-							          <li><a href="calendrier/exemples/activite">Activités</a></li>
+							          <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
 							          <li><a href="stages">Stages</a></li>
 							          <li><a href="balades">Balades</a></li>
 							          <li><a href="events">Événements</a></li>
@@ -93,7 +93,7 @@
 												<li><a href="service.php">Services</a></li>
 												<ul>
 													<li><a href="training">Entraînements</a></li>
-													<li><a href="calendrier/exemples/activite">Activités</a></li>
+													<li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
 													<li><a href="stages">Stages</a></li>
 													<li><a href="balades">Balades</a></li>
 													<li><a href="events">Événements</a></li>
@@ -109,7 +109,7 @@
 												<li><a href="connexion\profil">Mon Compte</a>
 													<ul>
 												<li><a href="training.php">Entraînements</a></li>
-												<li><a href="calendrier/exemples/activite.php">Activités</a></li>
+												<li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
 												<li><a href="events.php">Événements</a></li>
 												<li><a href="pricing.php">Prix</a></li>
 												<li class="menu-active"><a href="stages.php">Stages</a></li>

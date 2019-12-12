@@ -3,7 +3,7 @@ ul li{
      width:200px;height:200px;padding:5px;list-style:none;
 }
 /*permet de créer deux lignes*/
-ul li:nth-child(4n){clear:right;}
+ul li:nth-child(4n){clear:center;}
 
 ul li a{
      display:block;overflow:hidden;
