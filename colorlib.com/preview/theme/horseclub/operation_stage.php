@@ -10,7 +10,7 @@ if (isset($_POST['enregistrers']))
 {
 
     $ids=$_SESSION['id_stage'];
-    $nom_sta=$_POST=['nom_stage'];
+    $nom_sta=$_POST['nom_stage'];
     $date_debut_stage=$_POST['date_debut_stage'];
     $date_fin_stage=$_POST['date_fin_stage'];
     $description_stage=$_POST['description_stage'];
