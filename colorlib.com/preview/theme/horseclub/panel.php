@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="connexion/assets/css/style-responsive.css" rel="stylesheet">
     <link href="css/component.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     </head>
 
     <body>
@@ -25,60 +26,70 @@
       <br><br><br><br><br><br><br><br>
       <ul>
         <li>
-          <h1><b>Membre du site</b></h1>
+          <b>Membre du site</b>
           <a href="connexion/utilisateurs.php">
           <img src="img/panel/clipboard-with-blank-paper.png" height=300 alt="" />
           </a>
         </li>
         <li>
-          <h1><b>Tableau des Activités</b></h1>
-          <a href="#">
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <b>Tableau des Activités</b>
+          <a href="full%20calendar/examples/google-calendar.html">
+          <img src="img/panel/month-calendar.png" height=300 alt="" />
           </a>
         </li>
         <li>
-          <h1><b>Tableau des Cours</b></h1>
+          <b>Tableau des Cours</b>
           <a href="#">
           <img src="img/panel/list-with-text.png" height=300 alt="" />
           </a>
         </li>
         <li>
-          <h1><b>Tableau </b></h1>
+          <b>Tableau des Stages</b>
           <a href="#">
-          <img src="img/panel/two-gears.png" height=300 alt="" />
+          <img src="img/panel/list-with-text.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <b>Tableau des Promenades</b>
           <a href="#">
-          <h1><b>Membre du site</b></h1>
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <img src="img/panel/you-are-here.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <b>Tableau des Chevaux</b>
           <a href="#">
-          <h1><b>Membre du site</b></h1>
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <img src="img/panel/curriculum-with-picture.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <b>Tableau des Concours</b>
           <a href="#">
-          <h1><b>Membre du site</b></h1>
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <img src="img/panel/quality-badge.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <b>Tableau des boxs</b>
           <a href="#">
-          <h1><b>Membre du site</b></h1>
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <img src="img/panel/web-home.png" height=300 alt="" />
           </a>
         </li>
         <li>
+          <b>Tablau des Pensions</b>
           <a href="#">
-          <h1><b>Membre du site</b></h1>
-          <img src="img/panel/two-contacts.png" height=300 alt="" />
+          <img src="img/panel/web-home.png" hweb-home.pngeight=300 alt="" />
+          </a>
+        </li>
+        <li>
+          <b>Tableau des Galops</b>
+          <a href="#">
+          <img src="img/panel/open-book-with-bookmark.png" height=300 alt="" />
           </a>
         </li>
       </ul>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="banner-content col-lg-12">
+      <div align="right"><a href="./index.php" class="genric-btn primary-border">Retour</a></div>
+    </div>
       <script src="connexion/assets/js/jquery.js"></script>
         <script src="connexion/assets/js/bootstrap.min.js"></script>
     	<!--BACKSTRETCH-->

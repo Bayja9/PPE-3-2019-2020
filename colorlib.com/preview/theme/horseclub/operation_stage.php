@@ -3,7 +3,7 @@
 //require_once('login.inc.php');
 include "bdd.inc.php";
 include "class_stage.php";
-include "letraitementlogin.php";
+//include "letraitementlogin.php";
 
 
 if (isset($_POST['enregistrers']))
