@@ -149,7 +149,7 @@
 								<br><br>
 								Propriétaires, choisissez parmi de nombreuses options et déterminez la pension adaptée à vos besoins et à ceux de votre cheval. L’ensemble de l’équipe du centre équestre est à votre écoute afin de mettre en place un régime alimentaire adapté. Deux moniteurs Brevet d’État (BE) sont à vos côtés pour vous conseiller et vous orienter dans votre travail à cheval.
 							</p>
-							<a class="primary-btn" href="#">Commencez maintenant</a>
+							<a class="primary-btn" href="plan.php">Voici notre Plan</a>
 						</div>
 					</div>
 				</div>
