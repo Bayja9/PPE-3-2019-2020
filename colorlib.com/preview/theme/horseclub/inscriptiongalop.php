@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "class_galop.php";
+  include "bdd.inc.php";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -113,14 +115,15 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Galop<span>Inscrivez les galops</span></h1>
-<form>
+<form action="operation_galop.php" method="post">
     <div class="section"><span>1</span>Information sur le Galop</div>
     <div class="inner-wrap">
         <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
         <label><input type="text" name="lib_galop" placeholder="Libellé Galop" /></label>
+
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" type="submit" name="enregistrerg" class="genric-btn danger radius">Valider le Galop</a>
+			 <input type="submit" class="genric-btn danger radius" name="enregistrerg" value="Enregistrer">
             <br><br><br>  <br><br><br>
 		</div>
 </form>
