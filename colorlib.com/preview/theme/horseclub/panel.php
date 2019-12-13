@@ -20,10 +20,12 @@
     </head>
 
     <body>
+      <br>
+      <br>
     <center><font size="7"><b><u>Pannel Admin</u></b></font></center>
 		<div id="login-page">
 			<div class="container">
-      <br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br>
       <ul>
         <li>
           <b>Membre du site</b>
