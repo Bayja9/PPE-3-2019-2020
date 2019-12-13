@@ -156,7 +156,7 @@
                   <td>8</td>
                   <td>1300 m²</td>
                   <td>50 EUROS</td>
-                  <td>6 EUROS</td>
+                  <td>36 EUROS</td>
                </tr>
 
                <tr>
@@ -164,7 +164,7 @@
                   <td style="color:#FF001F">18</td>
                   <td style="color:#FF001F">300 m²</td>
                   <td style="color:#FF001F">56 EUROS</td>
-                  <td style="color:#FF001F">7 EUROS</td>
+                  <td style="color:#FF001F">41 EUROS</td>
 
                </tr>
                <tr>
@@ -172,7 +172,7 @@
                   <td>13</td>
                   <td>500 m²</td>
                   <td>62 EUROS</td>
-                  <td>7,50 EUROS </td>
+                  <td>50 EUROS </td>
                </tr>
 
 
@@ -181,7 +181,7 @@
                   <td style="color:#FF001F">6</td>
                   <td style="color:#FF001F">3500 m²</td>
                   <td style="color:#FF001F">70 EUROS</td>
-                  <td style="color:#FF001F">10 EUROS</td>
+                  <td style="color:#FF001F">56 EUROS</td>
                </tr>
 
             </table>

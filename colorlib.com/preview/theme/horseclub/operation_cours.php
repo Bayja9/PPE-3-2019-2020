@@ -6,7 +6,7 @@ include "class_cours.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrerc']))
 {
 
     $id_cours=$_SESSION['id_cours'];
@@ -20,10 +20,10 @@ if (isset($_POST['enregistrerd']))
 
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
     $descours -> ajout_cours($uncours, $conn);
-    header('Location: ./modif_cours.php');
+    header('Location: ./inscriptioncours.php');
 
 }
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifierc']))
 {
 
     $id_cours=$_SESSION['id_cours'];
@@ -36,7 +36,7 @@ if (isset($_POST['modifierd']))
 
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
     $descours -> modif_cours($uncours, $conn);
-    header('Location: ./modif_cours.php');
+    header('Location: ./inscriptioncours.php');
 }
 if (isset($_POST['suppr']))
 {
@@ -45,6 +45,6 @@ if (isset($_POST['suppr']))
 
     $uncours = new cours ($id_cours,'','','','','','');
     $descours -> suppr_cours($uncours, $conn);
-    header('Location: ./modif_cours.php');
+    header('Location: ./inscriptioncours.php');
 }
 ?>
