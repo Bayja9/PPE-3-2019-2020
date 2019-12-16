@@ -46,7 +46,7 @@
               <a class="tel" href="mailto:info@cheuclub.com">info@cheuclub.com</a>
             </div>
             <div class="col-lg-4 menu-top-middle justify-content-center d-flex">
-            <a href="index.html">
+            <a href="index">
               <img class="img-fluid" src="img/logo.png" alt="">
             </a>
             </div>
