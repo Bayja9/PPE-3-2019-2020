@@ -147,9 +147,9 @@
 <form>
     <div class="section"><span>1</span>Les informations dont nous avons besoin</div>
     <div class="inner-wrap">
-        <label><input type="text" name="" placeholder="Nom"/></label>
-        <label><input type="text" name="field2" placeholder="Prénom"/></label>
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+        <label><input type="text" name="nom_cavalier" placeholder="Nom du cavalier"/></label>
+        <label><input type="text" name="prenom_cavalier" placeholder="Prénom du cavalier"/></label>
+        <label><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
     </div>
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>

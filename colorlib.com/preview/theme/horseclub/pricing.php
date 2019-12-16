@@ -66,6 +66,7 @@
 							      ?>
 										<li><a href="index">Accueil</a></li>
 							      <li><a href="about">À propos</a></li>
+										<li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
 							      <li><a href="service">Services</a>
 							        <ul>
 							          <li><a href="training">Entraînements</a></li>
@@ -102,6 +103,7 @@
 							          ?>
 												<li><a href="index.php">Accueil</a></li>
 	                      <li><a href="about.php">À propos</a></li>
+												<li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
 	                      <li><a href="service">Services</a>
 	                        <ul>
 	                          <li><a href="training">Entraînements</a></li>
