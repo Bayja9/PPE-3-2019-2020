@@ -75,6 +75,18 @@
 							          <li><a href="events">Événements</a></li>
 							        </li>
 							      </ul>
+										<li><a href="#">Inscription</a>
+							        <ul>
+													<li><a href="inscription_cavalier">Inscription Cavalier</a></li>
+													<li><a href="inscription_concours">Inscription Concours</a></li>
+													<li><a href="inscription_promenade">Inscription Promenade</a></li>
+													<li><a href="inscriptionbalade">Inscription Balade</a></li>
+													<li><a href="inscriptioncours">Inscription Cours</a></li>
+													<li><a href="inscriptiongalop">Inscription Galop</a></li>
+													<li><a href="inscriptionpension">Inscription Pension</a></li>
+													<li><a href="inscriptionstage">Inscription Stage</a></li>
+											</li>
+										</ul>
 							      <li><a href="pricing">Prix</a></li>
 							      <li><a href="contact">Contact</a></li>
 							        <li><a href="connexion\modifier-profil">Mon Compte</a>
