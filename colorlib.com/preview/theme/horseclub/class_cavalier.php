@@ -15,7 +15,7 @@ class cavalier
 		Private $id_cavalier;
 		Private $nom_cavalier;
 		Private $prenom_cavalier;
-		Private $age_cavalier;
+		Private $dna_cavalier;
     Private $un_galop; // objet de type galop
     Private $mes_chevaux; // collection de chevaux
 
@@ -23,16 +23,17 @@ class cavalier
 		/* class Utilisateur Constructeur */
 		/* ---------------------- */
 
-			Public function cavalier ($idc, $n, $p, $idg, $libg)
+			Public function cavalier ($idc, $n, $p, $dna, $idg, $libg)
 			{
 
-				$this -> id_cavalier = $idc;
+				$this -> id_cavalier = $id_cav;
 				$this -> nom_cavalier = $n;
         $this -> prenom_cavalier = $p;
-        $this -> nom_cavalier = $n;
+        $this -> dna_cavalier = $dna;
         $galop = new galop ($idg, $libg);
         $this -> un_galop = $galop;
         $this -> meschevaux ='';
+				$this -> etat_cavalier =$etat_cav;
 
 			}
 
@@ -55,9 +56,19 @@ class cavalier
 				return $this-> nom_cavalier;
 			}
 
+			Public function get_dna_cavalier ()
+			{
+				return $this-> dna_cavalier;
+			}
+
 			Public function get_un_galop ()
 			{
 				return $this-> un_galop;
+			}
+
+			Public function get_etat_cavalier ()
+			{
+				return $this-> etat_cavalier;
 			}
 
 
@@ -81,54 +92,68 @@ class cavalier
          $this-> nom_cavalier = $n;
       }
 
+			Public function set_dna_cavalier ($dna)
+			{
+				 $this-> dna_cavalier = $dna;
+			}
 
-
+			public function set_etat_cavalier ($etat_cav)
+			{
+				 $this-> etat_cavalier = $etat_cav;
+			}
 
 			/* ---------------------- */
 			/* class Chevaux fonctions publiques */
 			/* ---------------------- */
 
 
-			Public function ajout_chevaux ($objet, $conn)
+			Public function ajout_cavalier ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
+					$id_cav = $objet->get_id_cavalier();
+					$n = $objet->get_nom_cavalier();
+					$p = $objet->get_prenom_cavalier();
+					$dna = $objet->get_dna_cavalier();
+					$etat_cav = $objet->get_etat_cavalier();
 
 
-					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$poids_che', '$origin_che', '$util_che', '0')";
-					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
+					print $SQL = " INSERT INTO cavalier values (NULL, '$n', '$p', '$dna','0')";
+					$Req = $conn -> query ($SQL) or die (' Erreur ajout cavalier ');
 				}
 
-				Public function modif_chevaux ($objet, $conn)
+				Public function modif_cavalier ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
+					$id_cav = $objet->get_id_cavalier();
+					$n = $objet->get_nom_cavalier();
+					$p = $objet->get_prenom_cavalier();
+					$dna = $objet->get_dna_cavalier();
+					$etat_cav = $objet->get_etat_cavalier();
 
-					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
-					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', age_chevaux = '$age_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
-					WHERE id_chevaux = '$id_che'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
+
+					print $SQL = "UPDATE cavalier SET id_cavalier = '$id_cav', nom_cavalier  = '$n',
+					prenom_cavalier = '$p', dna_cavalier = '$dna'
+					WHERE id_cavalier = '$id_cav'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur modification cavalier ');
 				}
 
-				Public function affiche_chevaux_total($objet, $conn)
+				Public function affiche_cavalier_total($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
+					$id_cav = $objet->get_id_cavalier();
+					$n = $objet->get_nom_cavalier();
+					$p = $objet->get_prenom_cavalier();
 
 
-					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
+					print $SQL = " SELECT * FROM cavalier WHERE id_cavalier = '$id_cav'";
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage cavalier ');
 					return $Res = $Req -> fetch ();
 				}
 
-				Public function suppr_chevaux ($objet, $conn)
+				Public function suppr_cavalier ($objet, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
+					$id_cav = $objet->get_id_cavalier();
 
-					print $SQL = "UPDATE chevaux SET etat_chevaux = '1'
-					WHERE id_chevaux = '$id_che'";
-				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression chevaux ');
+					print $SQL = "UPDATE cavalier SET etat_cavalier = '1'
+					WHERE id_cavalier = '$id_cav'";
+				 	$Req = $conn -> query ($SQL) or die (' Erreur suppression cavalier ');
 				}
 
 
