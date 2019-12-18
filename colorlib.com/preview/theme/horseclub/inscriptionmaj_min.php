@@ -66,7 +66,6 @@
                   ?>
                   <li><a href="index">Accueil</a></li>
                   <li><a href="about">À propos</a></li>
-                  <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                   <li><a href="service">Services</a>
                     <ul>
                       <li><a href="training">Entraînements</a></li>
@@ -77,6 +76,7 @@
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>
+                  <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                   <li><a href="contact">Contact</a></li>
                     <li><a href="connexion\modifier-profil">Mon Compte</a>
                       <ul>
@@ -91,7 +91,6 @@
                       ?>
                       <li><a href="index">Accueil</a></li>
                       <li><a href="about">À propos</a></li>
-                      <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                       <li><a href="service">Services</a>
                         <ul>
                           <li><a href="training">Entraînements</a></li>
@@ -102,6 +101,7 @@
                         </li>
                       </ul>
                       <li><a href="pricing">Prix</a></li>
+                      <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                       <li><a href="contact">Contact</a></li>
                 <li><a href="connexion\connexion">Connection</a></li>
                 <?php
@@ -172,7 +172,7 @@
           <br><br>
             <br><br><br>
             <h4> Voici les 2 feuilles d'inscriptions </h4>
-
+            <br>
             <a class="primary-btn" href="https://saintmedard.ucpa.com/download/fstore/loisirs/saint-medard/admin/images/BI_mineur_2018-2019_asso_Loisirs.pdf">Inscription Mineur</a> <a class="primary-btn" href="https://saintmedard.ucpa.com/download/fstore/loisirs/saint-medard/admin/images/BI_adultes_2018-2019_asso_Loisirs%20(1).pdf">Inscription Majeur</a>
 
 
