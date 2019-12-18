@@ -163,7 +163,15 @@
     </div>
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
-            <br><br><br><br>
+            <br><br>
+            <br><br>
+
+            <a class="primary-btn" href="modif_balade.php">Modification Balade</a> <a class="primary-btn" href="suppr_balade.php">Suppression Balade</a>
+
+            <br><br>
+            <br><br>
+
+
 		</div>
 </form>
           </div>

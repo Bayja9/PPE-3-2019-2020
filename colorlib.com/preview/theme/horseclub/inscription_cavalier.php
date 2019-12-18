@@ -154,6 +154,10 @@
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
             <br><br><br><br>
+
+            <a class="primary-btn" href="modif_cavalier.php">Modification Cavalier</a> <a class="primary-btn" href="suppr_cavalier.php">Suppression Cavalier</a>
+
+            <br><br>
 		</div>
 </form>
           </div>
