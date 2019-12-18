@@ -62,7 +62,6 @@
       ?>
       <li class="menu-active"><a href="index">Accueil</a></li>
       <li><a href="about">À propos</a></li>
-      <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
       <li><a href="service">Services</a>
         <ul>
           <li><a href="training">Entraînements</a></li>
@@ -85,6 +84,7 @@
         </li>
       </ul>
       <li><a href="pricing">Prix</a></li>
+      <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
       <li><a href="contact">Contact</a></li>
         <li><a href="connexion\profil">Mon Compte</a>
           <ul>
@@ -99,7 +99,6 @@
           ?>
           <li class="menu-active"><a href="index">Accueil</a></li>
           <li><a href="about">À propos</a></li>
-          <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
           <li><a href="service">Services</a>
             <ul>
               <li><a href="training">Entraînements</a></li>
@@ -110,6 +109,7 @@
             </li>
           </ul>
           <li><a href="pricing">Prix</a></li>
+          <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
           <li><a href="contact">Contact</a></li>
     <li><a href="connexion\connexion">Connection</a></li>
     <?php

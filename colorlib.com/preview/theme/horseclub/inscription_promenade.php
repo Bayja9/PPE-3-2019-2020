@@ -164,6 +164,9 @@
     </div>
     <div class="button-group-area mt-40">
 						<a href="operation_promenade.php" class="genric-btn danger radius">Valider mon Stage</a>
+            <br><br>
+            <a class="primary-btn" href="modif_promenade.php">Modification Promenade</a> <a class="primary-btn" href="suppr_promenade.php">Suppression Promenade</a>
+            <br><br>
 		</div>
 </form>
           </div>
@@ -173,186 +176,11 @@
 
 
     <!-- Start booking Area -->
-    <section class="booking-area section-gap relative" id="consultancy">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-    <div class="row justify-content-between align-items-center">
-    <div class="col-lg-6 col-md-6 booking-left">
-    <div class="active-review-carusel">
-    <div class="single-carusel">
-    <img src="img/r1.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Fannie Rowe</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Très bon site ! :)
-    </p>
-    <img src="img/r2.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Hulda Sutton</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Que des personnes aimables dans le centre équestre ;)
-    </p>
-    </div>
-    <div class="single-carusel">
-    <img src="img/r1.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Fannie Rowe</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Les prix sont convenables !!!!!!!!
-    </p>
-    <img src="img/r2.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Hulda Sutton</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Le site est très classe ;)
-    </p>
-    </div>
-    <div class="single-carusel">
-    <img src="img/r1.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Fannie Rowe</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Le centre équestre est parfait pour tout le monde !
-    </p>
-    <img src="img/r2.png" alt="">
-    <div class="title justify-content-start d-flex">
-    <h4>Hulda Sutton</h4>
-    <div class="star">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </div>
-    </div>
-    <p>
-    Que des personnes aimables :)
-    </p>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 booking-right">
-    <h4 class="mb-20">Formulaire de Rendez-vous</h4>
-    <form action="#">
-    <input class="form-control" type="text" name="name" placeholder="Votre nom..." required>
-    <input class="form-control" type="email" name="email" placeholder="Votre Email..." required>
-    <input class="form-control" type="text" name="phone" placeholder="Tél..." required>
-    <div class="input-group dates-wrap">
-    <input id="datepicker" class="dates form-control" id="exampleAmount" placeholder="Date & heure" type="text">
-     <div class="input-group-prepend">
-    <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
-    </div>
-    </div>
-    <textarea class="common-textarea form-control mt-10" name="message" placeholder="Message..." onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''" onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Messege'" data-cf-modified-7dbdb0edc011d2b308b8e55e-=""></textarea>
-    <button class="btn btn-default btn-lg btn-block text-center">Réserver maintenant !</button>
-    </form>
-    </div>
-    </div>
-    </div>
-    </section>
+
     <!-- End booking Area -->
 
     <!-- start footer Area -->
-    <footer class="footer-area section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3  col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h4>À Propos de nous</h4>
-              <p>
-                Le centre équestre met à votre disposition des infrastructures sécurisées qui vous permettront de monter à cheval même en hiver grâce au grand manège couvert. Deux monitrices Brevet d’État sont à l’écoute de vos attentes pour vous faire progresser et atteindre vos objectifs.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4  col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h4>Contact</h4>
-              <p>
-                Centre équestre de Brive <br><br>
-								Avenue Jean Mirabot, <br><br> 19100 Brive-la-Gaillarde
-              </p>
-              <p class="number">
-                06-56-78-87-45 <br>
-                06-56-34-74-12
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-5  col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h4>Newsletter</h4>
-              <p>Vous pouvez nous faire confiance. Nous n'envoyons que des offres, pas un seul spam.</p>
-              <div class="d-flex flex-row" id="mc_embed_signup">
 
-
-                  <form class="navbar-form" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-                    <div class="input-group add-on align-items-center d-flex">
-                        <input class="form-control" name="EMAIL" placeholder="Adresse Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adresse Email'" required="" type="email">
-                    <div style="position: absolute; left: -5000px;">
-                      <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                    </div>
-                      <div class="input-group-btn">
-                        <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
-                      </div>
-                    </div>
-                      <div class="info mt-20"></div>
-                  </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom row">
-          <p class="footer-text m-0 col-lg-6 col-md-12">
-
-          </p>
-          <div class="footer-social col-lg-6 col-md-12">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-            <a href="#"><i class="fa fa-behance"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
     <!-- End footer Area -->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
