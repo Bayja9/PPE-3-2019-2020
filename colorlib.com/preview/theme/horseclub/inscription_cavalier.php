@@ -144,16 +144,20 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Cavalier<span>Devenez un cavalier</span></h1>
-<form action="operation_cavalier.php" method="post">
-    <div class="section"><span>1</span>Les informations dont nous avons besoin</div>
+<form action='operation_cavalier.php' method='post'>
+  <hr>
+  <div class="inner-wrap">
+    <div class="section"><span>1</span>Informations du cavalier</div>
     <div class="inner-wrap">
-        <label for="cavalier"><input type="text" name="nom_cavalier" placeholder="Nom du cavalier"/></label>
-        <label for="cavalier"><input type="text" name="prenom_cavalier" placeholder="Prénom du cavalier"/></label>
-        <label for="cavalier"><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
+      <textarea class="form-control" name="nom_cavalier" rows="1" cols="80" placeholder="Nom du cavalier"></textarea>
+      <br>
+      <textarea class="form-control" name="prenom_cavalier" rows="1" cols="80" placeholder="Prénom du cavalier"></textarea>
+      <br>
+      <label for="cavalier">Date de naissance<input type="date" name="dna_cavalier" /></label>
     </div>
+    <hr>
     <div class="button-group-area mt-40">
-				<input type="submit" name="enregistrercav" value="Valider">
-        <br><br><br><br>
+        <input type="submit" class="genric-btn danger radius" name="enregistrercav" value="Enregistrer">
 		</div>
 </form>
           </div>

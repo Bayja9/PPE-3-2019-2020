@@ -130,25 +130,19 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Chevaux<span>Inscrivez les chevaux</span></h1>
-<form>
+<form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Information sur le cheval</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Prénom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Âge" /></label>
+      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"></textarea>
+      <input type="date" name="dna_chevaux"/>
     </div>
     <hr>
     <div class="section"><span>1</span>Autres</div>
     <div class="inner-wrap">
-              <label><input type="text" name="field2" placeholder="Date de Naissance" /></label>
-      <label><input type="text" name="field2" placeholder="Taille en M" /></label>
-      <label><input type="text" name="field2" placeholder="Couleur Cheval" /></label>
-      <label><input type="text" name="field2" placeholder="Note" /></label>
+      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"></textarea>
+      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"></textarea>
+      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"></textarea>
     <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
-        <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
-    </div>
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
             <br><br><br>  <br><br><br>

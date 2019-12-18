@@ -16,7 +16,6 @@ class chevaux
 		Private $nom_chevaux;
 		Private $dna_chevaux;
 		Private $taille_chevaux;
-		Private $age_chevaux;
 		Private $couleur_chevaux;
     Private $robe_chevaux;
     Private $sexe_chevaux;
@@ -37,7 +36,6 @@ class chevaux
 				$this -> nom_chevaux = $nom_che;
 				$this -> dna_chevaux = $dna_che;
 				$this -> taille_chevaux = $taille_che;
-				$this -> age_chevaux = $age_che;
 				$this -> couleur_chevaux = $coul_che;
 				$this -> robe_chevaux = $robe_che;
         $this -> sexe_chevaux = $sexe_che;
