@@ -16,24 +16,20 @@ class cavalier
 		Private $nom_cavalier;
 		Private $prenom_cavalier;
 		Private $dna_cavalier;
-    Private $un_galop; // objet de type galop
-    Private $mes_chevaux; // collection de chevaux
+		Private $etat_cavalier;
 
 		/* ---------------------- */
 		/* class Utilisateur Constructeur */
 		/* ---------------------- */
 
-			Public function cavalier ($idc, $n, $p, $dna, $idg, $libg)
+			Public function cavalier ($id_cav, $n, $p, $dna, $etat_cav)
 			{
 
 				$this -> id_cavalier = $id_cav;
 				$this -> nom_cavalier = $n;
         $this -> prenom_cavalier = $p;
         $this -> dna_cavalier = $dna;
-        $galop = new galop ($idg, $libg);
-        $this -> un_galop = $galop;
-        $this -> meschevaux ='';
-				$this -> etat_cavalier =$etat_cav;
+				$this -> etat_cavalier = $etat_cav;
 
 			}
 
@@ -61,25 +57,18 @@ class cavalier
 				return $this-> dna_cavalier;
 			}
 
-			Public function get_un_galop ()
-			{
-				return $this-> un_galop;
-			}
-
 			Public function get_etat_cavalier ()
 			{
 				return $this-> etat_cavalier;
 			}
 
-
-
 			/* ---------------------- */
 			/* class Utilisateur SET */
 			/* ---------------------- */
 
-			Public function set_id_cavalier ($idc)
+			Public function set_id_cavalier ($id_cavc)
 			{
-				 $this-> id_cavalier = $idc;
+				 $this-> id_cavalier = $id_cavc;
 			}
 
 			Public function set_prenom_cavalier ($p)
