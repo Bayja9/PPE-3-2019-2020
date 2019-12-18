@@ -6,7 +6,7 @@ include "class_cavalier.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrercav']))
 {
 
     $id_cav=$_SESSION['id_cavalier'];
@@ -15,12 +15,12 @@ if (isset($_POST['enregistrerd']))
     $dna_cavalier=$_POST['dna_cavalier'];
 
 
-    $uncavalier = new cavalier (NULL, $nom_cavalier, $prenom_cavalier, $dna_cavalier, '0');
+    $uncavalier = new cavalier (NULL, $n, $p, $dna, '0');
     $uncavalier -> ajout_cavalier($uncavalier, $conn);
-    header('Location: ./modif_cavalier.php');
+    header('Location: ./inscription_cavalier.php');
 
 }
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifiercav']))
 {
 
     $id_cav=$_SESSION['id_cavalier'];
@@ -29,9 +29,9 @@ if (isset($_POST['modifierd']))
     $dna_cavalier=$_POST['dna_cavalier'];
 
 
-    $uncavalier = new cavalier (NULL, $nom_cavalier, $prenom_cavalier, $dna_cavalier, '0');
+    $uncavalier = new cavalier (NULL, $n, $p, $dna, '0');
     $uncavalier -> modif_cavalier($uncavalier, $conn);
-    header('Location: ./modif_cavalier.php');
+    header('Location: ./inscription_cavalier.php');
 }
 if (isset($_POST['suppr']))
 {
@@ -40,6 +40,6 @@ if (isset($_POST['suppr']))
 
     $uncavalier = new cavalier ($idc,'','','','');
     $uncavalier -> suppr_cavalier($uncavalier, $conn);
-    header('Location: ./modif_cavalier.php');
+    header('Location: ./inscription_cavalier.php');
 }
 ?>

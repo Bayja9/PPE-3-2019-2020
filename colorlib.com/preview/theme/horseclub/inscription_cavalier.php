@@ -143,17 +143,17 @@
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Balade<span>Devenez un cavalier</span></h1>
-<form>
+<h1>Inscription Cavalier<span>Devenez un cavalier</span></h1>
+<form action="operation_cavalier.php" method="post">
     <div class="section"><span>1</span>Les informations dont nous avons besoin</div>
     <div class="inner-wrap">
-        <label><input type="text" name="nom_cavalier" placeholder="Nom du cavalier"/></label>
-        <label><input type="text" name="prenom_cavalier" placeholder="Prénom du cavalier"/></label>
-        <label><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
+        <label for="cavalier"><input type="text" name="nom_cavalier" placeholder="Nom du cavalier"/></label>
+        <label for="cavalier"><input type="text" name="prenom_cavalier" placeholder="Prénom du cavalier"/></label>
+        <label for="cavalier"><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
-            <br><br><br><br>
+				<input type="submit" name="enregistrercav" value="Valider">
+        <br><br><br><br>
 		</div>
 </form>
           </div>
@@ -165,7 +165,7 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="js/easing.min.js"></script>
+    <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
