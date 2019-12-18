@@ -152,17 +152,12 @@
         <label for="cavalier"><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
     </div>
     <div class="button-group-area mt-40">
-<<<<<<< HEAD
 						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
             <br><br><br><br>
 
             <a class="primary-btn" href="modif_cavalier.php">Modification Cavalier</a> <a class="primary-btn" href="suppr_cavalier.php">Suppression Cavalier</a>
 
             <br><br>
-=======
-				<input type="submit" name="enregistrercav" value="Valider">
-        <br><br><br><br>
->>>>>>> 9601021ffee64f5eafa69aa3925ec38ef9663573
 		</div>
 </form>
           </div>
