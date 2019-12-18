@@ -27,28 +27,40 @@
       <table class="tftable" border="1">
       <table border="8" cellpadding="5" cellspacing="2" width="50%" >
        <tr>
+         <?php
+           include ('bdd.inc.php');
+           //Affichage des donnees
+   		      $requete = "SELECT * FROM chevaux";
+   		      $result = $conn -> query($requete);
+         ?>
         <p class="">
-          <th width="1%" style="color:#C40101">Nom Prenom</th>
-          <th width="1%" style="color:#C40101">Libellé Promenade</th>
-          <th width="1%" style="color:#C40101">Localisation</th>
-          <th width="1%" style="color:#C40101">Date de Début</th>
-          <th width="1%" style="color:#C40101">Date de Fin</th>Information Complémentaire
-          <th width="1%" style="color:#C40101">Information Complémentaire</th>
+          <th width="1%" style="color:#C40101">Nom des Chevaux</th>
+          <th width="1%" style="color:#C40101">Date de Naissance des Chevaux</th>
+          <th width="1%" style="color:#C40101">Taille des Chevaux</th>
+          <th width="1%" style="color:#C40101">Age des Chevaux</th>
+          <th width="1%" style="color:#C40101">Couleur des Chevaux</th>
+          <th width="1%" style="color:#C40101">Note des Chevaux</th>
           <th width="1%" style="color:#C40101">Ajouter</th>
           <th width="1%" style="color:#C40101">Modifier</th>
           <th width="1%" style="color:#C40101">Supprimer</th>
        </tr>
+       <?php
+      while($ligne=$result->fetch())
+         {
+       ?>
           <tr>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="24%" style="color:black"><b></b></td>
-             <td width="24%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><a href=inscription_concours.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
-             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
-             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
+             <td width="1%" style="color:black"><b><?php echo $ligne['nom_chevaux']?></b></td>
+             <td width="24%" style="color:black"><b><?php echo $ligne['dna_chevaux']?></b></td>
+             <td width="24%" style="color:black"><b><?php echo $ligne['taille_chevaux']?></b></td>
+             <td width="1%" style="color:black"><b><?php echo $ligne['couleur_chevaux']?></b></td>
+             <td width="1%" style="color:black"><b><?php echo $ligne['note_chevaux']?></b></td>
+             <td width="1%" style="color:black"><a href=inscription_chevaux.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td width="1%" style="color:black"><a href=operation_chevaux.php?id_chevaux=<?php echo $ligne['id_chevaux']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
+             <td width="1%" style="color:black"><a href=operation_chevaux.php?id_chevaux=<?php echo $ligne['id_chevaux']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>
+          <?php
+              }
+          ?>
       </div>
     </div>
     </table>
