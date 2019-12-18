@@ -3,7 +3,7 @@
   session_start();
   include "operation_cours.php";
   include "bdd.inc.php";
-  include "autocomp/css/style.css";
+  include "style.css";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -168,7 +168,7 @@
     </div>
     <hr>
     <div class="">
-      <input type="submit" name="enregistrerc" value="Enregistrer">
+      <input class="" type="submit" name="enregistrerc" value="Enregistrer">
             <br><br>
             <a class="primary-btn" href="modif_cours.php">Modification Cours</a> <a class="primary-btn" href="suppr_cours.php">Suppression Cours</a>
 		</div>
