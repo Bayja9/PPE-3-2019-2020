@@ -59,7 +59,7 @@
         </li>
         <li>
           <b>Tableau des Chevaux</b>
-          <a href="tableau_chevaux.php*">
+          <a href="tableau_chevaux.php">
           <img src="img/panel/curriculum-with-picture.png" height=300 alt="" />
           </a>
         </li>

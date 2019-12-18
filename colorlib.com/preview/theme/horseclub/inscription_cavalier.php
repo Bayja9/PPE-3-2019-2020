@@ -157,7 +157,16 @@
     </div>
     <hr>
     <div class="button-group-area mt-40">
+<<<<<<< HEAD
         <input type="submit" class="genric-btn danger radius" name="enregistrercav" value="Enregistrer">
+=======
+						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
+            <br><br><br><br>
+
+            <a class="primary-btn" href="modif_cavalier.php">Modification Cavalier</a> <a class="primary-btn" href="suppr_cavalier.php">Suppression Cavalier</a>
+
+            <br><br>
+>>>>>>> 9080721209bf472cc771607d78b69058d8f46538
 		</div>
 </form>
           </div>

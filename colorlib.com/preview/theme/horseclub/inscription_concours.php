@@ -165,7 +165,9 @@
     </div>
     <div class="button-group-area mt-40">
 						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
-            <br><br><br>  <br><br><br>
+            <br><br>
+            <a class="primary-btn" href="modif_concours.php">Modification Concours</a> <a class="primary-btn" href="suppr_concours.php">Suppression Concours</a>
+            <br><br>
 		</div>
 </form>
 </div>

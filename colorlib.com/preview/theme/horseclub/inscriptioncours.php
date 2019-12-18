@@ -3,6 +3,7 @@
   session_start();
   include "operation_cours.php";
   include "bdd.inc.php";
+  include "style.css";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -165,9 +166,10 @@
         <label>Fin cours<input type="date" name="date_fin_cours" /></label>
     </div>
     <hr>
-    <div class="button-group-area mt-40">
-			<input type="submit" class="genric-btn danger radius" name="enregistrerc" value="Enregistrer">
-            <br><br><br>  <br><br><br>
+    <div class="">
+      <input class="" type="submit" name="enregistrerc" value="Enregistrer">
+            <br><br>
+            <a class="primary-btn" href="modif_cours.php">Modification Cours</a> <a class="primary-btn" href="suppr_cours.php">Suppression Cours</a>
 		</div>
 </form>
 </div>

@@ -29,6 +29,7 @@ class membre
 		/* ---------------------- */
 
 			Public function membre ( $idm, $nom_mem, $pre_mem, $dna_mem, $mail_mem, $tel_mem, $log_mem, $mdp_membre, $etat_mem)
+
 			{
 				$this -> id_membre = $idm;
 				$this -> nom_membre = $nom_mem;
@@ -237,7 +238,7 @@ class membre
 					print $SQL = " SELECT *  From membre WHERE id_membre= '$idm'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
 					return $Res = $Req -> fetch ();
-				
+
 
 
 

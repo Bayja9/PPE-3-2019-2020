@@ -153,9 +153,10 @@
         <label><input type="text" name="lib_galop" placeholder="Libellé Galop" /></label>
 
     </div>
-    <div class="button-group-area mt-40">
-			 <input type="submit" class="genric-btn danger radius" name="enregistrerg" value="Enregistrer">
-            <br><br><br>  <br><br><br>
+    <div class="button">
+			 <input type="submit" class="genric" name="enregistrerg" value="Enregistrer"/>
+            <br><br>
+            <a class="primary-btn" href="modif_galop.php">Modification Galop</a> <a class="primary-btn" href="suppr_galop.php">Suppression Galop</a>
 		</div>
 </form>
 </div>

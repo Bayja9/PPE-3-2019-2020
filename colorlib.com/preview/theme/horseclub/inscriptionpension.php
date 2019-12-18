@@ -161,8 +161,10 @@
         <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
-            <br><br><br>  <br><br><br>
+						<a href="#" class="genric-btn danger radius">Valider Pension</a>
+            <br><br>
+            <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
+            <br><br>
 		</div>
 </form>
 </div>

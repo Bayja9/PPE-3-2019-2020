@@ -27,28 +27,35 @@
       <table class="tftable" border="1">
       <table border="8" cellpadding="5" cellspacing="2" width="50%" >
        <tr>
+         <?php
+           include ('bdd.inc.php');
+           //Affichage des donnees
+             $requete = "SELECT * FROM pension";
+             $result = $conn -> query($requete);
+         ?>
         <p class="">
-          <th width="1%" style="color:#C40101">Nom Prenom</th>
-          <th width="1%" style="color:#C40101">Libellé Promenade</th>
-          <th width="1%" style="color:#C40101">Localisation</th>
-          <th width="1%" style="color:#C40101">Date de Début</th>
-          <th width="1%" style="color:#C40101">Date de Fin</th>Information Complémentaire
-          <th width="1%" style="color:#C40101">Information Complémentaire</th>
+          <th width="1%" style="color:#C40101">Libelle Pension</th>
+          <th width="1%" style="color:#C40101">Date Début Pension</th>
+          <th width="1%" style="color:#C40101">Date Fin Pension</th>
           <th width="1%" style="color:#C40101">Ajouter</th>
           <th width="1%" style="color:#C40101">Modifier</th>
           <th width="1%" style="color:#C40101">Supprimer</th>
        </tr>
+       <?php
+      while($ligne=$result->fetch())
+        {
+       ?>
           <tr>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="24%" style="color:black"><b></b></td>
-             <td width="24%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><b></b></td>
-             <td width="1%" style="color:black"><a href=inscription_concours.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
-             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
-             <td width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
+             <td width="24%" style="color:black"><b><?php echo $ligne['lib_pension']?></b></td>
+             <td width="5%" style="color:black"><b><?php echo $ligne['date_debut_pension']?></b></td>
+             <td width="5%" style="color:black"><b><?php echo $ligne['date_fin_pension']?></b></td>
+             <td width="1%" style="color:black"><a href=inscription_pension.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td width="1%" style="color:black"><a href=operation_pension.php?id_pension=<?php echo $ligne['id_pension']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
+             <td width="1%" style="color:black"><a href=operation_pension.php?id_pension=<?php echo $ligne['id_pension']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>
+          <?php
+        }
+           ?>
       </div>
     </div>
     </table>
