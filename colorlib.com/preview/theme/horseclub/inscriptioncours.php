@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
   session_start();
-  include "operation_cours.php";
   include "bdd.inc.php";
   include "style.css";
 ?>

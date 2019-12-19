@@ -210,7 +210,7 @@ class chevaux
 					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
-					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$poids_che', '$origin_che', '$util_che', '0')";
+					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$note_che', '$poids_che', '$origin_che', '$util_che', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
 				}
 
