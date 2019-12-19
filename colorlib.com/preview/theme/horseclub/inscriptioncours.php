@@ -161,8 +161,8 @@
         <label><input type="text" name="libelle_cours" placeholder="Libellé cours" /></label>
         <div class="section">Code Postal</div>
         <div class="inner-wrap">
-            <textarea class="form-control" id="nom_id" name="localisation_cours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
-            <ul id="nom_list_id"></ul>
+          <textarea class="form-control" id="nom_id" name="localisation_cours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+          <ul id="nom_list_id"></ul>
         </div>
 
   <div class="section"><span>2</span>Prendre un repas</div>

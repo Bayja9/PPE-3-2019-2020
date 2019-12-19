@@ -152,7 +152,6 @@
 
         $uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
         $t = $uncheval -> affiche_chevaux_total($uncheval, $conn);
-
 ?>
 
 <?php
