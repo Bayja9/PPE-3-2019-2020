@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "bdd.inc.php";
+  include "class_chevaux.php";
+
 ?>
 <html lang="zxx" class="no-js">
 

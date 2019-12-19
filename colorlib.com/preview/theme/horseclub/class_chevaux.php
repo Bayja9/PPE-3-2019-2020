@@ -21,10 +21,13 @@ class chevaux
     Private $sexe_chevaux;
     Private $qualite_chevaux;
 		Private $poids_chevaux;
-		Private $note_chevaux;
 		Private $origine_chevaux;
 		Private $utilisation_chevaux;
 		Private $etat_chevaux;
+		Private $note_chevaux;
+
+
+
 
 
 		/* ---------------------- */
@@ -232,7 +235,7 @@ class chevaux
 
 					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
 					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', note_chevaux = "$note_che", poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
+					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', note_chevaux = '$note_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
 					WHERE id_chevaux = '$id_che'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
   session_start();
-  include "class_galop.php";
   include "bdd.inc.php";
 ?>
 <html lang="zxx" class="no-js">
