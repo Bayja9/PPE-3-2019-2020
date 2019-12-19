@@ -21,11 +21,10 @@ if (isset($_POST['enregistrerche']))
     $poids_che=$_POST['poids_chevaux'];
     $origin_che=$_POST['origine_chevaux'];
     $util_che=$_POST['utilisation_chevaux'];
-    echo $note_che;
 
     $deschevaux = new chevaux (NULL, $nom_che, $dna_che, $taille_che, $coul_che, $robe_che, $sexe_che, $qual_che, $note_che, $poids_che, $origin_che, $util_che, '0');
     $deschevaux -> ajout_chevaux($uncheval, $conn);
-    //header('Location: ./modif_chevaux.php');
+    header('Location: ./inscriptionchevaux.php');
 
 }
 if (isset($_POST['modifierche']))

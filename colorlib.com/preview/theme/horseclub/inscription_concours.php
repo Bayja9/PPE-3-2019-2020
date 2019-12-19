@@ -148,7 +148,7 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Concours<span>Inscrivez Vous</span></h1>
-<form>
+<form action="operation_concours.php" method="post">
     <div class="section"><span>1</span>Information sur le concours</div>
     <div class="inner-wrap">
         <textarea class="form-control" name="nom_concours" rows="1" cols="80" placeholder="Nom du concours"></textarea>
@@ -156,10 +156,11 @@
         <label><input type="date" name="date_fin_concours" placeholder="Date fin Concours" /></label>
         <textarea class="form-control" name="lib_concours" rows="1" cols="80" placeholder="Libellé du concours"></textarea>
     </div>
+    <div>
+        <input type="submit" name="enregistrercon" value="Enregistrer"/>
+    </div>
     <hr>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
-            <br><br>
             <a class="primary-btn" href="modif_concours.php">Modification Concours</a> <a class="primary-btn" href="suppr_concours.php">Suppression Concours</a>
             <br><br>
 		</div>
