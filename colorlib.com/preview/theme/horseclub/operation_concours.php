@@ -6,7 +6,7 @@ include "class_concours.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrercon']))
 {
 
     $id_con=$_SESSION['id_concours'];
@@ -23,7 +23,7 @@ if (isset($_POST['enregistrerd']))
     header('Location: ./modif_concours.php');
 
 }
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifiercon']))
 {
 
     $id_con=$_SESSION['id_concours'];

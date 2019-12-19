@@ -150,8 +150,6 @@
     <div class="section"><span>1</span>Information sur le Galop</div>
     <div class="inner-wrap">
         <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
-        <label><input type="text" name="lib_galop" placeholder="Libellé Galop" /></label>
-
     </div>
     <div class="button">
 			 <input type="submit" class="genric" name="enregistrerg" value="Enregistrer"/>

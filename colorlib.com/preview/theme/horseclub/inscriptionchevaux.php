@@ -133,23 +133,27 @@
 <form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Information sur le cheval</div>
     <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"></textarea>
+      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
       <br>
       <input type="date" name="dna_chevaux"/>
       <br>
-      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"></textarea>
+      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"></textarea>
+      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"></textarea>
+      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"></textarea>
+      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"></textarea>
+      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"></textarea>
+      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"></textarea>
+      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="origine_chevaux" rows="1" cols="80" placeholder="Origine du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="utilisation_chevaux" rows="1" cols="80" placeholder="Utilisation du cheval"/></textarea>
     <hr>
   </div>
     <div class="button-group-area mt-40">
