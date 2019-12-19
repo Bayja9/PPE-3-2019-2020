@@ -95,7 +95,7 @@
 	                      <ul>
 	                  <li><a href="connexion\modifier-profil">Profil</a></li>
 	                  <li><a href="panel">Pannel Admin</a></li>
-	                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+	                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
 	                </li>
 	                      </ul>
 	                    <?php
@@ -103,8 +103,8 @@
 	                    else {
 	                      ?>
 	                <li><a href="index.php">Accueil</a></li>
-	                <li><a href="about.php">À propos</a></li>
-	                <li class="menu-active"><a href="service">Services</a>
+	                <li class="menu-active"><a href="about">À propos</a></li>
+	                <li><a href="service">Services</a>
 	                  <ul>
 	                    <li><a href="training">Entraînements</a></li>
 	                    <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
@@ -115,7 +115,7 @@
 	                </ul>
 	                <li><a href="pricing">Prix</a></li>
 	                <li><a href="contact">Contact</a></li>
-	                <li><a href="connexion\connexion.php">Connection</a></li>
+	                <li><a href="connexion\connexion.php">Connexion</a></li>
 	                <?php
 	                  }
 	                ?>
@@ -158,7 +158,7 @@
 							<p>
 								Nous, on aime bien rigoler ! Autant chez les adultes que chez les enfants d’ailleurs… Toute occasion est bonne pour se réunir et partager un bon moment autour d’une table remplie de bonnes choses à déguster. Et on aime bien les challenges aussi… alors à vos paris !
 								<br><br>
-								Cavaliers du centre équestre, choisissez la formule qui vous correspond et s’adapte à vos objectifs. Que vous soyez de passage en Corrèze ou que vous souhaitiez monter à cheval toute l’année, vous trouverez une formule pour vous satisfaire. Notez également que nous mettons en place des facilités de paiement pour étaler vos règlement de forfaits et que les chèques vacances sont acceptés pour le règlement des stages.
+								Cavaliers du centre équestre, choisissez la formule qui vous correspond et s’adapte à vos objectifs. Que vous soyez de passage en Corrèze ou que vous souhaitiez monter à cheval toute l’année, vous trouverez une formule pour vous satisfaire. Notez également que nous mettons en place des facilités de paiement pour étaler vos règlements de forfaits et que les chèques vacances sont acceptés pour le règlement des stages.
 								<br><br>
 								Propriétaires, choisissez parmi de nombreuses options et déterminez la pension adaptée à vos besoins et à ceux de votre cheval. L’ensemble de l’équipe du centre équestre est à votre écoute afin de mettre en place un régime alimentaire adapté. Deux moniteurs Brevet d’État (BE) sont à vos côtés pour vous conseiller et vous orienter dans votre travail à cheval.
 							</p>
@@ -232,21 +232,23 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 about-video-left">
-							<h6 class="text-uppercase">"TEXTE..."</h6>
-							<h1>
-							"TEXTE..." <br>
+							<h6 class="text-uppercase">Présentation</h6>
+							<br>
+							<p>
+								<span>Le centre équestre / poney club des Ecuries de Brive-la-Gaillarde propose principalement : </span>
+							</p>
+							<p>
+								<span>- Des cours d’équitation pour tous :</span>  à partir de 18 mois, du débutant au confirmé, tout au long de l’année ! Au programme : dressage, obstacle, ballades, jeux... en cours collectifs homogènes.
+								<br><br>
+								- La découverte de plusieurs disciplines avec des cours hebdomadaires de <span>voltige, pony-games, horse ball, equifeel !</span>
+								<br><br>
+								- La prise de chevaux en pension box ou en pension pré.
 
-							</h1>
-							<p>
-								<span>"TEXTE..."</span>
 							</p>
-							<p>
-								"TEXTE..."
-							</p>
-							<a class="primary-btn" href="#">Commencez maintenant</a>
+							<a class="primary-btn" href="pricing">Commencez maintenant</a>
 						</div>
 						<div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex">
-							<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
+							<a class="play-btn" href="https://www.youtube.com/watch?v=LJKaPnRqKxs"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
 						</div>
 					</div>
 				</div>

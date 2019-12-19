@@ -94,7 +94,7 @@
 	                      <ul>
 	                  <li><a href="connexion\modifier-profil">Profil</a></li>
 	                  <li><a href="panel">Pannel Admin</a></li>
-	                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+	                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
 	                </li>
 	                      </ul>
 	                    <?php
@@ -114,7 +114,7 @@
 	                </ul>
 	                <li><a href="pricing">Prix</a></li>
 	                <li><a href="contact">Contact</a></li>
-	                <li><a href="connexion\connexion.php">Connection</a></li>
+	                <li><a href="connexion\connexion.php">Connexion</a></li>
 	                <?php
 	                  }
 	                ?>
@@ -133,7 +133,7 @@
 							<h1 class="text-white">
 								Services
 							</h1>
-							<p class="text-white link-nav"><a href="index.html">"Nous vous proposons un large choix de chevaux que vous pouvez consulter." </a>  <span class="lnr lnr-arrow-right"></span>  <a href="service.html"> Services</a></p>
+							<p class="text-white link-nav"><a href="index.html">Nous vous proposons un large choix de chevaux que vous pouvez consulter. </a>  <span class="lnr lnr-arrow-right"></span>  <a href="service.html"> Services</a></p>
 						</div>
 					</div>
 				</div>
@@ -147,7 +147,7 @@
 						<div class="col-md-9 pb-40 header-text text-center">
 							<h1 class="pb-10">Nos services</h1>
 							<p>
-								"Nous vous proposons un large choix de services que vous pouvez consulter."
+								Nous vous proposons un large choix de services que vous pouvez consulter.
 							</p>
 						</div>
 					</div>
@@ -161,7 +161,7 @@
 								<div class="details">
 									<a href="chevaux"><h4>Nos chevaux</h4></a>
 									<p>
-										"Nous vous proposons un large choix de services que vous pouvez consulter."
+										Nous vous proposons plusieurs races de chevaux et plusieurs races de poney.
 								</div>
 							</div>
 						</div>
@@ -172,9 +172,9 @@
 									<img class="img-fluid" src="img/pages/sp2.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="training"><h4>Entrainements personnels</h4></a>
+									<a href="training"><h4>Entraînement personnels Débutant</h4></a>
 									<p>
-										"TEXTE..."
+										Il existe plusieurs entraînement personnels pour les Débutant.
 								</div>
 							</div>
 						</div>
@@ -185,9 +185,9 @@
 									<img class="img-fluid" src="img/pages/sp3.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="#"><h4>Entrainements personnels</h4></a>
+									<a href="#"><h4>Entraînement personnels Amateur</h4></a>
 									<p>
-										"TEXTE..."
+										Il existe plusieurs entraînement personnels pour les Amateurs.
 								</div>
 							</div>
 						</div>
@@ -198,9 +198,9 @@
 									<img class="img-fluid" src="img/pages/sp4.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="#"><h4>Entrainements personnels</h4></a>
+									<a href="#"><h4>Entraînement personnels Professionnel</h4></a>
 									<p>
-										"TEXTE..."
+										Il existe plusieurs entraînement personnels pour les Professionnel.
 								</div>
 							</div>
 						</div>
@@ -211,9 +211,9 @@
 									<img class="img-fluid" src="img/pages/sp5.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="#"><h4>Entrainements personnels</h4></a>
+									<a href="#"><h4>Vos chevaux</h4></a>
 									<p>
-										"TEXTE..."
+										On peut prendre soin de vos chevaux en proposant plusieurs services.
 								</div>
 							</div>
 						</div>
@@ -224,9 +224,9 @@
 									<img class="img-fluid" src="img/pages/sp6.jpg" alt="">
 								</div>
 								<div class="details">
-									<a href="#"><h4>Entrainements personnels</h4></a>
+									<a href="#"><h4>Chambres</h4></a>
 									<p>
-										"TEXTE..."
+										Vous pouvez louer plusieurs chambres à des prix convenables pour le type de cheval/poney que vous avait.
 								</div>
 							</div>
 						</div>

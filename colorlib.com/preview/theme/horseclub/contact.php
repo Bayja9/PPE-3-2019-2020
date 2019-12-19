@@ -94,7 +94,7 @@
 							          <ul>
 							      <li><a href="connexion\modifier-profil">Profil</a></li>
 							      <li><a href="panel">Pannel Admin</a></li>
-							      <li><a href="connexion\deconnexion">Déconnection</a></li>
+							      <li><a href="connexion\deconnexion">Déconnexion</a></li>
 							    </li>
 							          </ul>
 											<?php
@@ -114,7 +114,7 @@
 												</ul>
 												<li><a href="pricing">Prix</a></li>
 												<li class="menu-active"><a href="contact">Contact</a></li>
-									<li><a href="connexion\connexion">Connection</a></li>
+									<li><a href="connexion\connexion">Connexion</a></li>
 									<?php
 										}
 									?>
@@ -175,7 +175,7 @@
 							</div>
 						</div>
 						<div class="col-lg-8">
-							<form class="form-area " id="myForm" action="https://bootstrap4cc.github.io/free-horse-riding-club-theme/mail.php" method="post" class="contact-form text-right">
+							<form class="form-area " id="myForm" action="pricing" method="post" class="contact-form text-right">
 								<div class="row">
 									<div class="col-lg-6 form-group">
 										<input name="name" placeholder="Entrer votre nom..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
@@ -187,7 +187,7 @@
 									</div>
 									<div class="col-lg-6 form-group">
 										<textarea class="common-textarea form-control" name="message" placeholder="Message..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-										<button class="primary-btn mt-20 text-white" style="float: right;">Envoyer</button>
+										<button type="submit" class="primary-btn mt-20 text-white" style="float: right;">Envoyer</button>
 
 									</div>
 								</div>

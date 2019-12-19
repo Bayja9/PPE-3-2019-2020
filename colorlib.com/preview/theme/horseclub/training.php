@@ -94,7 +94,7 @@
 	                      <ul>
 	                  <li><a href="connexion\modifier-profil">Profil</a></li>
 	                  <li><a href="panel">Pannel Admin</a></li>
-	                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+	                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
 	                </li>
 	                      </ul>
 	                    <?php
@@ -114,7 +114,7 @@
 	                </ul>
 	                <li><a href="pricing">Prix</a></li>
 	                <li><a href="contact">Contact</a></li>
-	                <li><a href="connexion\connexion.php">Connection</a></li>
+	                <li><a href="connexion\connexion.php">Connexion</a></li>
 	                <?php
 	                  }
 	                ?>
@@ -145,7 +145,7 @@
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-9 pb-40 header-text text-center">
-							<h1 class="pb-10">Nos programmes de formation</h1>
+							<h1 class="pb-10">Nos programmes de formations</h1>
 							<p>
 								Voici nos programmes de formations
 							</p>
@@ -163,7 +163,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											130 EUROS
 										</p>
 									</div>
 									<p>
@@ -183,7 +183,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											135 EUROS
 										</p>
 									</div>
 									<p>
@@ -203,7 +203,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											150 EUROS
 										</p>
 									</div>
 									<p>
@@ -223,7 +223,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											90 EUROS
 										</p>
 									</div>
 									<p>
@@ -243,7 +243,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											110 EUROS
 										</p>
 									</div>
 									<p>
@@ -263,7 +263,7 @@
 									<div class="title justify-content-between d-flex">
 										<a href="#"><h4>Formation</h4></a>
 										<p class="price">
-											$2500
+											130 EUROS
 										</p>
 									</div>
 									<p>

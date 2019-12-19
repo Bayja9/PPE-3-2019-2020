@@ -161,12 +161,16 @@
         <label><input type="text" name="libelle_cours" placeholder="Libellé cours" /></label>
         <div class="section">Code Postal</div>
         <div class="inner-wrap">
-            <textarea class="form-control" id="nom_id" name="localisation_cours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
-            <ul id="nom_list_id"></ul>
+          <textarea class="form-control" id="nom_id" name="localisation_cours" placeholder="Entrer votre code postal ou votre ville" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+          <ul id="nom_list_id"></ul>
         </div>
 
   <div class="section"><span>2</span>Prendre un repas</div>
+<<<<<<< HEAD
       <label><input type="text" name="repas" placeholder="Oui ou Non" /></label>
+=======
+          <label><input type="text" name="repas" placeholder="Entrer 'Oui' ou 'Non'" /></label>
+>>>>>>> d5e02e489ea6dc93963f38fa676440a5b88f3a7e
     </div>
     <hr>
     <div class="section"><span>3</span>Date enregistrement</div>
@@ -191,7 +195,7 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="js/easing.min.js"></script>
+    <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>

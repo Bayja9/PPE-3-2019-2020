@@ -34,17 +34,32 @@ if (isset($_POST['modifierc']))
     $repas=$_POST['repas'];
     $localisation_cours=$_POST['localisation_cours'];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5e02e489ea6dc93963f38fa676440a5b88f3a7e
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, '0');
-    $descours -> modif_cours($uncours, $conn);
+    $uncours -> modif_cours($uncours, $conn);
     header('Location: ./modifcours.php');
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5e02e489ea6dc93963f38fa676440a5b88f3a7e
 }
 if (isset($_POST['suppr']))
 {
 
     $id_cours=$_POST['id_cours'];
 
+<<<<<<< HEAD
     $uncours = new cours ($id_cours,'','','','','','','');
     $descours -> suppr_cours($uncours, $conn);
+=======
+
+    $uncours = new cours ($id_cours,'','','','','','','');
+    $uncours -> suppr_cours($uncours, $conn);
+
+>>>>>>> d5e02e489ea6dc93963f38fa676440a5b88f3a7e
     header('Location: ./inscriptioncours.php');
 }
 ?>

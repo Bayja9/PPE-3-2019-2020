@@ -129,6 +129,11 @@ class cours
 				 $this-> date_fin_cours = $date_fin_cours;
 			}
 
+			Public function set_repas ($repas)
+			{
+				 $this-> repas = $repas;
+			}
+
 			Public function set_localisation_cours ($localisation_cours)
 			{
 				 $this-> localisation_cours = $localisation_cours;
@@ -153,11 +158,12 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$repas = $objet->get_repas();
 					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 
 
-					print $SQL = " INSERT INTO cours values (NULL, '$nom_cours', '$lib_cours', '$date_deb_cours','$date_fin_cours','$localisation_cours', '0')";
+					print $SQL = " INSERT INTO cours values (NULL, '$nom_cours', '$lib_cours', '$date_deb_cours', '$date_fin_cours', '$repas', '$localisation_cours', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout cours ');
 				}
 
@@ -168,12 +174,13 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$repas = $objet->get_repas();
 					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 
 
 					print $SQL = "UPDATE cours SET id_cours = '$id_cours', nom_cours  = '$nom_cours',
-					libelle_cours = '$lib_cours', date_debut_cours = '$date_deb_cours', date_fin_cours = '$date_fin_cours', localisation_cours = '$localisation_cours' WHERE id_cours = '$id_cours'";
+					libelle_cours = '$lib_cours', date_debut_cours = '$date_deb_cours', date_fin_cours = '$date_fin_cours', repas = '$repas', localisation_cours = '$localisation_cours' WHERE id_cours = '$id_cours'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification cours ');
 				}
 
@@ -193,6 +200,7 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$repas = $objet->get_repas();
 					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 

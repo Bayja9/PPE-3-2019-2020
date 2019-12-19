@@ -94,7 +94,7 @@
                       <ul>
                   <li><a href="connexion\modifier-profil">Profil</a></li>
                   <li><a href="panel">Pannel Admin</a></li>
-                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
                 </li>
                       </ul>
                     <?php
@@ -114,7 +114,7 @@
                 </ul>
                 <li><a href="pricing">Prix</a></li>
                 <li><a href="contact">Contact</a></li>
-                <li><a href="connexion\connexion.php">Connection</a></li>
+                <li><a href="connexion\connexion.php">Connexion</a></li>
                 <?php
                   }
                 ?>
@@ -158,11 +158,11 @@
                 <span>A Brive-la-Gaillarde</span>
               </p>
               <p>
-                Si nous accompagnons systématiquement les débutants lors de petites balades d'1h à 1h30, les cavaliers plus expérimentés pourront partir seuls en promenade, à la carte ! Ou accompagnés pour ne pas se perdre.
+                Si nous accompagnons systématiquement les débutants lors de petites balades d'1 h à 1 h 30, les cavaliers plus expérimentés pourront partir seuls en promenade, à la carte ! Ou accompagnés pour ne pas se perdre.
                 <br><br>
-                Nous tenons à préciser que soucieux de vous garantir un niveau de sécurité maximum, nous nous réservons le droit de refuser de trotter ou de galoper si nous jugeons le niveau trop faible, la promenade se fera au pas afin d'éviter tout risque d'accident. Évidement, si l'ensemble du groupe ne possède un niveau suffisant la balade s’effectuera en fonction de la personne la plus inexpérimentée.
+                Nous tenons à préciser que soucieux de vous garantir un niveau de sécurité maximum, nous nous réservons le droit de refuser de trotter ou de galoper si nous jugeons le niveau trop faible, la promenade se fera au pas afin d'éviter tout risque d'accident. Évidement, si l'ensemble du groupe ne possède pas un niveau suffisant la balade s’effectuera en fonction de la personne la plus inexpérimentée.
                 <br><br>
-                Si vous avez un niveau suffisant vous pourrez partir seul ou accompagné pour des balades aux trois allures de 1h à 3h.
+                Si vous avez un niveau suffisant, vous pourrez partir seul ou accompagné pour des balades aux trois allures de 1 h à 3 h.
                 <br><br>
                 Les promenades journée ne sont en général pas accompagnées, mais n'hésitez pas à suivre notre calendrier, nous essayerons de vous proposer plusieurs dates pour des balades organisées.
               </p>

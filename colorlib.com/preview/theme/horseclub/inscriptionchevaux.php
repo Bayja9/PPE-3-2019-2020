@@ -175,7 +175,7 @@
   </div>
     <div class="button-group-area mt-40">
 			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
-            <br><br><br>
+      <br><br><br>
 		</div>
 
     <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
