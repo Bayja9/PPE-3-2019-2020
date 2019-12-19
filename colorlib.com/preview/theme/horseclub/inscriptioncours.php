@@ -166,11 +166,10 @@
         </div>
 
   <div class="section"><span>2</span>Prendre un repas</div>
-<<<<<<< HEAD
+
       <label><input type="text" name="repas" placeholder="Oui ou Non" /></label>
-=======
+
           <label><input type="text" name="repas" placeholder="Entrer 'Oui' ou 'Non'" /></label>
->>>>>>> d5e02e489ea6dc93963f38fa676440a5b88f3a7e
     </div>
     <hr>
     <div class="section"><span>3</span>Date enregistrement</div>
