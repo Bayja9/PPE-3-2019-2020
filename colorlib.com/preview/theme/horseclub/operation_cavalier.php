@@ -3,16 +3,16 @@
 //require_once('login.inc.php');
 include "bdd.inc.php";
 include "class_cavalier.php";
-include "letraitementlogin.php";
+//include "letraitementlogin.php";
 
 
 if (isset($_POST['enregistrercav']))
 {
 
     $id_cav=$_SESSION['id_cavalier'];
-    $nom_cavalier=$_POST['nom_cavalier'];
-    $prenom_cavalier=$_POST['prenom_cavalier'];
-    $dna_cavalier=$_POST['dna_cavalier'];
+    $n=$_POST['nom_cavalier'];
+    $p=$_POST['prenom_cavalier'];
+    $dna=$_POST['dna_cavalier'];
 
 
     $uncavalier = new cavalier (NULL, $n, $p, $dna, '0');
@@ -24,9 +24,9 @@ if (isset($_POST['modifiercav']))
 {
 
     $id_cav=$_SESSION['id_cavalier'];
-    $nom_cavalier=$_POST['nom_cavalier'];
-    $prenom_cavalier=$_POST['prenom_cavalier'];
-    $dna_cavalier=$_POST['dna_cavalier'];
+    $n=$_POST['nom_cavalier'];
+    $p=$_POST['prenom_cavalier'];
+    $dna=$_POST['dna_cavalier'];
 
 
     $uncavalier = new cavalier (NULL, $n, $p, $dna, '0');

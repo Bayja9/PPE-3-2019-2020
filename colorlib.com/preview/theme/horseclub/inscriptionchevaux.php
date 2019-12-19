@@ -145,29 +145,31 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Chevaux<span>Inscrivez les chevaux</span></h1>
-<form>
+<form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Information sur le cheval</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Prénom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Âge" /></label>
-    </div>
+      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"></textarea>
+      <br>
+      <input type="date" name="dna_chevaux"/>
+      <br>
+      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"></textarea>
+      <br>
+      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"></textarea>
     <hr>
-    <div class="section"><span>1</span>Autres</div>
-    <div class="inner-wrap">
-              <label><input type="text" name="field2" placeholder="Date de Naissance" /></label>
-      <label><input type="text" name="field2" placeholder="Taille en M" /></label>
-      <label><input type="text" name="field2" placeholder="Couleur Cheval" /></label>
-      <label><input type="text" name="field2" placeholder="Note" /></label>
-    <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
-        <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
-    </div>
+  </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
-            <br><br>
-            <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
+			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
+            <br><br><br>  <br><br><br>
 		</div>
 </form>
 </div>
@@ -178,7 +180,7 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="js/easing.min.js"></script>
+    <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
