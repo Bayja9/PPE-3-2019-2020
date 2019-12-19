@@ -4,7 +4,7 @@
 ?>
 <html lang="zxx" class="no-js">
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Mobile Specific Meta -->
@@ -52,8 +52,8 @@
             </a>
             </div>
             <div class="col-lg-4 col-sm-4 menu-top-right">
-              <a class="tel" href="tel:06 12 12 00 54">06.12.12.00.54</a>
-              <a href="tel:06 12 12 00 54"><span class="lnr lnr-phone-handset"></span></a>
+              <a class="tel" href="tel:0612120054">06.12.12.00.54</a>
+              <a href="tel:0612120054"><span class="lnr lnr-phone-handset"></span></a>
             </div>
           </div>
         </div>
@@ -132,59 +132,63 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Inscription Chevaux
+              Promenades
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptionchevaux.php">Chevaux</a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscription_promenade.php"> Balades </a></p>
           </div>
         </div>
       </div>
     </section>
     <!-- End banner Area -->
+
     <!-- Formulaire -->
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Chevaux<span>Inscrivez les chevaux</span></h1>
-<form action="operation_chevaux.php" method="post">
-    <div class="section"><span>1</span>Information sur le cheval</div>
+<h1>Inscription Promenade<span>Inscrivez-vous pour une promenade à Cheval ou Poney</span></h1>
+<form>
+    <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
-      <br>
-      <input type="date" name="dna_chevaux"/>
-      <br>
-      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="origine_chevaux" rows="1" cols="80" placeholder="Origine du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="utilisation_chevaux" rows="1" cols="80" placeholder="Utilisation du cheval"/></textarea>
-    <hr>
-  </div>
+        <label>Libellé Promenade <input type="text" name="lib_promenade" value=""/></label>
+        <label>localisation <input type="text" name="localisation" value=""/></label>
+    </div>
+
+    <div class="section"><span>2</span>Date enregistrement Stage</div>
+    <div class="inner-wrap">
+        <label>Date de Début <input type="date" name="date_debut_promenade" value="date_debut_promenade"/></label>
+        <label>Date de Fin <input type="date" name="date_fin_promenade" value="date_fin_promenade" /></label>
+    </div>
+
+    <div class="section"><span>3</span>Information Complémentaire</div>
+        <div class="inner-wrap">
+        <textarea class="form-control" name="desc_promenade" value="" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+    </div>
     <div class="button-group-area mt-40">
-			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
-            <br><br><br>  <br><br><br>
+						<a href="operation_promenade.php" class="genric-btn danger radius">Valider mon Stage</a>
+            <br><br>
+            <a class="primary-btn" href="modif_promenade.php">Modification Promenade</a> <a class="primary-btn" href="suppr_promenade.php">Suppression Promenade</a>
+            <br><br>
 		</div>
 </form>
-</div>
-</center>
-<!-- Fin Formulaire -->
+          </div>
+        </div>
+      </section>
+    <!-- End upcoming-event Area -->
+
+
+    <!-- Start booking Area -->
+
+    <!-- End booking Area -->
+
+    <!-- start footer Area -->
+
+    <!-- End footer Area -->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-    <script src="js/easing.min.js"></script>
+      <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -200,5 +204,5 @@
     <script src="js/main.js"></script>
   </body>
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:54 GMT -->
 </html>
