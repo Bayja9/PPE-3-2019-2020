@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
   session_start();
-  include "operation_cours.php";
   include "bdd.inc.php";
   include "style.css";
 ?>
@@ -89,6 +88,7 @@
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
                         <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>
@@ -155,10 +155,9 @@
 
   <div class="section"><span>2</span>Prendre un repas</div>
         <p>
-    	Oui: <input type="radio" name="repas" /><br/>
-    	Non: <input type="radio" name="repas" /><br/>
+    	     Oui: <input type="radio" name="repas"/><br/>
+    	     Non: <input type="radio" name="repas"/><br/>
         </p>
-
     </div>
     <hr>
     <div class="section"><span>3</span>Date enregistrement</div>

@@ -101,4 +101,4 @@
             $.backstretch("connexion/assets/img/autre photo.jpg", {speed: 500});
         </script>
     </body>
-</html
+</html>

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "bdd.inc.php";
+  include "class_concours.php";
+  include "class_ville.php";
 ?>
 <html lang="zxx" class="no-js">
 
@@ -36,6 +39,9 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <link rel="stylesheet" href="autocomp/css/style.css" />
+    <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="autocomp/js/script.js"></script>
   </head>
   <body>
 
@@ -86,6 +92,7 @@
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
                         <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>
@@ -144,29 +151,27 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Concours<span>Inscrivez Vous</span></h1>
-<form>
-    <div class="section"><span>1</span>Information sur le concour</div>
+<form action='operation_concours.php' method='post'>
+    <div class="section"><span>1</span>Information sur le concours</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Nom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Prénom du Cheval" /></label>
-        <label><input type="text" name="field2" placeholder="Âge" /></label>
-    </div>
-    <hr>
-    <div class="section"><span>1</span>Autres</div>
-    <div class="inner-wrap">
-              <label><input type="text" name="field2" placeholder="Date de Naissance" /></label>
-      <label><input type="text" name="field2" placeholder="Taille en M" /></label>
-      <label><input type="text" name="field2" placeholder="Couleur Cheval" /></label>
-      <label><input type="text" name="field2" placeholder="Note" /></label>
-    <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
+        <textarea class="form-control" name="nom_concours" rows="1" cols="80" placeholder="Nom du concours"/></textarea>
+        <label><input type="date" name="date_debut_concours" placeholder="Date début Concours" /></label>
+        <label><input type="date" name="date_fin_concours" placeholder="Date fin Concours" /></label>
+        <textarea class="form-control" name="lib_concours" rows="1" cols="80" placeholder="Libellé du concours"/></textarea>
+        <br>
+        <div class="section"><span>2</span>Code Postal</div>
         <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+            <textarea class="form-control" id="nom_id" name="localisation_concours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+            <ul id="nom_list_id"></ul>
+        </div>
     </div>
+    <div>
+      		<input type="submit" name="enregistrercon" value="Enregistrer">
+    </div>
+
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
-            <br><br>
-            <a class="primary-btn" href="modif_concours.php">Modification Concours</a> <a class="primary-btn" href="suppr_concours.php">Suppression Concours</a>
+
+
             <br><br>
 		</div>
 </form>

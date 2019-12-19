@@ -88,6 +88,7 @@
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
                         <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>
@@ -196,8 +197,12 @@
 		</div>
 
 
+<<<<<<< HEAD
     <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
 
+=======
+    <a class="primary-btn" href="modif_stage.php">Modification Stage</a> <a class="primary-btn" href="suppr_stage.php">Suppression Stage</a>
+>>>>>>> 702acedb7f3cd187ca5afc2e2acaed72f682129b
     <br><br>
 
 </form>

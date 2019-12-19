@@ -69,14 +69,26 @@
                   <li><a href="service">Services</a>
                     <ul>
                       <li><a href="training">Entraînements</a></li>
-                      <li><a href="calendrier/exemples/activite">Activités</a></li>
+                      <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
                       <li><a href="stages">Stages</a></li>
                       <li><a href="balades">Balades</a></li>
                       <li><a href="events">Événements</a></li>
                     </li>
                   </ul>
+                  <li><a href="#">Inscription</a>
+                    <ul>
+                        <li><a href="inscription_cavalier">Inscription Cavalier</a></li>
+                        <li><a href="inscription_concours">Inscription Concours</a></li>
+                        <li><a href="inscription_promenade">Inscription Promenade</a></li>
+                        <li><a href="inscriptionbalade">Inscription Balade</a></li>
+                        <li><a href="inscriptioncours">Inscription Cours</a></li>
+                        <li><a href="inscriptiongalop">Inscription Galop</a></li>
+                        <li><a href="inscriptionpension">Inscription Pension</a></li>
+                        <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
+                    </li>
+                  </ul>
                   <li><a href="pricing">Prix</a></li>
-                  <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                   <li><a href="contact">Contact</a></li>
                     <li><a href="connexion\modifier-profil">Mon Compte</a>
                       <ul>
@@ -89,21 +101,20 @@
                   }
                     else {
                       ?>
-                      <li><a href="index">Accueil</a></li>
-                      <li><a href="about">À propos</a></li>
-                      <li><a href="service">Services</a>
-                        <ul>
-                          <li><a href="training">Entraînements</a></li>
-                          <li><a href="calendrier/exemples/activite">Activités</a></li>
-                          <li><a href="stages">Stages</a></li>
-                          <li><a href="balades">Balades</a></li>
-                          <li><a href="events">Événements</a></li>
-                        </li>
-                      </ul>
-                      <li><a href="pricing">Prix</a></li>
-                      <li class="menu-active"><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
-                      <li><a href="contact">Contact</a></li>
-                <li><a href="connexion\connexion">Connection</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="about.php">À propos</a></li>
+                <li class="menu-active"><a href="service">Services</a>
+                  <ul>
+                    <li><a href="training">Entraînements</a></li>
+                    <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
+                    <li><a href="stages">Stages</a></li>
+                    <li><a href="balades">Balades</a></li>
+                    <li><a href="events">Événements</a></li>
+                  </li>
+                </ul>
+                <li><a href="pricing">Prix</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="connexion\connexion.php">Connection</a></li>
                 <?php
                   }
                 ?>

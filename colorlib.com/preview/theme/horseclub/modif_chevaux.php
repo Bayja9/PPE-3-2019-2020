@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
   session_start();
   include "bdd.inc.php";
+  include "class_chevaux.php";
+
 ?>
 <html lang="zxx" class="no-js">
 
@@ -118,8 +119,8 @@
                 <li><a href="contact">Contact</a></li>
                 <li><a href="connexion\connexion.php">Connection</a></li>
                 <?php
-                  }
-                ?>
+              }
+              ?>
               </ul>
             </nav><!-- #nav-menu-container -->
           </div>
@@ -133,9 +134,9 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Inscription Galop
+              Modification Chevaux
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptiongalop.php">Galop</a></p>
+            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptionchevaux.php">Chevaux</a></p>
           </div>
         </div>
       </div>
@@ -143,21 +144,60 @@
     <!-- End banner Area -->
     <!-- Formulaire -->
 <center>
+  <?php
+    if (isset($_POST['modif']))
+      {
+        $id_che=$_POST['choix_chevaux'];
+
+        $uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
+        $uncheval -> affiche_chevaux_total($uncheval, $conn);
+?>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Galop<span>Inscrivez les galops</span></h1>
-<form action="operation_galop.php" method="post">
-    <div class="section"><span>1</span>Information sur le Galop</div>
+<h1>Modification Chevaux<span>Modifier les chevaux</span></h1>
+<form action="operation_chevaux.php" method="post">
+    <div class="section"><span>1</span>Modifier le cheval</div>
     <div class="inner-wrap">
-        <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
-    </div>
-    <div class="button">
-			 <input type="submit" class="genric" name="enregistrerg" value="Enregistrer"/>
-            <br><br>
-            <a class="primary-btn" href="modif_galop.php">Modification Galop</a> <a class="primary-btn" href="suppr_galop.php">Suppression Galop</a>
+      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
+      <br>
+      <input type="date" name="dna_chevaux"/>
+      <br>
+    <hr>
+  </div>
+    <div class="button-group-area mt-40">
+			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
+            <br><br><br>
 		</div>
+
+    <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
+    <br><br>
 </form>
 </div>
+<?php
+}
+ ?>
+    <div class="form-style-10">
+      <br><br>
+<h1>Modification Chevaux<span>Modifier les chevaux</span></h1>
+<form action="operation_chevaux.php" method="post">
+    <div class="section"><span>1</span>Modifier le cheval</div>
+    <div class="inner-wrap">
+      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
+      <br>
+      <input type="date" name="dna_chevaux"/>
+      <br>
+    <hr>
+  </div>
+    <div class="button-group-area mt-40">
+     <input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
+            <br><br><br>
+   </div>
+
+    <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
+    <br><br>
+</form>
+</div>
+
 </center>
 <!-- Fin Formulaire -->
 
@@ -165,7 +205,7 @@
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="js/easing.min.js"></script>
+    <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>

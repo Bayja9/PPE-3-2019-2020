@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="header">
-          
+
         </div><!-- header -->
         <h1 class="main_title">Autocomplétion</h1>
         <div class="content">
@@ -19,13 +19,13 @@
                 <div class="label_div">Saisir une lettre: </div>
                 <div class="input_container">
                     <input type="text" id="nom_id" onkeyup="autocomplet()">
-					<input type="text" id="nom2_id">
+					          <input type="text" id="nom2_id">
                     <ul id="nom_list_id"></ul>
                 </div>
             </form>
-        </div><!-- content -->    
+        </div><!-- content -->
         <div class="footer">
-          
+
         </div><!-- footer -->
     </div><!-- container -->
 </body>

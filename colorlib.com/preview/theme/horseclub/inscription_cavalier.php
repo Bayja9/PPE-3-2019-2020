@@ -86,6 +86,7 @@
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
                         <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                     </li>
                   </ul>
                   <li><a href="pricing">Prix</a></li>
@@ -144,15 +145,21 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Cavalier<span>Devenez un cavalier</span></h1>
-<form action="operation_cavalier.php" method="post">
-    <div class="section"><span>1</span>Les informations dont nous avons besoin</div>
+<form action='operation_cavalier.php' method='post'>
+  <hr>
+  <div class="inner-wrap">
+    <div class="section"><span>1</span>Informations du cavalier</div>
     <div class="inner-wrap">
-        <label for="cavalier"><input type="text" name="nom_cavalier" placeholder="Nom du cavalier"/></label>
-        <label for="cavalier"><input type="text" name="prenom_cavalier" placeholder="Prénom du cavalier"/></label>
-        <label for="cavalier"><input type="date" name="dna_cavalier" placeholder="Date de naissance"/></label>
+      <textarea class="form-control" name="nom_cavalier" rows="1" cols="80" placeholder="Nom du cavalier"></textarea>
+      <br>
+      <textarea class="form-control" name="prenom_cavalier" rows="1" cols="80" placeholder="Prénom du cavalier"></textarea>
+      <br>
+      <label for="cavalier">Date de naissance<input type="date" name="dna_cavalier" /></label>
     </div>
+    <hr>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider ma Balade</a>
+
+        <input type="submit" class="genric-btn danger radius" name="enregistrercav" value="Enregistrer">
             <br><br><br><br>
 
             <a class="primary-btn" href="modif_cavalier.php">Modification Cavalier</a> <a class="primary-btn" href="suppr_cavalier.php">Suppression Cavalier</a>

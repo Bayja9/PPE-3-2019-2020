@@ -6,7 +6,7 @@ include "class_pension.php";
 include "letraitementlogin.php";
 
 
-if (isset($_POST['enregistrerd']))
+if (isset($_POST['enregistrerp']))
 {
 
     $idp=$_SESSION['id_pension'];
@@ -16,11 +16,11 @@ if (isset($_POST['enregistrerd']))
 
 
     $unepension = new pension (NULL, $date_debut_p, $date_fin_p, $lib_pension, '0');
-    $despensions -> ajout_pension($unepension, $conn);
-    header('Location: ./modif_pension.php');  
+    $unepension -> ajout_pension($unepension, $conn);
+    header('Location: ./inscriptionpension.php');
 
 }
-if (isset($_POST['modifierd']))
+if (isset($_POST['modifierp']))
 {
 
     $idp=$_SESSION['id_pension'];
@@ -30,7 +30,7 @@ if (isset($_POST['modifierd']))
 
 
     $unepension = new pension (NULL, $date_debut_p, $date_fin_p, $lib_pension, '0');
-    $despensions -> modif_pension($unepension, $conn);
+    $unepesion -> modif_pension($unepension, $conn);
     header('Location: ./modif_pension.php');
 }
 if (isset($_POST['suppr']))
@@ -39,7 +39,7 @@ if (isset($_POST['suppr']))
     $idp=$_SESSION['id_pension'];
 
     $unepension = new pension ($id_pension,'','','','');
-    $despensions -> suppr_pension($deschevaux, $conn);
-    header('Location: ./modif_chevaux.php');
+    $unepension -> suppr_pension($unepension, $conn);
+    header('Location: ./suppr_pension.php');
 }
 ?>

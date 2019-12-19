@@ -16,7 +16,6 @@ class chevaux
 		Private $nom_chevaux;
 		Private $dna_chevaux;
 		Private $taille_chevaux;
-		Private $age_chevaux;
 		Private $couleur_chevaux;
     Private $robe_chevaux;
     Private $sexe_chevaux;
@@ -25,24 +24,24 @@ class chevaux
 		Private $origine_chevaux;
 		Private $utilisation_chevaux;
 		Private $etat_chevaux;
-
+		Private $note_chevaux;
 
 		/* ---------------------- */
 		/* class Chevaux Constructeur */
 		/* ---------------------- */
 
-			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $age_che, $couleur_che, $robe_che, $sexe_che, $qual_che, $poids_che, $origin_che, $util_che, $etat_che)
+			Public function chevaux ( $id_che, $nom_che, $dna_che, $taille_che, $coul_che, $robe_che, $sexe_che, $qual_che, $poids_che, $note_che, $origin_che, $util_che, $etat_che)
 			{
 				$this -> id_chevaux = $id_che;
 				$this -> nom_chevaux = $nom_che;
 				$this -> dna_chevaux = $dna_che;
 				$this -> taille_chevaux = $taille_che;
-				$this -> age_chevaux = $age_che;
 				$this -> couleur_chevaux = $coul_che;
 				$this -> robe_chevaux = $robe_che;
         $this -> sexe_chevaux = $sexe_che;
         $this -> qualite_chevaux = $qual_che;
 				$this -> poids_chevaux = $poids_che;
+				$this -> note_chevaux = $note_che;
 				$this -> origine_chevaux = $origin_che;
 				$this -> utilisation_chevaux = $util_che;
 				$this -> etat_chevaux = $etat_che;
@@ -50,37 +49,15 @@ class chevaux
 			}
 
 			/* ---------------------- */
-			/* fonction Chevaux getalldata */
-			/* ---------------------- */
-
-			public function getallchevaux()
-			{
-				$data = $this->id_chevaux;
-				$data = $data.$this->nom_chevaux;
-				$data = $data.$this->dna_chevaux;
-				$data = $data.$this->taille_chevaux;
-				$data = $data.$this->couleur_chevaux;
-				$data = $data.$this->robe_chevaux;
-				$data = $data.$this->sexe_chevaux;
-				$data = $data.$this->qualite_chevaux;
-				$data = $data.$this->poids_chevaux;
-				$data = $data.$this->origine_chevaux;
-				$data = $data.$this->utilisation_chevaux;
-				$data = $data.$this->etat_chevaux;
-
-				return $data;
-			}
-
-			/* ---------------------- */
 			/* class Chevaux GET */
 			/* ---------------------- */
 
-			Public function get_id_chevaux ()
+			Public function get_id_chevaux()
 			{
 				return $this-> id_chevaux;
 			}
 
-			Public function get_nom_chevaux ()
+			Public function get_nom_chevaux()
 			{
 				return $this-> nom_chevaux;
 			}
@@ -93,11 +70,6 @@ class chevaux
 			Public function  get_taille_chevaux ()
 			{
 				return $this-> taille_chevaux;
-			}
-
-			Public function  get_age_chevaux ()
-			{
-				return $this-> age_chevaux;
 			}
 
 			Public function  get_couleur_chevaux ()
@@ -118,6 +90,11 @@ class chevaux
 			Public function  get_qualite_chevaux ()
 			{
 				return $this-> qualite_chevaux;
+			}
+
+			Public function  get_note_chevaux ()
+			{
+				return $this-> note_chevaux;
 			}
 
 			Public function  get_poids_chevaux ()
@@ -165,11 +142,6 @@ class chevaux
 				 $this-> taille_chevaux = $taille_che;
 			}
 
-			Public function set_age_chevaux ($age_che)
-			{
-				 $this-> age_chevaux = $age_che;
-			}
-
 			Public function set_couleur_chevaux ($coul_che)
 			{
 				 $this-> couleur_chevaux = $coul_che;
@@ -188,6 +160,11 @@ class chevaux
 			Public function set_qualite_chevaux ($qual_che)
 			{
 				 $this-> qualite_chevaux = $qual_che;
+			}
+
+			Public function set_note_chevaux ($note_che)
+			{
+				 $this-> note_chevaux = $note_che;
 			}
 
 			Public function set_poids_chevaux ($poids_che)
@@ -222,17 +199,17 @@ class chevaux
 					$nom_che = $objet->get_nom_chevaux();
 					$dna_che = $objet->get_datenaissance_chevaux();
 					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
 					$coul_che = $objet->get_couleur_chevaux();
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$note_che = $objet->get_note_chevaux();
 					$poids_che = $objet->get_poids_chevaux();
 					$origin_che = $objet->get_origine_chevaux();
 					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
-					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$age_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$poids_che', '$origin_che', '$util_che', '0')";
+					print $SQL = " INSERT INTO chevaux values (NULL, '$nom_che', '$dna_chevaux', '$dna_che', '$taille_che', '$coul_che', '$robe_che', '$sexe_che', '$qual_che', '$note_che', '$poids_che', '$origin_che', '$util_che', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout chevaux ');
 				}
 
@@ -242,19 +219,20 @@ class chevaux
 					$nom_che = $objet->get_nom_chevaux();
 					$dna_che = $objet->get_datenaissance_chevaux();
 					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
 					$coul_che = $objet->get_couleur_chevaux();
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$note_che = $objet->get_note_chevaux();
 					$poids_che = $objet->get_poids_chevaux();
 					$origin_che = $objet->get_origine_chevaux();
 					$util_che = $objet->get_utilisation_chevaux();
 					$etat_che = $objet->get_etat_chevaux();
 
 					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
-					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', age_chevaux = '$age_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
+					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', couleur_chevaux = '$coul_che',
+					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che',
+					note_chevaux = '$note_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
 					WHERE id_chevaux = '$id_che'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}
@@ -265,11 +243,11 @@ class chevaux
 					$nom_che = $objet->get_nom_chevaux();
 					$dna_che = $objet->get_datenaissance_chevaux();
 					$taille_che = $objet->get_taille_chevaux();
-					$age_che = $objet->get_age_chevaux();
 					$coul_che = $objet->get_couleur_chevaux();
 					$robe_che = $objet->get_robe_chevaux();
 					$sexe_che = $objet->get_sexe_chevaux();
 					$qual_che = $objet->get_qualite_chevaux();
+					$note_che = $objet->get_note_chevaux();
 					$poids_che = $objet->get_poids_chevaux();
 					$origin_che = $objet->get_origine_chevaux();
 					$util_che = $objet->get_utilisation_chevaux();
