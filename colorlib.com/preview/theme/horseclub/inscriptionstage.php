@@ -203,7 +203,7 @@
     </section>
 
 
-    <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
+    <a class="primary-btn" href="modif_stage.php">Modification Stage</a> <a class="primary-btn" href="suppr_stage.php">Suppression Stage</a>
     <br><br>
 </form>
 </div>

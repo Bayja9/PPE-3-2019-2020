@@ -26,10 +26,6 @@ class chevaux
 		Private $etat_chevaux;
 		Private $note_chevaux;
 
-
-
-
-
 		/* ---------------------- */
 		/* class Chevaux Constructeur */
 		/* ---------------------- */
@@ -56,12 +52,12 @@ class chevaux
 			/* class Chevaux GET */
 			/* ---------------------- */
 
-			Public function get_id_chevaux ()
+			Public function get_id_chevaux()
 			{
 				return $this-> id_chevaux;
 			}
 
-			Public function get_nom_chevaux ()
+			Public function get_nom_chevaux()
 			{
 				return $this-> nom_chevaux;
 			}
@@ -235,7 +231,8 @@ class chevaux
 
 					print $SQL = "UPDATE chevaux SET id_chevaux = '$id_che', nom_chevaux  = '$nom_che',
 					dna_chevaux = '$dna_che', taille_chevaux = '$taille_che', couleur_chevaux = '$coul_che',
-					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che', note_chevaux = '$note_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
+					robe_chevaux = '$robe_che', sexe_chevaux = '$sexe_che', qualite_chevaux = '$qual_che',
+					note_chevaux = '$note_che', poids_chevaux = '$poids_che', origine_chevaux = '$origin_che', utilisation_chevaux = '$util_che'
 					WHERE id_chevaux = '$id_che'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}

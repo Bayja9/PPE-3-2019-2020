@@ -145,27 +145,19 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Pension<span>Inscrivez les pensions</span></h1>
-<form>
-    <div class="section"><span>1</span>Information sur la pensions</div>
+<form action="operation_pension.php" method="post">
+    <div class="section"><span>1</span>Informations sur la pension</div>
     <div class="inner-wrap">
-        <label><input type="text" name="field1" placeholder="Libellé Pension" /></label>
+        <textarea class="form-control" name="lib_pension" rows="1" cols="80" placeholder="Libellé de la pension"></textarea>
+        <label>Date Début pension<input type="date" name="date_debut_pension" /></label>
+        <label>Date Fin pension<input type="date" name="date_fin_pension" /></label>
     </div>
-    <hr>
-    <div class="section"><span>2</span>Date enregistrement</div>
-    <div class="inner-wrap">
-        <label>Début pension<input type="date" name="field3" /></label>
-        <label>Fin pension<input type="date" name="field4" /></label>
-    </div>
-    <hr>
-    <div class="section"><span>3</span>Information Complémentaire</div>
-        <div class="inner-wrap">
-        <textarea class="form-control" name="commentaire" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+    <div>
+        <input type="submit" name="enregistrerp" value="Enregistrer"/>
     </div>
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider Pension</a>
-            <br><br>
-            <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
-            <br><br>
+        <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pension.php">Suppression Pension</a>
+        <br><br>
 		</div>
 </form>
 </div>
