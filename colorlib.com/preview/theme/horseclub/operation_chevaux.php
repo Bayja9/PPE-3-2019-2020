@@ -53,7 +53,7 @@ if (isset($_POST['suppr']))
     $idc=$_POST['id_chevaux'];
 
     $uncheval = new chevaux ($id_cheval,'','','','','','','','','','','');
-    $undiplome -> suppr_diplome($uncheval, $conn);
+    $uncheval -> suppr_diplome($uncheval, $conn);
 
   header('Location: ./modif_chevaux.php');
 }
