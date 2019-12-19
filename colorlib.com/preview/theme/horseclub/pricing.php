@@ -88,13 +88,13 @@
 	                        <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
 	                    </li>
 	                  </ul>
-	                  <li><a href="pricing">Prix</a></li>
+	                  <li class="menu-active"><a href="pricing">Prix</a>
 	                  <li><a href="contact">Contact</a></li>
 	                    <li><a href="connexion\modifier-profil">Mon Compte</a>
 	                      <ul>
 	                  <li><a href="connexion\modifier-profil">Profil</a></li>
 	                  <li><a href="panel">Pannel Admin</a></li>
-	                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+	                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
 	                </li>
 	                      </ul>
 	                    <?php
@@ -103,7 +103,7 @@
 	                      ?>
 	                <li><a href="index.php">Accueil</a></li>
 	                <li><a href="about.php">À propos</a></li>
-	                <li class="menu-active"><a href="service">Services</a>
+	                <li><a href="service.php">Services</a></li>
 	                  <ul>
 	                    <li><a href="training">Entraînements</a></li>
 	                    <li><a href="full calendar/examples/google-calendar.html">Activités</a></li>
@@ -112,9 +112,9 @@
 	                    <li><a href="events">Événements</a></li>
 	                  </li>
 	                </ul>
-	                <li><a href="pricing">Prix</a></li>
+	                <li class="menu-active"><a href="pricing">Prix</a>
 	                <li><a href="contact">Contact</a></li>
-	                <li><a href="connexion\connexion.php">Connection</a></li>
+	                <li><a href="connexion\connexion.php">Connexion</a></li>
 	                <?php
 	                  }
 	                ?>

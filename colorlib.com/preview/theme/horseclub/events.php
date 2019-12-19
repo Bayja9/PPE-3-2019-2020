@@ -94,7 +94,7 @@
 							          <ul>
 							      <li><a href="connexion\modifier-profil">Profil</a></li>
 							      <li><a href="panel">Pannel Admin</a></li>
-							      <li><a href="connexion\deconnexion">Déconnection</a></li>
+							      <li><a href="connexion\deconnexion">Déconnexion</a></li>
 							    </li>
 							          </ul>
 											<?php
@@ -114,7 +114,7 @@
 												</ul>
 												<li><a href="pricing">Prix</a></li>
 												<li><a href="contact">Contact</a></li>
-									<li><a href="connexion\connexion">Connection</a></li>
+									<li><a href="connexion\connexion">Connexion</a></li>
 									<?php
 										}
 									?>
@@ -145,9 +145,9 @@
 					<div class="container">
 						<div class="row d-flex justify-content-center">
 							<div class="col-md-9 pb-40 header-text text-center">
-								<h1 class="pb-10">Découvrez notre évènement à venir</h1>
+								<h1 class="pb-10">Découvrez nos événements à venir</h1>
 								<p>
-									"TEXTE..."
+									Événement du 10 Janvier 2020 au 28 Janvier 2020
 								</p>
 							</div>
 						</div>
@@ -158,24 +158,24 @@
 							<div class="col-lg-6 upcoming-right">
 								<a href="#"><h4>Événement sur le rock solid carbon</h4></a>
 								<p class="meta">
-									<span>21 Janvier 2019</span>
+									<span>10 Janvier 2020</span>
 									Au musée du Louvre
 								</p>
 								<p>
-									"TEXTE..."
+									À partir de 19h pour tout âge
 								</p>
 								<a class="primary-btn text-uppercase" href="#">Voir les détails</a>
 							</div>
 						</div>
 						<div class="row align-items-center upcoming-wrap">
 							<div class="col-lg-6 upcoming-left">
-								<a href="#"><h4>Événement sur le rock solid carbon</h4></a>
+								<a href="#"><h4>Événement sur la coline de Dordogne</h4></a>
 								<p class="meta">
-									<span>21 Janvier 2019</span>
-									Au musée du Louvre
+									<span>12 Janvier 2020</span>
+									En Dordogne
 								</p>
 								<p>
-									"TEXTE..."
+									À partir de 20h30 pour les Adultes
 								</p>
 								<a class="primary-btn text-uppercase" href="#">Voir les détails</a>
 							</div>
@@ -188,26 +188,26 @@
 								<img class="img-fluid" src="img/pages/ev3.jpg" alt="">
 							</div>
 							<div class="col-lg-6 upcoming-right">
-								<a href="#"><h4>Événement sur le rock solid carbon</h4></a>
+								<a href="#"><h4>Événement sur les champs-élysées</h4></a>
 								<p class="meta">
-									<span>21 Janvier 2019</span>
-									Au musée du Louvre
+									<span>21 Janvier 2020</span>
+									Avenue des Champs-Élysées
 								</p>
 								<p>
-									"TEXTE..."
+									À partir de 21h30 pour les Adultes
 								</p>
 								<a class="primary-btn text-uppercase" href="#">Voir les détails</a>
 							</div>
 						</div>
 						<div class="row align-items-center upcoming-wrap">
 							<div class="col-lg-6 order-1 upcoming-left">
-								<a href="#"><h4>Événement sur le rock solid carbon</h4></a>
+								<a href="#"><h4>Événement sur Brive-la-Gaillarde</h4></a>
 								<p class="meta">
-									<span>21 Janvier 2019</span>
-									Au musée du Louvre
+									<span>28 Janvier 2020</span>
+									Sur la place "14 Juillet"
 								</p>
 								<p>
-									"TEXTE..."
+									À partir de 18h30 pour tout âge
 								</p>
 								<a class="primary-btn text-uppercase" href="#">Voir les détails</a>
 							</div>

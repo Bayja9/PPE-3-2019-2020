@@ -90,7 +90,7 @@
           <ul>
       <li><a href="connexion\modifier-profil">Modifier Profil</a></li>
       <li><a href="panel">Pannel Admin</a></li>
-      <li><a href="connexion\deconnexion">Déconnection</a></li>
+      <li><a href="connexion\deconnexion">Déconnexion</a></li>
     </li>
           </ul>
         <?php
@@ -110,7 +110,7 @@
           </ul>
           <li><a href="pricing">Prix</a></li>
           <li><a href="contact">Contact</a></li>
-    <li><a href="connexion\connexion">Connection</a></li>
+    <li><a href="connexion\connexion">Connexion</a></li>
     <?php
       }
     ?>
@@ -134,7 +134,7 @@ sur notre site
 <?php
 if (isset($_SESSION['id'])) {
   ?>
-  <a href="connexion\deconnexion" class="genric-btn">Déconnection</a>
+  <a href="connexion\deconnexion" class="genric-btn">Déconnexion</a>
     <?php
   }
     else {
@@ -158,12 +158,12 @@ if (isset($_SESSION['id'])) {
 Vidéo <br>
 </h1>
 <p>
-<span>Voici une petite vidéo pour la présentation des chevaux...</span>
+<span>Voici une petite vidéo pour la présentation de notre centre équestre...</span>
 </p>
-<a class="primary-btn" href="#">Lancer la vidéo</a>
+<a class="primary-btn" href="https://www.youtube.com/watch?v=LJKaPnRqKxs">Lancer la vidéo</a>
 </div>
 <div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex">
-<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
+<a class="play-btn" href="https://www.youtube.com/watch?v=LJKaPnRqKxs"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
 </div>
 </div>
 </div>
@@ -227,104 +227,50 @@ Usage of the Internet is becoming more common due to rapid advancement of techno
 </section>
 
 
-
-
-
-<section class="price-area section-gap">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="menu-content pb-70 col-lg-8">
-        <div class="title text-center">
-          <h1 class="mb-10">Choisissez le meilleur plan qui vous convient</h1>
-          <p>Voici les tarifs</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="single-price">
-          <div class="top-part">
-            <h1 class="package-no">01</h1>
-            <h4>De base </h4>
-            <p>Pour les particuliers</p>
-          </div>
-          <div class="package-list">
-            <ul>
-              <li>Transfert en ligne sécurisé</li>
-              <li>Styles illimités pour l'interface</li>
-              <li>Service client fiable</li>
-            </ul>
-          </div>
-          <div class="bottom-part">
-            <h1>199.00€</h1>
-            <a class="price-btn text-uppercase" href="#">Acheter</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="single-price">
-          <div class="top-part">
-            <h1 class="package-no">02</h1>
-            <h4>Economie</h4>
-            <p>Pour les particuliers</p>
-          </div>
-          <div class="package-list">
-            <ul>
-              <li>Transfert en ligne sécurisé</li>
-              <li>Styles illimités pour l'interface</li>
-              <li>Service client fiable</li>
-            </ul>
-          </div>
-          <div class="bottom-part">
-            <h1>299.00€</h1>
-            <a class="price-btn text-uppercase" href="#">Acheter</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="single-price">
-          <div class="top-part">
-            <h1 class="package-no">03</h1>
-            <h4>Premium</h4>
-            <p>Pour les particuliers</p>
-          </div>
-          <div class="package-list">
-            <ul>
-              <li>Transfert en ligne sécurisé</li>
-              <li>Styles illimités pour l'interface</li>
-              <li>Service client fiable</li>
-            </ul>
-          </div>
-          <div class="bottom-part">
-            <h1>399.00€</h1>
-            <a class="price-btn text-uppercase" href="#">Acheter</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="single-price">
-          <div class="top-part">
-            <h1 class="package-no">04</h1>
-            <h4>Entreprise</h4>
-            <p>Pour les particuliers</p>
-          </div>
-          <div class="package-list">
-            <ul>
-              <li>Transfert en ligne sécurisé</li>
-              <li>Styles illimités pour l'interface</li>
-              <li>Service client fiable</li>
-            </ul>
-          </div>
-          <div class="bottom-part">
-            <h1>499.00€</h1>
-            <a class="price-btn text-uppercase" href="#">Acheter</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="latest-blog-area section-gap" id="blog">
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="menu-content pb-60 col-lg-8">
+<div class="title text-center">
+<h1 class="mb-10">Voici les actualités de notre site ainsi que notre centre équestre </h1>
+<p>N'hesitez pas de regarder de temps en temps...</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 single-blog">
+<img class="img-fluid" src="img/b1.jpg" alt="">
+<ul class="tags">
+<li><a href="#">cheveaux pour tout âges </a></li>
+<li><a href="#">Life style</a></li>
+</ul>
+<a href="#"><h4>Voici les nouveaux cheveaux que nous proposons</h4></a>
+<p>
+Quelques poney en plus mais aussi des nouveaux cheveaux pour les compétitions.
+<br>
+N'hesitez pas à nous contacter pour plus de renseingements.
+</p>
+<p class="post-date">Jeudi 14 novembre 2019</p>
+</div>
+<div class="col-lg-6 single-blog">
+<img class="img-fluid" src="img/b2.jpg" alt="">
+<ul class="tags">
+<li><a href="#">Nouvelles activités </a></li>
+<li><a href="#">Life style</a></li>
+</ul>
+<a href="#"><h4>Voici les nouvelles activités</h4></a>
+<p>
+Nous proposons encore plus d'activités pour les débutant, amateur mais également pour les plus Pro.
+<br>
+N'hesitez pas à nous contacter pour plus de renseingements.
+</p>
+<p class="post-date">Vendredi 16 novembre 2019 </p>
+</div>
+</div>
+</div>
 </section>
 
+<br><br>
 
 <section class="booking-area section-gap relative" id="consultancy">
 <div class="overlay overlay-bg"></div>
@@ -443,51 +389,9 @@ Que des personnes aimables :)
 </div>
 </div>
 </section>
-
-
-<section class="latest-blog-area section-gap" id="blog">
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="menu-content pb-60 col-lg-8">
-<div class="title text-center">
-<h1 class="mb-10">Voici les actualités de notre site ainsi que notre centre équestre </h1>
-<p>N'hesitez pas de regarder de temps en temps...</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6 single-blog">
-<img class="img-fluid" src="img/b1.jpg" alt="">
-<ul class="tags">
-<li><a href="#">cheveaux pour tout âges </a></li>
-<li><a href="#">Life style</a></li>
-</ul>
-<a href="#"><h4>Voici les nouveaux cheveaux que nous proposons</h4></a>
-<p>
-Quelques poney en plus mais aussi des nouveaux cheveaux pour les compétitions.
-<br>
-N'hesitez pas à nous contacter pour plus de renseingements.
-</p>
-<p class="post-date">Jeudi 14 novembre 2019</p>
-</div>
-<div class="col-lg-6 single-blog">
-<img class="img-fluid" src="img/b2.jpg" alt="">
-<ul class="tags">
-<li><a href="#">Nouvelles activités </a></li>
-<li><a href="#">Life style</a></li>
-</ul>
-<a href="#"><h4>Voici les nouvelles activités</h4></a>
-<p>
-Nous proposons encore plus d'activités pour les débutant, amateur mais également pour les plus Pro.
-<br>
-N'hesitez pas à nous contacter pour plus de renseingements.
-</p>
-<p class="post-date">Vendredi 16 novembre 2019 </p>
-</div>
-</div>
-</div>
-</section>
-
+<br><br>
+<center><h1> GALERIE </h1></center>
+<br><br>
 
 <section class="gallery-area">
 <div class="container-fluid">
