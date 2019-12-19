@@ -195,21 +195,21 @@
         </div>
     </div>
     <hr>
+
+
     <div>
         <input type="submit" name="enregistrers" value="Enregistrer"/>
 		</div>
 
-    <section>
-    <form action="" method="post">
-      <p class="enregistrer">
-      <input type="submit" value="enregistrers" class="agrandir" />
-      </p>
-    </form>
-    </section>
 
+<<<<<<< HEAD
+    <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
 
+=======
     <a class="primary-btn" href="modif_stage.php">Modification Stage</a> <a class="primary-btn" href="suppr_stage.php">Suppression Stage</a>
+>>>>>>> 702acedb7f3cd187ca5afc2e2acaed72f682129b
     <br><br>
+
 </form>
 </div>
 </center>
