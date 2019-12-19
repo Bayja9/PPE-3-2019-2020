@@ -36,6 +36,13 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <!--
+    Autocompletion
+    ============================================= -->
+    <link rel="stylesheet" href="autocomp/css/style.css" />
+    <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="autocomp/js/script.js"></script>
+
   </head>
   <body>
 
@@ -150,7 +157,11 @@
     <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
         <label>Libellé Promenade <input type="text" name="lib_promenade" value=""/></label>
-        <label>localisation <input type="text" name="localisation" value=""/></label>
+        <div class="section">Code Postal</div>
+        <div class="inner-wrap">
+            <textarea class="form-control" id="nom_id" name="localisation" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+            <ul id="nom_list_id"></ul>
+        </div>
     </div>
 
     <div class="section"><span>2</span>Date enregistrement Stage</div>

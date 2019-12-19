@@ -38,6 +38,13 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <!--
+    Autocompletion
+    ============================================= -->
+    <link rel="stylesheet" href="autocomp/css/style.css" />
+    <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="autocomp/js/script.js"></script>
+
   </head>
   <body>
 
@@ -152,6 +159,11 @@
     <div class="inner-wrap">
         <label><input type="text" name="nom_cours" placeholder="Nom cours" /></label>
         <label><input type="text" name="libelle_cours" placeholder="Libellé cours" /></label>
+        <div class="section">Code Postal</div>
+        <div class="inner-wrap">
+            <textarea class="form-control" id="nom_id" name="localisation_cours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+            <ul id="nom_list_id"></ul>
+        </div>
 
   <div class="section"><span>2</span>Prendre un repas</div>
         <p>
@@ -166,9 +178,11 @@
         <label>Fin cours<input type="date" name="date_fin_cours" /></label>
     </div>
     <hr>
-    <div class="">
-      <input class="" type="submit" name="enregistrerc" value="Enregistrer">
+      <div>
+          <input type="submit" name="enregistrerc" value="Enregistrer un Cours"/>
+  		</div>
             <br><br>
+      <div>
             <a class="primary-btn" href="modif_cours.php">Modification Cours</a> <a class="primary-btn" href="suppr_cours.php">Suppression Cours</a>
 		</div>
 </form>

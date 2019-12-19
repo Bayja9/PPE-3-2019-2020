@@ -187,7 +187,12 @@
     <div class="section"><span>2</span>Informations Complémentaires</div>
         <div class="inner-wrap">
         <textarea class="form-control" name="nom_stage" rows="1" cols="80" placeholder="Nom du stage"></textarea>
-        <textarea class="form-control" name="description_stage" rows="8" cols="80" placeholder="Description"></textarea>
+        <textarea class="form-control" name="description_stage" rows="5" cols="80" placeholder="Description"></textarea>
+        <div class="section"><span>3</span>Code Postal</div>
+        <div class="inner-wrap">
+            <textarea class="form-control" id="nom_id" name="localisation_stage" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+            <ul id="nom_list_id"></ul>
+        </div>
     </div>
     <hr>
     <div>

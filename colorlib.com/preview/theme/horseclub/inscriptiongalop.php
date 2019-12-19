@@ -150,6 +150,7 @@
     <div class="section"><span>1</span>Information sur le Galop</div>
     <div class="inner-wrap">
         <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
+        <label><input type="date" name="date_debut_cours" placeholder="Date Obtention du Galop" /></label>
     </div>
     <div class="button">
 			 <input type="submit" class="genric" name="enregistrerg" value="Enregistrer"/>
