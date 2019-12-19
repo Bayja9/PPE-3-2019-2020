@@ -237,25 +237,13 @@ class chevaux
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification chevaux ');
 				}
 
-				Public function affiche_chevaux_total($objet, $conn)
+				Public function affiche_chevaux_total($id_che, $conn)
 				{
-					$id_che = $objet->get_id_chevaux();
-					$nom_che = $objet->get_nom_chevaux();
-					$dna_che = $objet->get_datenaissance_chevaux();
-					$taille_che = $objet->get_taille_chevaux();
-					$coul_che = $objet->get_couleur_chevaux();
-					$robe_che = $objet->get_robe_chevaux();
-					$sexe_che = $objet->get_sexe_chevaux();
-					$qual_che = $objet->get_qualite_chevaux();
-					$note_che = $objet->get_note_chevaux();
-					$poids_che = $objet->get_poids_chevaux();
-					$origin_che = $objet->get_origine_chevaux();
-					$util_che = $objet->get_utilisation_chevaux();
-					$etat_che = $objet->get_etat_chevaux();
 
 					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
-					$Req = $conn -> query ($SQL) or die (' Erreur affichage utilisateur ');
+					$Req = $conn -> query ($SQL) or die (' Erreur affichage chevaux ');
 					return $Res = $Req -> fetch ();
+
 				}
 
 				Public function suppr_chevaux ($objet, $conn)

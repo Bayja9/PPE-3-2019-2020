@@ -39,9 +39,13 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <!--
+    Autocompletion
+    ============================================= -->
     <link rel="stylesheet" href="autocomp/css/style.css" />
     <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
     <script type="text/javascript" src="autocomp/js/script.js"></script>
+    
   </head>
   <body>
 

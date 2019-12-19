@@ -18,6 +18,7 @@ class cours
 		Private $date_debut_cours;
 		Private $date_fin_cours;
     Private $repas;
+		Private $localisation_cours;
     Private $etat_cours;
 
 
@@ -25,7 +26,7 @@ class cours
 		/* class Promenade Constructeur */
 		/* ---------------------- */
 
-			Public function cours ( $id_cours, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $etat_cours)
+			Public function cours ( $id_cours, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, $etat_cours)
 			{
 				$this -> id_cours = $id_cours;
 				$this -> nom_cours = $nom_cours;
@@ -33,6 +34,7 @@ class cours
 				$this -> date_debut_cours = $date_deb_cours;
         $this -> date_fin_cours = $date_fin_cours;
 				$this -> repas = $repas;
+				$this -> localisation_cours = $localisation_cours;
         $this -> etat_cours = $etat_cours;
 			}
 
@@ -48,6 +50,7 @@ class cours
 				$data = $data.$this->date_debut_cours;
 				$data = $data.$this->date_fin_cours;
 				$data = $data.$this->repas;
+				$data = $data.$this->localisation_cours;
 				$data = $data.$this->etat_cours;
 
 				return $data;
@@ -87,6 +90,11 @@ class cours
 				return $this-> repas;
       }
 
+			Public function get_localisation_cours ()
+      {
+				return $this-> localisation_cours;
+      }
+
       Public function get_etat_cours ()
       {
       	return $this-> etat_cours;
@@ -121,6 +129,11 @@ class cours
 				 $this-> date_fin_cours = $date_fin_cours;
 			}
 
+			Public function set_localisation_cours ($localisation_cours)
+			{
+				 $this-> localisation_cours = $localisation_cours;
+			}
+
 			Public function set_etat_cours ($etat_cours)
 			{
 				 $this-> etat_cours = $etat_cours;
@@ -140,10 +153,11 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 
 
-					print $SQL = " INSERT INTO cours values (NULL, '$nom_cours', '$lib_cours', '$date_deb_cours','$date_fin_cours', '0')";
+					print $SQL = " INSERT INTO cours values (NULL, '$nom_cours', '$lib_cours', '$date_deb_cours','$date_fin_cours','$localisation_cours', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout cours ');
 				}
 
@@ -154,11 +168,12 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 
 
 					print $SQL = "UPDATE cours SET id_cours = '$id_cours', nom_cours  = '$nom_cours',
-					libelle_cours = '$lib_cours', date_debut_cours = '$date_deb_cours', date_fin_cours = '$date_fin_cours' WHERE id_cours = '$id_cours'";
+					libelle_cours = '$lib_cours', date_debut_cours = '$date_deb_cours', date_fin_cours = '$date_fin_cours', localisation_cours = '$localisation_cours' WHERE id_cours = '$id_cours'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification cours ');
 				}
 
@@ -178,6 +193,7 @@ class cours
 					$lib_cours = $objet->get_libelle_cours();
 					$date_deb_cours = $objet->get_date_debut_cours();
 					$date_fin_cours = $objet->get_date_fin_cours();
+					$localisation_cours = $objet->get_localisation_cours();
 					$etat_cours = $objet->get_etat_cours();
 
 					print $SQL = " SELECT *  From cours WHERE id_cours = '$id_cours'";
