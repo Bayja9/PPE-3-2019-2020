@@ -18,9 +18,9 @@ if (isset($_POST['enregistrercon']))
 
 
 
-    $unconcours = new concours (NULL, $nom_con, $date_deb_con, $date_deb_con, $date_fin_con, $lib_con, $loca_con, '0');
-    $desconcours-> ajout_concours($unconcours, $conn);
-    header('Location: ./modif_concours.php');
+    $unconcours = new concours (NULL, $nom_con, $date_deb_con, $date_fin_con, $lib_con, $loca_con, '0');
+    $unconcours-> ajout_concours($unconcours, $conn);
+    header('Location: ./inscription_concours.php');
 
 }
 if (isset($_POST['modifiercon']))
@@ -35,7 +35,7 @@ if (isset($_POST['modifiercon']))
 
 
     $unconcours = new concours (NULL, $nom_con, $date_deb_con, $date_deb_con, $date_fin_con, $lib_con, $loca_con, '0');
-    $desconcours-> modif_concours($unconcours, $conn);
+    $unconcours-> modif_concours($unconcours, $conn);
     header('Location: ./modif_concours.php');
 
 }
@@ -45,7 +45,7 @@ if (isset($_POST['suppr']))
     $id_con=$_POST['id_concours'];
 
     $unconcours = new concours ($id_concours,'','','','','','','');
-    $descours -> suppr_concours($unconcours, $conn);
+    $unconcours -> suppr_concours($unconcours, $conn);
     header('Location: ./modif_concours.php');
 }
 ?>

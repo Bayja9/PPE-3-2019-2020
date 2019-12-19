@@ -148,12 +148,12 @@ class concours
 					$nom_con = $objet->get_nom_concours();
 					$date_deb_con = $objet->get_date_debut_concours();
 					$date_fin_con = $objet->get_date_fin_concours();
+					$lib_con =$objet->get_lib_concours();
 					$loca_con = $objet->get_localisation_concours();
-          $lib_con =$objet->get_lib_concours();
 					$etat_con = $objet->get_etat_concours();
 
 
-					print $SQL = " INSERT INTO concours values (NULL, '$nom_con', '$date_deb_con', '$date_fin_con', '$loca_con', '$lib_con', '0')";
+					print $SQL = " INSERT INTO concours values (NULL, '$nom_con', '$date_deb_con', '$date_fin_con', '$lib_con', '$loca_con', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout concours ');
 				}
 

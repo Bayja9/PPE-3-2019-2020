@@ -154,10 +154,10 @@
 <form action='operation_concours.php' method='post'>
     <div class="section"><span>1</span>Information sur le concours</div>
     <div class="inner-wrap">
-        <textarea class="form-control" name="nom_concours" rows="1" cols="80" placeholder="Nom du concours"></textarea>
+        <textarea class="form-control" name="nom_concours" rows="1" cols="80" placeholder="Nom du concours"/></textarea>
         <label><input type="date" name="date_debut_concours" placeholder="Date début Concours" /></label>
         <label><input type="date" name="date_fin_concours" placeholder="Date fin Concours" /></label>
-        <textarea class="form-control" name="lib_concours" rows="1" cols="80" placeholder="Libellé du concours"></textarea>
+        <textarea class="form-control" name="lib_concours" rows="1" cols="80" placeholder="Libellé du concours"/></textarea>
         <br>
         <div class="section"><span>2</span>Code Postal</div>
         <div class="inner-wrap">
@@ -165,11 +165,13 @@
             <ul id="nom_list_id"></ul>
         </div>
     </div>
+    <div>
+      		<input type="submit" name="enregistrercon" value="Enregistrer">
+    </div>
 
     <div class="button-group-area mt-40">
-						<input type="submit" class="genric-btn danger radius" name="enregistrercon" value="Enregistrer">
-            <br><br>
-            <a class="primary-btn" href="modif_concours.php">Modification Concours</a> <a class="primary-btn" href="suppr_concours.php">Suppression Concours</a>
+
+
             <br><br>
 		</div>
 </form>
