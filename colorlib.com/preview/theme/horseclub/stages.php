@@ -94,7 +94,7 @@
                       <ul>
                   <li><a href="connexion\modifier-profil">Profil</a></li>
                   <li><a href="panel">Pannel Admin</a></li>
-                  <li><a href="connexion\deconnexion">Déconnection</a></li>
+                  <li><a href="connexion\deconnexion">Déconnexion</a></li>
                 </li>
                       </ul>
                     <?php
@@ -114,7 +114,7 @@
                 </ul>
                 <li><a href="pricing">Prix</a></li>
                 <li><a href="contact">Contact</a></li>
-                <li><a href="connexion\connexion.php">Connection</a></li>
+                <li><a href="connexion\connexion.php">Connexion</a></li>
                 <?php
                   }
                 ?>
@@ -147,7 +147,7 @@
           <div class="col-md-9 pb-40 header-text text-center">
             <h1 class="pb-10">Des stages d’équitation ouverts à tous.</h1>
             <p>
-              Pendant vos vacances, profitez de votre temps libre. Vos poneys et chevaux vous attendent : stages, cours particuliers, anniversaires… Des stages et hébergements sont proposés aux adhérents et aux non adhérents.
+              Pendant vos vacances, profitez de votre temps libre. Vos poneys et chevaux vous attendent : stages, cours particuliers, anniversaires… Des stages et hébergements sont proposés aux adhérents et aux non-adhérents.
               <br><br>
               Le poney club les accueille du matin au soir ou simplement l’après-midi. Les thèmes des stages proposés sont différents : découverte, perfectionnement, compétition ou encore passage d’examens fédéraux du galop 1 au galop 8.
             </p>
@@ -162,13 +162,13 @@
                     <blockquote class="generic-blockquote">
                       Des stages sont organisés, du lundi au samedi, durant toutes les vacances scolaires, en 1/2 journée ou en journée complète avec passage des examens fédéraux. Renseignements au bureau.
                       <br><br>
-                      Le galops 8 se déroule sur rendez vous
+                      Le galop 8 se déroule sur rendez-vous
                       <br><br>
-                      Vous pouvez aussi vivre votre passion à travers des cours particuliers de ½ h ou 1h.
+                      Vous pouvez aussi vivre votre passion à travers des cours particuliers de ½ h ou 1 h.
                       <br><br>
                       Vous pouvez aussi choisir de faire une animation spécifique : balade, anniversaire, heure libre ou demi-pension…
                       <br><br>
-                      Le centre équestre de Vernouillet 78 vous propose de vous accueillir en groupe (comité d’entreprise, centre aéré, école, groupe d’amis…
+                      Le centre équestre de Vernouillet 78 vous propose de vous accueillir en groupe, (comité d’entreprise, centre aéré, école, groupe d’amis…)
                     </blockquote>
                   </div>
                 </div>
