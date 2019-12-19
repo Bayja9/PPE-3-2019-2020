@@ -37,7 +37,7 @@ if (isset($_POST['modifierc']))
 
 
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, '0');
-    $descours -> modif_cours($uncours, $conn);
+    $uncours -> modif_cours($uncours, $conn);
     header('Location: ./modifcours.php');
 
 }
@@ -48,7 +48,7 @@ if (isset($_POST['suppr']))
 
 
     $uncours = new cours ($id_cours,'','','','','','','');
-    $descours -> suppr_cours($uncours, $conn);
+    $uncours -> suppr_cours($uncours, $conn);
 
     header('Location: ./inscriptioncours.php');
 }
