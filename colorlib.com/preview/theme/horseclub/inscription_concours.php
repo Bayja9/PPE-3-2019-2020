@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <link rel="stylesheet" href="autocomp/css/style.css" />
+    <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="autocomp/js/script.js"></script>
   </head>
   <body>
 
@@ -148,17 +151,23 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Concours<span>Inscrivez Vous</span></h1>
-<form>
+<form action='operation_concours.php' method='post'>
     <div class="section"><span>1</span>Information sur le concours</div>
     <div class="inner-wrap">
         <textarea class="form-control" name="nom_concours" rows="1" cols="80" placeholder="Nom du concours"></textarea>
         <label><input type="date" name="date_debut_concours" placeholder="Date début Concours" /></label>
         <label><input type="date" name="date_fin_concours" placeholder="Date fin Concours" /></label>
         <textarea class="form-control" name="lib_concours" rows="1" cols="80" placeholder="Libellé du concours"></textarea>
+        <br>
+        <div class="section"><span>2</span>Code Postal</div>
+        <div class="inner-wrap">
+            <textarea class="form-control" id="nom_id" name="localisation_concours" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+            <ul id="nom_list_id"></ul>
+        </div>
     </div>
-    <hr>
+
     <div class="button-group-area mt-40">
-						<a href="#" class="genric-btn danger radius">Valider le Cavalier</a>
+						<input type="submit" class="genric-btn danger radius" name="enregistrercon" value="Enregistrer">
             <br><br>
             <a class="primary-btn" href="modif_concours.php">Modification Concours</a> <a class="primary-btn" href="suppr_concours.php">Suppression Concours</a>
             <br><br>

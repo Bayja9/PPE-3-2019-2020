@@ -13,14 +13,12 @@ body {
 .container {
 	width: 1000px;
 	height: auto;
-	background: #ffffff;
-	border: 1px solid #cccccc;
 	border-radius: 10px;
 	margin: auto;
 	text-align: left;
 }
 .header {
-	padding: 10px;
+	padding: 5px;
 }
 .main_title {
 	background: #cccccc;
@@ -77,5 +75,3 @@ body {
 #country_list_id {
 	display: none;
 }
-
-
