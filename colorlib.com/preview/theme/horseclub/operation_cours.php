@@ -19,7 +19,7 @@ if (isset($_POST['enregistrerc']))
 
 
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
-    $descours -> ajout_cours($uncours, $conn);
+    $uncours -> ajout_cours($uncours, $conn);
     header('Location: ./inscriptioncours.php');
 
 }
@@ -35,7 +35,7 @@ if (isset($_POST['modifierc']))
 
 
     $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, '0');
-    $descours -> modif_cours($uncours, $conn);
+    $uncours -> modif_cours($uncours, $conn);
     header('Location: ./inscriptioncours.php');
 }
 if (isset($_POST['suppr']))
@@ -44,7 +44,7 @@ if (isset($_POST['suppr']))
     $id_cours=$_POST['id_cours'];
 
     $uncours = new cours ($id_cours,'','','','','','');
-    $descours -> suppr_cours($uncours, $conn);
+    $uncours -> suppr_cours($uncours, $conn);
     header('Location: ./inscriptioncours.php');
 }
 ?>

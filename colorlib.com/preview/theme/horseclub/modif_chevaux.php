@@ -3,6 +3,7 @@
   include "bdd.inc.php";
   include "class_chevaux.php";
 
+
 ?>
 <html lang="zxx" class="no-js">
 
@@ -150,31 +151,16 @@
         $id_che=$_POST['choix_chevaux'];
 
         $uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
-        $uncheval -> affiche_chevaux_total($uncheval, $conn);
-?>
-    <div class="form-style-10">
-      <br><br>
-<h1>Modification Chevaux<span>Modifier les chevaux</span></h1>
-<form action="operation_chevaux.php" method="post">
-    <div class="section"><span>1</span>Modifier le cheval</div>
-    <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
-      <br>
-      <input type="date" name="dna_chevaux"/>
-      <br>
-    <hr>
-  </div>
-    <div class="button-group-area mt-40">
-			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
-            <br><br><br>
-		</div>
+        $t = $uncheval -> affiche_chevaux_total($uncheval, $conn);
 
-    <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
-    <br><br>
-</form>
-</div>
+?>
+
 <?php
 }
+//$id_che=$_POST['choix_chevaux'];
+//$uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
+//$t = $uncheval -> affiche_chevaux_total($id_che, $conn);
+
  ?>
     <div class="form-style-10">
       <br><br>
@@ -182,10 +168,30 @@
 <form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Modifier le cheval</div>
     <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
+      <textarea class="form-control" name="nom_chevaux" type="text" rows="1" ><?php echo $uncheval -> affiche_chevaux_total($undiplome, $conn)['nom_chevaux']; ?></textarea>
       <br>
       <input type="date" name="dna_chevaux"/>
       <br>
+      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name= type="text" rows="9" ><?php echo $undiplome -> affiche_diplome($undiplome, $conn)['nom_diplome']; ?></textarea>
+      <Br>
+      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="origine_chevaux" rows="1" cols="80" placeholder="Origine du cheval"/></textarea>
+      <br>
+      <textarea class="form-control" name="utilisation_chevaux" rows="1" cols="80" placeholder="Utilisation du cheval"/></textarea>
+      <hr>
     <hr>
   </div>
     <div class="button-group-area mt-40">
