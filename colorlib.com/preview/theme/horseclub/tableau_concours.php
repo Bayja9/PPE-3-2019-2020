@@ -30,34 +30,34 @@
          <?php
            include ('bdd.inc.php');
            //Affichage des donnees
-             $requete = "SELECT * FROM promenade";
+             $requete = "SELECT * FROM concours";
              $result = $conn -> query($requete);
          ?>
         <p class="">
-          <th width="1%" style="color:#C40101">Nom Prenom</th>
-          <th width="1%" style="color:#C40101">Nom de la Promenade</th>
-          <th width="1%" style="color:#C40101">Description de la Promenade</th>
-          <th width="1%" style="color:#C40101">Date Début Promenade</th>
-          <th width="1%" style="color:#C40101">Date Fin Promenade</th>
-          <th width="1%" style="color:#C40101">Localisation</th>
-          <th width="1%" style="color:#C40101">Ajouter</th>
-          <th width="1%" style="color:#C40101">Modifier</th>
-          <th width="1%" style="color:#C40101">Supprimer</th>
+          <th align="center" align="center" align="center" width="1%" style="color:#C40101">Id</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Nom des Concours</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Date Début Concours</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Date Fin Concours</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Description de la Concours</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Localisation</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Ajouter</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Modifier</th>
+          <th align="center" align="center" width="1%" style="color:#C40101">Supprimer</th>
        </tr>
        <?php
       while($ligne=$result->fetch())
         {
        ?>
           <tr>
-             <td width="1%" style="color:black"><b><?php echo $ligne['']?></b></td>
-             <td width="24%" style="color:black"><b><?php echo $ligne['nom_promenade']?></b></td>
-             <td width="24%" style="color:black"><b><?php echo $ligne['desc_promenade']?></b></td>
-             <td width="1%" style="color:black"><b><?php echo $ligne['date_début_promenade']?></b></td>
-             <td width="1%" style="color:black"><b><?php echo $ligne['date_fin_promenade']?></b></td>
-             <td width="1%" style="color:black"><b><?php echo $ligne['localisation']?></b></td>
-             <td width="1%" style="color:black"><a href=inscription_promenade.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
-             <td width="1%" style="color:black"><a href=operation_promenade.php?id_promenade=<?php echo $ligne['id_promenade']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
-             <td width="1%" style="color:black"><a href=operation_promenade.php?id_promenade=<?php echo $ligne['id_promenade']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
+             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['id_concours']?></b></td>
+             <td align="center" align="center" width="20%" style="color:black"><b><?php echo $ligne['nom_concours']?></b></td>
+             <td align="center" align="center" width="25%" style="color:black"><b><?php echo $ligne['date_debut_concours']?></b></td>
+             <td align="center" align="center" width="25%" style="color:black"><b><?php echo $ligne['date_fin_concours']?></b></td>
+             <td align="center" align="center" width="1%" style="color:black"><b><?php echo $ligne['lib_concours']?></b></td>
+             <td align="center" align="center" width="1%" style="color:black"><b><?php echo $ligne['localisation_concours']?></b></td>
+             <td align="center" width="1%" style="color:black"><a href=inscription_concours.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td align="center" width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
+             <td align="center" width="1%" style="color:black"><a href=operation_concours.php?id_concours=<?php echo $ligne['id_concours']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>
           <?php
         }
@@ -66,13 +66,13 @@
     </div>
     </table>
   </center>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--BACKSTRETCH-->
+  <script src="connexion/assets/js/jquery.js"></script>
+    <script src="connexion/assets/js/bootstrap.min.js"></script>
+  <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="connexion/assets/js/jquery.backstretch.min.js"></script>
     <script>
-      $.backstretch("assets/img/autre photo.jpg", {speed: 500});
+        $.backstretch("connexion/assets/img/autre photo.jpg", {speed: 500});
     </script>
-  </body>
+</body>
 </html>
