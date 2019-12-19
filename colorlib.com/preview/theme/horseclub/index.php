@@ -81,10 +81,10 @@
             <li><a href="inscriptiongalop">Inscription Galop</a></li>
             <li><a href="inscriptionpension">Inscription Pension</a></li>
             <li><a href="inscriptionstage">Inscription Stage</a></li>
+            <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
         </li>
       </ul>
       <li><a href="pricing">Prix</a></li>
-      <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
       <li><a href="contact">Contact</a></li>
         <li><a href="connexion\profil">Mon Compte</a>
           <ul>
@@ -109,7 +109,6 @@
             </li>
           </ul>
           <li><a href="pricing">Prix</a></li>
-          <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
           <li><a href="contact">Contact</a></li>
     <li><a href="connexion\connexion">Connection</a></li>
     <?php
