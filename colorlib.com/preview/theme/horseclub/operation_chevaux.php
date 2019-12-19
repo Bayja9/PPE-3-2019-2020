@@ -9,7 +9,7 @@ include "letraitementlogin.php";
 if (isset($_POST['enregistrerche']))
 {
 
-    $idc=$_SESSION['id_chevaux'];
+    $id_che=$_SESSION['id_chevaux'];
     $nom_che=$_POST['nom_chevaux'];
     $dna_che=$_POST['dna_chevaux'];
     $taille_che=$_POST['taille_chevaux'];
@@ -30,7 +30,7 @@ if (isset($_POST['enregistrerche']))
 if (isset($_POST['modifierche']))
 {
 
-    $idc=$_SESSION['id_chevaux'];
+    $id_che=$_SESSION['id_chevaux'];
     $nom_che=$_POST['nom_chevaux'];
     $dna_che=$_POST['dna_chevaux'];
     $taille_che=$_POST['taille_chevaux'];

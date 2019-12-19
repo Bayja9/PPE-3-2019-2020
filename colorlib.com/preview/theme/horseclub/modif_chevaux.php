@@ -151,7 +151,7 @@
 		$SQL = "SELECT * FROM chevaux";
 		$req = $conn -> query($SQL);
 	?>
-	<select name= "LISTEDEROULANTE">
+	<select name= "listederoulante">
 	<?php
 		while ($res = $req -> fetch())
 	{
@@ -164,7 +164,7 @@
 	//fin de recherche
 	?>
 	</select><br>
-		<input type="submit" name="modif" value="CHOIX">
+		<input type="submit" name="modif" value="choix">
 	</fieldset></form>
 <center>
   <?php
@@ -174,6 +174,9 @@
 
         $uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
         $t = $uncheval -> affiche_chevaux_total($uncheval, $conn);
+
+
+
 ?>
 
 <?php
@@ -189,13 +192,13 @@
 <form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Modifier le cheval</div>
     <div class="inner-wrap">
-      <input type="text" class="form-control" name="nom_chevaux" rows="1" value="<?php echo $uncheval -> affiche_chevaux_total($undiplome, $conn)['nom_chevaux']; ?>"/>
+      <input type="text" class="form-control" name="nom_chevaux" rows="1" value="<?php echo $uncheval -> affiche_chevaux_total($uncheval, $conn)['nom_chevaux']; ?>"/>
       <br>
       <input type="date" name="dna_chevaux"/>
       <br>
       <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"/></textarea>
       <br>
-      <textarea class="form-control" name= type="text" rows="9" ><?php echo $undiplome -> affiche_diplome($undiplome, $conn)['nom_diplome']; ?></textarea>
+      <textarea class="form-control" name= type="text" rows="9" ><?php echo $undiplome -> affiche_chevaux_total($uncheval, $conn)['nom_diplome']; ?></textarea>
       <Br>
       <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"/></textarea>
       <br>

@@ -239,11 +239,9 @@ class chevaux
 
 				Public function affiche_chevaux_total($id_che, $conn)
 				{
-
-					print $SQL = " SELECT *  From chevaux WHERE id_chevaux = '$id_che'";
+					print $SQL = " SELECT * From chevaux WHERE id_chevaux = '$id_che'";
 					$Req = $conn -> query ($SQL) or die (' Erreur affichage chevaux ');
 					return $Res = $Req -> fetch ();
-
 				}
 
 				Public function suppr_chevaux ($objet, $conn)
