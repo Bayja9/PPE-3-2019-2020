@@ -166,10 +166,7 @@
         </div>
 
   <div class="section"><span>2</span>Prendre un repas</div>
-        <p>
-    	     Oui: <input type="radio" name="repas"/><br/>
-    	     Non: <input type="radio" name="repas"/><br/>
-        </p>
+      <label><input type="text" name="repas" placeholder="Oui ou Non" /></label>
     </div>
     <hr>
     <div class="section"><span>3</span>Date enregistrement</div>

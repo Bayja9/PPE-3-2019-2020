@@ -144,6 +144,28 @@
     </section>
     <!-- End banner Area -->
     <!-- Formulaire -->
+    <center>
+    <?php
+	//recherche chevaux
+		include ('bdd.inc.php');
+		$SQL = "SELECT * FROM chevaux";
+		$req = $conn -> query($SQL);
+	?>
+	<select name= "LISTEDEROULANTE">
+	<?php
+		while ($res = $req -> fetch())
+	{
+	?>
+
+		<option value="<?php echo $res['id_chevaux']?>"><?php echo $res['nom_chevaux']?></option>
+
+	<?php
+	}
+	//fin de recherche
+	?>
+	</select><br>
+		<input type="submit" name="modif" value="CHOIX">
+	</fieldset></form>
 <center>
   <?php
     if (isset($_POST['modif']))
@@ -168,7 +190,7 @@
 <form action="operation_chevaux.php" method="post">
     <div class="section"><span>1</span>Modifier le cheval</div>
     <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" type="text" rows="1" ><?php echo $uncheval -> affiche_chevaux_total($undiplome, $conn)['nom_chevaux']; ?></textarea>
+      <input type="text" class="form-control" name="nom_chevaux" rows="1" value="<?php echo $uncheval -> affiche_chevaux_total($undiplome, $conn)['nom_chevaux']; ?>"/>
       <br>
       <input type="date" name="dna_chevaux"/>
       <br>
