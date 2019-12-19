@@ -189,21 +189,17 @@
         <textarea class="form-control" name="description_stage" rows="8" cols="80" placeholder="Description"></textarea>
     </div>
     <hr>
+
+
     <div>
         <input type="submit" name="enregistrers" value="Enregistrer"/>
 		</div>
 
-    <section>
-    <form action="" method="post">
-      <p class="enregistrer">
-      <input type="submit" value="enregistrers" class="agrandir" />
-      </p>
-    </form>
-    </section>
-
 
     <a class="primary-btn" href="modif_pension.php">Modification Pension</a> <a class="primary-btn" href="suppr_pensio.php">Suppression Pension</a>
+
     <br><br>
+
 </form>
 </div>
 </center>
