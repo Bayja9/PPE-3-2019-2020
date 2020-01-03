@@ -3,13 +3,13 @@
 include 'bdd.inc.php';
 
 	/* ---------------------- */
-	/* DEBUT class Promenade */
+	/* DEBUT class Cour */
 	/* ---------------------- */
 
 class cours
 {
 		/* ---------------------- */
-		/* class Promenade Variables */
+		/* class Cours Variables */
 		/* ---------------------- */
 
 		Private $id_cours;
@@ -23,7 +23,7 @@ class cours
 
 
 		/* ---------------------- */
-		/* class Promenade Constructeur */
+		/* class Cours Constructeur */
 		/* ---------------------- */
 
 			Public function cours ( $id_cours, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, $etat_cours)
@@ -57,7 +57,7 @@ class cours
 			}
 
 			/* ---------------------- */
-			/* class Promenade GET */
+			/* class Cours GET */
 			/* ---------------------- */
 
 			Public function get_id_cours()
@@ -101,7 +101,7 @@ class cours
       }
 
 			/* ---------------------- */
-			/* class Promenade SET */
+			/* class Cours SET */
 			/* ---------------------- */
 
 			Public function set_id_cours ($id_cours)
@@ -147,7 +147,7 @@ class cours
 
 
 			/* ---------------------- */
-			/* class Promenade fonctions publiques */
+			/* class Cours fonctions publiques */
 			/* ---------------------- */
 
 
@@ -212,7 +212,7 @@ class cours
 
 
 	/* ---------------------- */
-	/* FIN class Promenade */
+	/* FIN class Cours */
 	/* ---------------------- */
 }
 ?>

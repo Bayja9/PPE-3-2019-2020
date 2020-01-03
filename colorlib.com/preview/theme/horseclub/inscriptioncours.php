@@ -159,27 +159,23 @@
     <div class="inner-wrap">
         <label><input type="text" name="nom_cours" placeholder="Nom cours" /></label>
         <label><input type="text" name="libelle_cours" placeholder="Libellé cours" /></label>
-        <div class="section">Code Postal</div>
-        <div class="inner-wrap">
-          <textarea class="form-control" id="nom_id" name="localisation_cours" placeholder="Entrer votre code postal ou votre ville" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
-          <ul id="nom_list_id"></ul>
-        </div>
-
-  <div class="section"><span>2</span>Prendre un repas</div>
-
-      <label><input type="text" name="repas" placeholder="Oui ou Non" /></label>
-
-          <label><input type="text" name="repas" placeholder="Entrer 'Oui' ou 'Non'" /></label>
-    </div>
     <hr>
-    <div class="section"><span>3</span>Date enregistrement</div>
+    <div class="section"><span>2</span>Date enregistrement</div>
     <div class="inner-wrap">
         <label>Début cours<input type="date" name="date_debut_cours" /></label>
         <label>Fin cours<input type="date" name="date_fin_cours" /></label>
     </div>
+    <div class="section"><span>3</span>Prendre un repas</div>
+            <label><input type="text" name="repas" placeholder="Entrer 'Oui' ou 'Non'" /></label>
+      </div>
+      <div class="section">Code Postal</div>
+      <div class="inner-wrap">
+        <textarea class="form-control" id="nom_id" name="localisation_cours" placeholder="Entrer votre code postal ou votre ville" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+        <ul id="nom_list_id"></ul>
+      </div>
     <hr>
       <div>
-          <input type="submit" name="enregistrerc" value="Enregistrer un Cours"/>
+          <input type="submit" name="enregistrerc" value="Enregistrer"/>
   		</div>
             <br><br>
       <div>
