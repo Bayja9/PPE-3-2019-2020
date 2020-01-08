@@ -55,7 +55,7 @@
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['date_début_promenade']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['date_fin_promenade']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['localisation']?></b></td>
-             <td align="center" width="1%" style="color:black"><a href=inscription_promenade.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td align="center" width="1%" style="color:black"><a href="inscription_promenade.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'/></a>
              <td align="center" width="1%" style="color:black"><a href=operation_promenade.php?id_promenade=<?php echo $ligne['id_promenade']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
              <td align="center" width="1%" style="color:black"><a href=operation_promenade.php?id_promenade=<?php echo $ligne['id_promenade']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>

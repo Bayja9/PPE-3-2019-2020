@@ -51,7 +51,7 @@
              <td align="center" width="5%" style="color:black"><b><?php echo $ligne['lib_pension']?></b></td>
              <td align="center" width="5%" style="color:black"><b><?php echo $ligne['date_debut_pension']?></b></td>
              <td align="center" width="5%" style="color:black"><b><?php echo $ligne['date_fin_pension']?></b></td>
-             <td align="center" width="1%" style="color:black"><a href=inscription_pension.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td align="center" width="1%" style="color:black"><a href="inscriptionpension.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'/></a>
              <td align="center" width="1%" style="color:black"><a href=operation_pension.php?id_pension=<?php echo $ligne['id_pension']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
              <td align="center" width="1%" style="color:black"><a href=operation_pension.php?id_pension=<?php echo $ligne['id_pension']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>

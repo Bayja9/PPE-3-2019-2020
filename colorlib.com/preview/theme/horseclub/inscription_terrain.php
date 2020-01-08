@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
   session_start();
+  include "class_stage.php";
   include "bdd.inc.php";
-  include "class_chevaux.php";
 ?>
 <html lang="zxx" class="no-js">
 
-<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->
+<!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Mobile Specific Meta -->
@@ -83,10 +83,12 @@
                         <li><a href="inscription_cavalier">Inscription Cavalier</a></li>
                         <li><a href="inscription_concours">Inscription Concours</a></li>
                         <li><a href="inscription_promenade">Inscription Promenade</a></li>
+                        <li><a href="inscriptionbalade">Inscription Balade</a></li>
                         <li><a href="inscriptioncours">Inscription Cours</a></li>
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
                         <li><a href="inscriptionstage">Inscription Stage</a></li>
+                        <li><a href="inscription_terrain">Inscription Terrain</a></li>
                         <li><a href="inscriptionmaj_min.php">Inscription Mineur/Majeur</a></li>
                     </li>
                   </ul>
@@ -126,6 +128,8 @@
         </div>
       </header><!-- #header -->
 
+
+
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
       <div class="overlay overlay-bg"></div>
@@ -133,9 +137,9 @@
         <div class="row d-flex align-items-center justify-content-center">
           <div class="about-content col-lg-12">
             <h1 class="text-white">
-              Inscription Chevaux
+              Inscription Terrain
             </h1>
-            <p class="text-white link-nav"><a href="index.html">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscriptionchevaux.php">Chevaux</a></p>
+            <p class="text-white link-nav"><a href="index.php">Accueil </a>  <span class="lnr lnr-arrow-right"></span>  <a href="inscription_terrain.php">inscription Terrain</a></p>
           </div>
         </div>
       </div>
@@ -145,63 +149,44 @@
 <center>
     <div class="form-style-10">
       <br><br>
-<h1>Inscription Chevaux<span>Inscrivez les chevaux</span></h1>
-<form action="operation_chevaux.php" method="post">
-    <div class="section"><span>1</span>Information sur le cheval</div>
-    <div class="inner-wrap">
-      <textarea class="form-control" name="nom_chevaux" rows="1" cols="80" placeholder="Nom du cheval"/></textarea>
-      <br>
-      <input type="date" name="dna_chevaux"/>
-      <br>
-      <textarea class="form-control" name="taille_chevaux" rows="1" cols="80" placeholder="Taille du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="couleur_chevaux" rows="1" cols="80" placeholder="Couleur du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="robe_chevaux" rows="1" cols="80" placeholder="Robe du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="sexe_chevaux" rows="1" cols="80" placeholder="Sexe du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="qualite_chevaux" rows="1" cols="80" placeholder="Qualité du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="poids_chevaux" rows="1" cols="80" placeholder="Poids du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="note_chevaux" rows="1" cols="80" placeholder="Note du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="origine_chevaux" rows="1" cols="80" placeholder="Origine du cheval"/></textarea>
-      <br>
-      <textarea class="form-control" name="utilisation_chevaux" rows="1" cols="80" placeholder="Utilisation du cheval"/></textarea>
-    <hr>
-  </div>
-    <div class="button-group-area mt-40">
-			<input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
-      <br><br><br>
-		</div>
-
-    <a class="primary-btn" href="modif_chevaux.php">Modification Chevaux</a> <a class="primary-btn" href="suppr_chevaux.php">Suppression Chevaux</a>
+<h1>Inscription Terrain<span>Inscrivez-vous pour ce terrain</span></h1>
+<form action='operation_stage.php' method='post'>
+  <div class="section"><span>1</span>Information sur le terrain</div>
+  <div class="inner-wrap">
+    <textarea class="form-control" name="nom_terrain" rows="1" cols="80" placeholder="Nom du Terrain"/></textarea>
+    <br>
+    <textarea class="form-control" name="surface_terrain" rows="1" cols="80" placeholder="Surface du Terrain"/></textarea>
+    <br>
+    <textarea class="form-control" name="type_terrain" rows="1" cols="80" placeholder="Type du Terrain"/></textarea>
+  <hr>
+</div>
+  <div class="button-group-area mt-40">
+    <input type="submit" class="genric-btn danger radius" name="enregistrerche" value="Enregistrer">
     <br><br>
+    <a class="primary-btn" href="modif_galop.php">Modification Galop</a> <a class="primary-btn" href="suppr_galop.php">Suppression Galop</a>
+  </div>
+
 </form>
 </div>
 </center>
-<!-- Fin Formulaire -->
-
-<script src="js/vendor/jquery-2.2.4.min.js"></script>
-<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-<script src="js/easing.min.js"></script>
-<script src="js/hoverIntent.js"></script>
-<script src="js/superfish.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+      <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 <!-- Mirrored from bootstrap4cc.github.io/free-horse-riding-club-theme/training.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Oct 2019 12:20:51 GMT -->

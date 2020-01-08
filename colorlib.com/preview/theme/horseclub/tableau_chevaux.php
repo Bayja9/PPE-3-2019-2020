@@ -55,7 +55,7 @@
              <td align="center" width="24%" style="color:black"><b><?php echo $ligne['taille_chevaux']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['couleur_chevaux']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['note_chevaux']?></b></td>
-             <td align="center" width="1%" style="color:black"><a href=inscription_chevaux.php</a><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'</td></td>
+             <td align="center" width="1%" style="color:black"><a href="inscriptionchevaux.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'/></a>
              <td align="center" width="1%" style="color:black"><a href=operation_chevaux.php?id_chevaux=<?php echo $ligne['id_chevaux']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
              <td align="center" width="1%" style="color:black"><a href=operation_chevaux.php?id_chevaux=<?php echo $ligne['id_chevaux']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
           </tr>
