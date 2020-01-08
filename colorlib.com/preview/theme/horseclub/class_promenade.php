@@ -13,11 +13,11 @@ class promenade
 		/* ---------------------- */
 
 		Private $id_promenade;
-		Private $description_promenade;
+		Private $nom_promenade;
+		Private $desc_promenade;
 		Private $date_debut_promenade;
 		Private $date_fin_promenade;
 		Private $localisation;
-		Private $lib_promenade;
     Private $etat_promenade;
 
 
@@ -26,14 +26,14 @@ class promenade
 		/* class Promenade Constructeur */
 		/* ---------------------- */
 
-			Public function promenade ( $idp, $desc_pro, $date_deb_pro, $date_fin_pro, $localisation, $lib_pro, $etat_pro)
+			Public function promenade ( $idp, $nom_pro, $desc_pro, $date_deb_pro, $date_fin_pro, $localisation, $etat_pro)
 			{
 				$this -> id_promenade = $idp;
-				$this -> description_promenade = $desc_pro;
+				$this -> nom_promenade = $desc_pro;
+				$this -> desc_promenade = $desc_pro;
 				$this -> date_debut_promenade = $date_deb_pro;
 				$this -> date_fin_promenade = $date_fin_pro;
 				$this -> localisation = $localisation;
-				$this -> lib_promenade = $lib_pro;
         $this -> etat_promenade = $etat_pro;
 			}
 
@@ -44,11 +44,11 @@ class promenade
 			public function getallpromenade()
 			{
 				$data = $this->id_promenade;
-				$data = $data.$this->description_promenade;
+				$data = $data.$this->nom_promenade;
+				$data = $data.$this->desc_promenade;
 				$data = $data.$this->date_debut_promenade;
 				$data = $data.$this->date_fin_promenade;
 				$data = $data.$this->localisation;
-				$data = $data.$this->lib_promenade;
 				$data = $data.$this->etat_promenade;
 
 				return $data;
@@ -63,9 +63,14 @@ class promenade
 				return $this-> id_promenade;
 			}
 
-			Public function get_description_promenade ()
+			Public function get_nom_promenade ()
 			{
-				return $this-> description_promenade;
+				return $this-> nom_promenade;
+			}
+
+			Public function get_desc_promenade ()
+			{
+				return $this-> desc_promenade;
 			}
 
 			Public function get_date_debut_promenade ()
@@ -83,12 +88,6 @@ class promenade
 				return $this-> localisation;
 			}
 
-			Public function get_lib_promenade ()
-			{
-				return $this-> lib_promenade;
-			}
-
-
       Public function get_etat_promenade ()
       {
 				return $this-> etat_promenade;
@@ -104,9 +103,14 @@ class promenade
 				 $this-> id_promenade = $idp;
 			}
 
-			Public function set_description_promenade ($desc_pro)
+			Public function set_nom_promenade ($nom_pro)
 			{
-				 $this-> description_promenade = $desc_pro;
+				 $this-> nom_promenade = $nom_pro;
+			}
+
+			Public function set_desc_promenade ($desc_pro)
+			{
+				 $this-> desc_promenade = $desc_pro;
 			}
 
 			Public function set_date_debut_promenade ($date_deb_pro)
@@ -124,11 +128,6 @@ class promenade
 				 $this-> localisation = $localisation;
 			}
 
-			Public function set_lib_promenade ($lib_pro)
-			{
-				 $this-> lib_promenade = $lib_pro;
-			}
-
 			Public function set_etat_promenade ($etat_pro)
 			{
 				 $this-> etat_promenade = $etat_pro;
@@ -144,30 +143,30 @@ class promenade
 			Public function ajout_promenade ($objet, $conn)
 				{
 					$idp = $objet->get_id_promenade();
-					$desc_pro = $objet->get_description_promenade();
+					$nom_pro = $objet->get_nom_promenade();
+					$desc_pro = $objet->get_desc_promenade();
 					$date_deb_pro = $objet->get_date_debut_promenade();
 					$date_fin_pro = $objet->get_date_fin_promenade();
 					$localisation = $objet->get_localisation();
-					$lib_pro = $objet->get_lib_promenade();
 					$etat_pro = $objet->get_etat_promenade();
 
 
-					print $SQL = " INSERT INTO promenade values (NULL, '$desc_pro', '$date_deb_pro', '$date_fin_pro', '$localisation', '$lib_pro', '0')";
+					print $SQL = " INSERT INTO promenade values (NULL, '$nom_pro', '$desc_pro', '$date_deb_pro', '$date_fin_pro', '$localisation', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout promenade ');
 				}
 
 				Public function modif_promenade ($objet, $conn)
 				{
-          $idp = $objet->get_id_promenade();
-					$desc_pro = $objet->get_description_promenade();
+					$idp = $objet->get_id_promenade();
+					$nom_pro = $objet->get_nom_promenade();
+					$desc_pro = $objet->get_desc_promenade();
 					$date_deb_pro = $objet->get_date_debut_promenade();
 					$date_fin_pro = $objet->get_date_fin_promenade();
 					$localisation = $objet->get_localisation();
-					$lib_pro = $objet->get_lib_promenade();
 					$etat_pro = $objet->get_etat_promenade();
 
-					print $SQL = "UPDATE promenade SET id_promenade = '$idp', description_promenade  = '$desc_pro',
-					date_deb_pro = '$date_deb_pro', date_fin_pro = '$date_fin_pro', localisation = '$localisation', lib_promenade = '$lib_pro' WHERE id_promenade = '$idp'";
+					print $SQL = "UPDATE promenade SET id_promenade = '$idp', nom_promenade = '$nom_pro' desc_promenade  = '$desc_pro',
+					date_deb_pro = '$date_deb_pro', date_fin_pro = '$date_fin_pro', localisation = '$localisation' WHERE id_promenade = '$idp'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification promenade ');
 				}
 
@@ -181,12 +180,12 @@ class promenade
 
 				Public function affiche_promenade_total($objet, $conn)
 				{
-          $idp = $objet->get_id_promenade();
-					$desc_pro = $objet->get_description_promenade();
+					$idp = $objet->get_id_promenade();
+					$nom_pro = $objet->get_nom_promenade();
+					$desc_pro = $objet->get_desc_promenade();
 					$date_deb_pro = $objet->get_date_debut_promenade();
 					$date_fin_pro = $objet->get_date_fin_promenade();
 					$localisation = $objet->get_localisation();
-					$lib_pro = $objet->get_lib_promenade();
 					$etat_pro = $objet->get_etat_promenade();
 
 					print $SQL = " SELECT *  From promenade WHERE id_promenade = '$idp'";

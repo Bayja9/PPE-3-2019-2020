@@ -152,14 +152,13 @@
     <div class="form-style-10">
       <br><br>
 <h1>Inscription Promenade<span>Inscrivez-vous pour une promenade à Cheval ou Poney</span></h1>
-<form>
+<form action='operation_promenade.php' method='post'>
     <div class="section"><span>1</span>Prénom et adresse</div>
     <div class="inner-wrap">
-        <label>Libellé Promenade <input type="text" name="lib_promenade" value=""/></label>
-        <div class="section">Code Postal</div>
-        <div class="inner-wrap">
-            <textarea class="form-control" id="nom_id" name="localisation" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
-            <ul id="nom_list_id"></ul>
+        <label>Nom de la Promenade <input type="text" name="nom_promenade" value=""/></label>
+        <div class="section"><span>3</span>Information Complémentaire</div>
+            <div class="inner-wrap">
+            <textarea class="form-control" name="desc_promenade" value="" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
         </div>
     </div>
 
@@ -169,31 +168,17 @@
         <label>Date de Fin <input type="date" name="date_fin_promenade" value="date_fin_promenade" /></label>
     </div>
 
-    <div class="section"><span>3</span>Information Complémentaire</div>
-        <div class="inner-wrap">
-        <textarea class="form-control" name="desc_promenade" value="" rows="8" cols="80" placeholder="Postez un commentaire"></textarea>
+    <div class="section">Code Postal</div>
+    <div class="inner-wrap">
+        <textarea class="form-control" id="nom_id" name="localisation" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
+        <ul id="nom_list_id"></ul>
     </div>
-    <div class="button-group-area mt-40">
-						<a href="operation_promenade.php" class="genric-btn danger radius">Valider mon Stage</a>
-            <br><br>
-            <a class="primary-btn" href="modif_promenade.php">Modification Promenade</a> <a class="primary-btn" href="suppr_promenade.php">Suppression Promenade</a>
-            <br><br>
+
+      <div>
+          <input type="submit" name="enregistrerd" value="Enregistrer"/>
+      </div>
 		</div>
 </form>
-          </div>
-        </div>
-      </section>
-    <!-- End upcoming-event Area -->
-
-
-    <!-- Start booking Area -->
-
-    <!-- End booking Area -->
-
-    <!-- start footer Area -->
-
-    <!-- End footer Area -->
-
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
