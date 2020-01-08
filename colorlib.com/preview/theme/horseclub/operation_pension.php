@@ -30,7 +30,7 @@ if (isset($_POST['modifierp']))
 
 
     $unepension = new pension (NULL, $date_debut_p, $date_fin_p, $lib_pension, '0');
-    $unepesion -> modif_pension($unepension, $conn);
+    $unepension -> modif_pension($unepension, $conn);
     header('Location: ./modif_pension.php');
 }
 if (isset($_POST['suppr']))
