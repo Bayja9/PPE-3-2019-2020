@@ -39,6 +39,7 @@
           <th align="center" width="1%" style="color:#C40101">Début du Stage</th>
           <th align="center" width="1%" style="color:#C40101">Fin du Stage</th>
           <th align="center" width="1%" style="color:#C40101">Description du Stage</th>
+          <th align="center" width="1%" style="color:#C40101">Localisation du Stage</th>
           <th align="center" width="1%" style="color:#C40101">Ajouter</th>
           <th align="center" width="1%" style="color:#C40101">Modifier</th>
           <th align="center" width="1%" style="color:#C40101">Supprimer</th>
@@ -52,7 +53,8 @@
              <td align="center" width="24%" style="color:black"><b><?php echo $ligne['nom_stage']?></b></td>
              <td align="center" width="20%" style="color:black"><b><?php echo $ligne['date_debut_stage']?></b></td>
              <td align="center" width="20%" style="color:black"><b><?php echo $ligne['date_fin_stage']?></b></td>
-             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['desc_stage']?></b></td>
+             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['description_stage']?></b></td>
+             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['localisation_stage']?></b></td>
              <td align="center" width="1%" style="color:black"><a href="inscriptionstage.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'/></a>
              <td align="center" width="1%" style="color:black"><a href=operation_stage.php?id_stage=<?php echo $ligne['id_stage']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
              <td align="center" width="1%" style="color:black"><a href=operation_stage.php?id_stage=<?php echo $ligne['id_stage']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>

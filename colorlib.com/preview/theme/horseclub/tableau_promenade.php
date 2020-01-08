@@ -52,7 +52,7 @@
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['id_promenade']?></b></td>
              <td align="center" width="24%" style="color:black"><b><?php echo $ligne['nom_promenade']?></b></td>
              <td align="center" width="24%" style="color:black"><b><?php echo $ligne['desc_promenade']?></b></td>
-             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['date_début_promenade']?></b></td>
+             <td align="center" width="1%" style="color:black"><b><?php echo $ligne['date_debut_promenade']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['date_fin_promenade']?></b></td>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['localisation']?></b></td>
              <td align="center" width="1%" style="color:black"><a href="inscription_promenade.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'/></a>

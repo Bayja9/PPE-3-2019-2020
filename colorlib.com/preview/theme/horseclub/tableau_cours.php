@@ -41,6 +41,7 @@
           <th align="center" width="1%" style="color:#C40101">Date début du Cours</th>
           <th align="center" width="1%" style="color:#C40101">Date Fin du Cours</th>
           <th align="center" width="1%" style="color:#C40101">Repas</th>
+          <th align="center" width="1%" style="color:#C40101">Localisation du Cours</th>
           <th align="center" width="1%" style="color:#C40101">Ajouter</th>
           <th align="center" width="1%" style="color:#C40101">Modifier</th>
           <th align="center" width="1%" style="color:#C40101">Supprimer</th>
@@ -52,10 +53,11 @@
           <tr>
              <td align="center" width="1%" style="color:black"><b><?php echo $ligne['id_cours']?></b></td>
              <td align="center" width="20%" style="color:black"><b><?php echo $ligne['nom_cours']?></b></td>
-             <td align="center" width="20%" style="color:black"><b><?php echo $ligne['lib_cours']?></b></td>
-             <td align="center" width="15%" style="color:black"><b><?php echo $ligne['date_début_cours']?></b></td>
+             <td align="center" width="20%" style="color:black"><b><?php echo $ligne['libelle_cours']?></b></td>
+             <td align="center" width="15%" style="color:black"><b><?php echo $ligne['date_debut_cours']?></b></td>
              <td align="center" width="15%" style="color:black"><b><?php echo $ligne['date_fin_cours']?></b></td>
              <td align="center" width="3%" style="color:black"><b><?php echo $ligne['repas']?></b></td>
+             <td align="center" width="3%" style="color:black"><b><?php echo $ligne['localisation_cours']?></b></td>
              <td align="center" width="1%" style="color:black"><a href="inscriptioncours.php"><img src='https://image.flaticon.com/icons/png/512/61/61183.png' width='50px' height='50px'  alt='le alt'></a>
              <td align="center" width="1%" style="color:black"><a href=operation_cours.php?id_concours=<?php echo $ligne['id_cours']?> </a><img src='http://www.radiolavoiesainte.net/neriyatv/images/modifier.jpg' width='50px' height='50px'  alt='le alt'</td>
              <td align="center" width="1%" style="color:black"><a href=operation_cours.php?id_concours=<?php echo $ligne['id_cours']?> </a><img src='https://cdn.pixabay.com/photo/2013/07/12/12/40/abort-146072_960_720.png' width='50px' height='50px' alt='le alt'</td>
