@@ -163,8 +163,9 @@ class cours
 					$etat_cours = $objet->get_etat_cours();
 
 
-					print $SQL = " INSERT INTO cours values (NULL, '$nom_cours', '$lib_cours', '$date_deb_cours', '$date_fin_cours', '$rep_cours', '$localisation_cours', '0')";
+					print $SQL = "INSERT INTO cours VALUES(NULL, '$nom_cours', '$lib_cours', '$date_deb_cours', '$date_fin_cours', '$rep_cours', '$localisation_cours', '0')";
 					$Req = $conn -> query ($SQL);
+					die();
 				}
 
 				Public function modif_cours ($objet, $conn)

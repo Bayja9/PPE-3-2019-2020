@@ -9,7 +9,7 @@ include "class_cours.php";
 if (isset($_POST['enregistrerc']))
 {
 
-    $id_cours=$_SESSION['id_cours'];
+    //$id_cours=$_SESSION['id_cours'];
     $nom_cours=$_POST['nom_cours'];
     $lib_cours=$_POST['libelle_cours'];
     $date_deb_cours=$_POST['date_debut_cours'];
