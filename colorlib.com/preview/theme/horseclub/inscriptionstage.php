@@ -38,6 +38,13 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stage.css">
+    <!--
+    Autocompletion
+    ============================================= -->
+    <link rel="stylesheet" href="autocomp/css/style.css" />
+    <script type="text/javascript" src="autocomp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="autocomp/js/script.js"></script>
+
   </head>
   <body>
 
@@ -149,49 +156,26 @@
       <br><br>
 <h1>Inscription Stage<span>Inscrivez-vous pour ce stage</span></h1>
 
-<section class="training-area section-gap">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-9 pb-40 header-text text-center">
-              <div class="section-top-border">
-                <h3 class="mb-30">STAGES</h3>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <blockquote class="generic-blockquote">
-                      Des stages sont organisés, du lundi au samedi, durant toutes les vacances scolaires, en 1/2 journée ou en journée complète avec passage des examens fédéraux. Renseignements au bureau.
-                      <br><br>
-                      Le galops 8 se déroule sur rendez vous
-                      <br><br>
-                      Vous pouvez aussi vivre votre passion à travers des cours particuliers de ½ h ou 1h.
-                      <br><br>
-                      Vous pouvez aussi choisir de faire une animation spécifique : balade, anniversaire, heure libre ou demi-pension…
-                      <br><br>
-                      Le centre équestre de Vernouillet 78 vous propose de vous accueillir en groupe (comité d’entreprise, centre aéré, école, groupe d’amis…
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-
-      </div>
-    </section>
 <form action='operation_stage.php' method='post'>
   <hr>
   <div class="inner-wrap">
-    <div class="section"><span>1</span>Dates du stage</div>
-    <div class="inner-wrap">
-      <label for="stage">Date de début<input type="date" name="date_debut_stage"/></label>
-      <label for="stage">Date de fin<input type="date" name="date_fin_stage" /></label>
-    </div>
-    <hr>
-    <div class="section"><span>2</span>Informations Complémentaires</div>
+    <div class="section"><span>1</span>Informations</div>
         <div class="inner-wrap">
         <textarea class="form-control" name="nom_stage" rows="1" cols="80" placeholder="Nom du stage"></textarea>
         <textarea class="form-control" name="description_stage" rows="5" cols="80" placeholder="Description"></textarea>
-        <div class="section"><span>3</span>Code Postal</div>
+
+        <div class="section"><span>2</span>Dates du stage</div>
+        <div class="inner-wrap">
+          <label for="stage">Date de début<input type="date" name="date_debut_stage"/></label>
+          <label for="stage">Date de fin<input type="date" name="date_fin_stage" /></label>
+        </div>
+
+        <div class="section"><span>2</span>Code Postal</div>
         <div class="inner-wrap">
             <textarea class="form-control" id="nom_id" name="localisation_stage" rows="1" cols="150" onkeyup="autocomplet()"/></textarea>
             <ul id="nom_list_id"></ul>
         </div>
+
     </div>
     <hr>
 
