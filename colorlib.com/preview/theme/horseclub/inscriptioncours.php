@@ -165,7 +165,7 @@
         <label>Fin cours<input type="date" name="date_fin_cours" /></label>
     </div>
     <div class="section"><span>3</span>Prendre un repas</div>
-            <label><input type="text" name="repas" placeholder="Entrer 'Oui' ou 'Non'" /></label>
+            <label><input type="text" name="repas_cours" placeholder="Entrer 'Oui' ou 'Non'" /></label>
       </div>
       <div class="section">Code Postal</div>
       <div class="inner-wrap">

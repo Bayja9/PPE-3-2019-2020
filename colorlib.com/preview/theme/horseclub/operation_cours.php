@@ -14,12 +14,12 @@ if (isset($_POST['enregistrerc']))
     $lib_cours=$_POST['libelle_cours'];
     $date_deb_cours=$_POST['date_debut_cours'];
     $date_fin_cours=$_POST['date_fin_cours'];
-    $repas=$_POST['repas'];
+    $rep_cours=$_POST['repas_cours'];
     $localisation_cours=$_POST['localisation_cours'];
 
 
 
-    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, '0');
+    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $rep_cours, $localisation_cours, '0');
     $uncours -> ajout_cours($uncours, $conn);
     header('Location: ./inscriptioncours.php');
 
@@ -31,11 +31,11 @@ if (isset($_POST['modifierc']))
     $lib_cours=$_POST['libelle_cours'];
     $date_deb_cours=$_POST['date_debut_cours'];
     $date_fin_cours=$_POST['date_fin_cours'];
-    $repas=$_POST['repas'];
+    $rep_cours=$_POST['repas_cours'];
     $localisation_cours=$_POST['localisation_cours'];
 
 
-    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $repas, $localisation_cours, '0');
+    $uncours = new cours (NULL, $nom_cours, $lib_cours, $date_deb_cours, $date_fin_cours, $rep_cours, $localisation_cours, '0');
     $uncours -> modif_cours($uncours, $conn);
     header('Location: ./modif_cours.php');
 

@@ -15,7 +15,6 @@ class galop
 		Private $id_galop;
     Private $date_obtention_galop;
 		Private $nom_galop;
-		Private $libelle_galop;
 		Private $etat_galop;
 
 
@@ -23,11 +22,10 @@ class galop
 		/* class Galop Constructeur */
 		/* ---------------------- */
 
-			Public function galop ($idg, $dat_obt_gal, $nom_gal, $lib_galop, $etat_gal)
+			Public function galop ($idg, $dat_obt_gal, $nom_gal, $etat_gal)
 			{
 				$this -> id_galop = $idg;
         $this -> date_obtention_galop = $dat_obt_gal;
-				$this -> libelle_galop = $lib_galop;
 				$this -> nom_galop = $nom_gal;
 				$this -> etat_galop = $etat_gal;
 			}
@@ -40,7 +38,6 @@ class galop
 			{
 				$data = $this->id_galop;
 				$data = $data.$this->date_obtention_galop;
-				$data = $data.$this->libelle_galop;
 				$data = $data.$this->nom_galop;
 				$data = $data.$this->etat_galop;
 
@@ -64,11 +61,6 @@ class galop
 			Public function get_nom_galop ()
 			{
 				return $this-> nom_galop;
-			}
-
-			Public function get_lib_galop ()
-			{
-				return $this-> libelle_galop;
 			}
 
 			Public function get_etat_galop ()
@@ -95,12 +87,6 @@ class galop
 				 $this-> nom_galop = $nom_gal;
 			}
 
-			Public function set_lib_galop ($lib_galop)
-			{
-				 $this-> libelle_galop = $lib_galop;
-			}
-
-
 			Public function set_etat_galop ($etat_gal)
 			{
 				 $this-> etat_galop = $etat_gal;
@@ -118,11 +104,10 @@ class galop
 					$idg = $objet->get_id_galop();
 					$dat_obt_gal = $objet->get_date_obtention_galop();
 					$nom_galop = $objet->get_nom_galop();
-					$lib_galop = $objet->get_lib_galop();
 					$etat_galop = $objet->get_etat_galop();
 
 
-					print $SQL = " INSERT INTO galop values (NULL, '$dat_obt_gal', '$nom_galop', '$lib_galop', '0')";
+					print $SQL = " INSERT INTO galop values (NULL, '$dat_obt_gal', '$nom_galop', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout galop ');
 				}
 
@@ -135,7 +120,7 @@ class galop
 					$etat_galop = $objet->get_etat_galop();
 
 					print $SQL = "UPDATE galop SET id_galop = '$idg', date_obtention_galop  = '$dat_obt_gal',
-					nom_galop = '$nom_gal' libelle_galop = '$lib_galop' WHERE id_galop = '$idg'";
+					nom_galop = '$nom_gal' WHERE id_galop = '$idg'";
 				 	$Req = $conn -> query ($SQL) or die (' Erreur modification galop ');
 				}
 
@@ -153,7 +138,6 @@ class galop
           $idg = $objet->get_id_galop();
 					$dat_obt_gal = $objet->get_date_obtention_galop();
 					$nom_galop = $objet->get_nom_galop();
-					$lib_galop = $objet->get_lib_galop();
 					$etat_galop = $objet->get_etat_galop();
 
 
