@@ -65,14 +65,14 @@
         <p class="">
           <th width="1%" style="color:#C40101">ID</th>
           <th width="1%" style="color:#C40101">Mail</th>
+          <th width="1%" style="color:#C40101">Mot de Passe</th>
           <th width="1%" style="color:#C40101">Date de Création</th>
-          <th width="1%" style="color:#C40101">Level</th>
        </tr>
           <tr>
              <td width="1%" style="color:black"><b><?= $afficher_profil['id'] ?></b></td>
              <td width="24%" style="color:black"><b><?= $afficher_profil['mail'] ?></b></td>
+             <td width="24%" style="color:black"><b><?= $afficher_profil['mdp'] ?></b></td>
              <td width="24%" style="color:black"><b><?= $afficher_profil['date_creation_compte'] ?></b></td>
-             <td width="1%" style="color:black"><b><?= $afficher_profil['level'] ?></b></td>
           </tr>
       </div>
     </div>

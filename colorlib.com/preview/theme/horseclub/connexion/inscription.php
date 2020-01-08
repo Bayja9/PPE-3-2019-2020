@@ -5,7 +5,7 @@
 
     // S'il y a une session alors on ne retourne plus sur cette page
     if (isset($_SESSION['id'])){
-        header('Location:connexion.php');
+        header('Location:index.php');
         exit;
     }
 
@@ -71,7 +71,7 @@
             // Si toutes les conditions sont remplies alors on fait le traitement
             if($valid){
 
-                $mdp = crypt($mdp, "$6$rounds=5000$macleapersonnaliseretagardersecret$");
+                $mdp = crypt($mdp, "$6rounds=5000macleapersonnaliseretagardersecret$");
 
                 $date_creation_compte = date('Y-m-d H:i:s');
 
