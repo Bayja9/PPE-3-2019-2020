@@ -82,7 +82,6 @@
                         <li><a href="inscription_cavalier">Inscription Cavalier</a></li>
                         <li><a href="inscription_concours">Inscription Concours</a></li>
                         <li><a href="inscription_promenade">Inscription Promenade</a></li>
-                        <li><a href="inscriptionbalade">Inscription Balade</a></li>
                         <li><a href="inscriptioncours">Inscription Cours</a></li>
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
@@ -150,7 +149,8 @@
     <div class="section"><span>1</span>Information sur le Galop</div>
     <div class="inner-wrap">
         <label><input type="text" name="nom_galop" placeholder="Nom du Galop" /></label>
-        <label><input type="date" name="date_debut_cours" placeholder="Date Obtention du Galop" /></label>
+        <label><input type="text" name="libelle_galop" placeholder="Libelle du Galop" /></label>
+        <label><input type="date" name="date_obtention_galop" placeholder="Date Obtention du Galop" /></label>
     </div>
     <div class="button">
 			 <input type="submit" class="genric" name="enregistrerg" value="Enregistrer"/>

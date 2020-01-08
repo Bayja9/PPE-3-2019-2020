@@ -23,7 +23,7 @@ class galop
 		/* class Galop Constructeur */
 		/* ---------------------- */
 
-			Public function galop ($idg, $nom_gal, $lib_galop, $etat_gal)
+			Public function galop ($idg, $dat_obt_gal, $nom_gal, $lib_galop, $etat_gal)
 			{
 				$this -> id_galop = $idg;
         $this -> date_obtention_galop = $dat_obt_gal;
@@ -40,6 +40,7 @@ class galop
 			{
 				$data = $this->id_galop;
 				$data = $data.$this->date_obtention_galop;
+				$data = $data.$this->libelle_galop;
 				$data = $data.$this->nom_galop;
 				$data = $data.$this->etat_galop;
 
@@ -121,7 +122,7 @@ class galop
 					$etat_galop = $objet->get_etat_galop();
 
 
-					print $SQL = " INSERT INTO galop values (NULL, '$nom_galop', '$lib_galop', '0')";
+					print $SQL = " INSERT INTO galop values (NULL, '$dat_obt_gal', '$nom_galop', '$lib_galop', '0')";
 					$Req = $conn -> query ($SQL) or die (' Erreur ajout galop ');
 				}
 
@@ -152,6 +153,7 @@ class galop
           $idg = $objet->get_id_galop();
 					$dat_obt_gal = $objet->get_date_obtention_galop();
 					$nom_galop = $objet->get_nom_galop();
+					$lib_galop = $objet->get_lib_galop();
 					$etat_galop = $objet->get_etat_galop();
 
 

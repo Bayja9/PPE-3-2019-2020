@@ -81,7 +81,6 @@
                         <li><a href="inscription_cavalier">Inscription Cavalier</a></li>
                         <li><a href="inscription_concours">Inscription Concours</a></li>
                         <li><a href="inscription_promenade">Inscription Promenade</a></li>
-                        <li><a href="inscriptionbalade">Inscription Balade</a></li>
                         <li><a href="inscriptioncours">Inscription Cours</a></li>
                         <li><a href="inscriptiongalop">Inscription Galop</a></li>
                         <li><a href="inscriptionpension">Inscription Pension</a></li>
