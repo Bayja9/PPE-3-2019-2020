@@ -89,18 +89,6 @@
         <li><a href="connexion\profil">Mon Compte</a>
           <ul>
       <li><a href="connexion\modifier-profil">Modifier Profil</a></li>
-      <?php
-      if(!isset($_SESSION['userlevel']) || empty($_SESSION['userlevel']))
-        {
-      if ($_SESSION['userlevel'] == 2)
-        {
-        echo "ADMIN";
-        }
-        else
-        {
-        }
-        }
-        ?>
       <li><a href="panel">Pannel Admin</a></li>
       <li><a href="connexion\deconnexion">Déconnexion</a></li>
     </li>
