@@ -180,7 +180,7 @@
 ?>
 
 <?php
-}
+      }
 //$id_che=$_POST['choix_chevaux'];
 //$uncheval = new chevaux (NULL, '', '', '', '', '', '', '', '', '', '', '', '');
 //$t = $uncheval -> affiche_chevaux_total($id_che, $conn);
